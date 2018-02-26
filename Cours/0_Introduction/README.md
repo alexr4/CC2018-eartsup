@@ -3,7 +3,7 @@
 
 ---
 
-<h1 id="préparation2">27/02/2018 - Préparation2</h1>
+<h1 id="préparation">27/02/2018 - Préparation</h1>
 <p>Bienvenus dans ce premier cours, dans celui-ci nous vous présentons le cours ainsi que les différents outils que nous utiliserons.</p>
 <h2 id="présentation-du-cours">Présentation du cours</h2>
 <p>The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the <strong>New file</strong> button in the file explorer. You can also create folders by clicking the <strong>New folder</strong> button.</p>
