@@ -1,34 +1,26 @@
-<!--- ** Issues are for new bugs & feature requests. ** -->
-<!--- ** For coding questions visit https://forum.processing.org ** -->
-<!--- ** Be sure to read the troubleshooting page first: ** -->
-<!--- ** https://github.com/processing/processing/wiki/Troubleshooting ** -->
-<!--- ** Before posting, please search Issues for duplicates  ** --> 
+<!--- ** Les "Issues" sont dédiées aux bugs et demande que vous n'avez pas réussi à résoudre par vous même ** -->
+<!--- ** Pour plus d'information sur la création d'un "issue" ou la manière de debugger votre code rendez vous sur wiki section "Debugger son programme" ** -->
+<!--- ** Vérifier que le bug/problème n'a pas été reporté par quelqu'un d'autre de la classe ** -->
 
 ## Description
-<!--- Use a title that describes what is happening. -->
-<!--- Give a description of the proposed change. -->
+<!--- Décivez votre probleme par une courte description claire et précise -->
 
-## Expected Behavior
-<!--- Bug? Tell us what you were expecting. -->
-<!--- Improvement? Tell us how you’d like it to work. -->
+## Comportement désiré
+<!--- Expliquez ici ce que vous chercher à obtenir dans votre programme -->
 
-## Current Behavior
-<!--- Explain the difference from current behavior. -->
+## Comportement actuel
+<!--- Expliquez le comportement obtenu (bug=. -->
 
-## Steps to Reproduce
-<!--- Provide an unambiguous set of steps to reproduce. -->
-<!--- Including code will make it more likely to be fixed. -->
+## Étapes de reproduction
+<!--- Indiquez ici comment reproduire votre bug, précisez votre code -->
 1.
 2.
 3.
 
-## Your Environment
-<!--- Include details about your environment. -->
-<!--- Thousands of people use Processing every day and may not have --> 
-<!--- this issue, this might give us clues about why you’re seeing it. -->
-* Processing version:
-* Operating System and OS version:
-* Other information:
+## Environnement
+<!--- Indiquez votre environnement de travail -->
+* Operating System:
+* Navigateur:
 
 ## Possible Causes / Solutions
-<!--- Optionally, ideas on how to implement the change. -->
+<!--- Indiquez les idées que vous avez eu ou que vous avez testé pour résoudre votre programme -->
