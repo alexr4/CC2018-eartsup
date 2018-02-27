@@ -4,6 +4,7 @@
 **Auteure : Madeleine Morley**
 _Date de publication : December 21st, 2017_
 _Tag : Design + Art_
+_Lien : [https://eyeondesign.aiga.org/momas-thinking-machines-explores-the-transformation-of-art-design-in-the-computer-age/](https://eyeondesign.aiga.org/momas-thinking-machines-explores-the-transformation-of-art-design-in-the-computer-age/)_
 
 Images : 
 * _Susan-Kare-Sketch-1.jpg_
