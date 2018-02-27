@@ -6,10 +6,9 @@ Bienvenus dans ce premier cours, dans celui-ci nous vous présentons le cours ai
 ## Présentation du cours
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eBV14-3LT-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+https://www.youtube.com/embed/eBV14-3LT-g
 
-<iframe src="https://player.vimeo.com/video/234283043?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/234283043">Bonjour, interactive lab - Showreel 2017</a> from <a href="https://vimeo.com/user14681110">Bonjour</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+https://vimeo.com/234283043
 
 ## Présentation outils
 
