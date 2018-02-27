@@ -1,7 +1,3 @@
----
-
-
----
 
 <h1 id="préparation">27/02/2018 - Préparation</h1>
 <p>Bienvenus dans ce premier cours, dans celui-ci nous vous présentons le cours ainsi que les différents outils que nous utiliserons.</p>
