@@ -5,7 +5,11 @@ Bienvenus dans ce premier cours, dans celui-ci nous vous présentons le cours ai
 
 ## Présentation du cours
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eBV14-3LT-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/234283043?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/234283043">Bonjour, interactive lab - Showreel 2017</a> from <a href="https://vimeo.com/user14681110">Bonjour</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ## Présentation outils
 
