@@ -1,0 +1,133 @@
+#Section-1
+{
+  color: #F0F0F0;
+  background-color: #6DA7BF;
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#auteur
+{
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  height: 100px;
+  margin-left: -230px;
+}
+
+#date
+{
+  width: 200px;
+  height: 100px;
+  margin-left: 700px;
+  margin-top: 39px;
+}
+
+#Block-1
+{
+  position: absolute;
+  width: 600px;
+  margin-left: 100px;
+  margin-top: 50px;
+  column-count: 2;
+  column-gap: 100px;
+  column-rule-style: double;
+}
+
+#Image-1
+{
+  margin-left: 900px;
+  margin-top: 100px;
+  margin-right: 50px;
+}
+
+#Section-2
+{
+  margin-top: 300px;
+}
+
+#Part-2
+{
+  color: #F0F0F0;
+  background-color: #6DA7BF;
+  width: 80px;
+}
+
+#Block-2
+{
+  position: absolute;
+  column-count: 2;
+  column-gap: 100px;
+  column-rule-style: double;
+  width: 600px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+#Part-3
+{
+  color: #F0F0F0;
+  background-color: #6DA7BF;
+  width: 180px;
+}
+
+#Part-4
+{
+  color: #F0F0F0;
+  background-color: #6DA7BF;
+  width: 225px;
+}
+
+#Part-5
+{
+  color: #F0F0F0;
+  background-color: #6DA7BF;
+  width: 145px;
+}
+
+#Susan
+{
+  margin-top: 200px;
+}
+
+#Part-6
+{
+  color: #F0F0F0;
+  background-color: #6DA7BF;
+  width: 120px;
+}
+
+h1
+{
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: fantasy;
+}
+
+h3
+{
+  font-style: italic;
+  color: #6DA7BF;
+  font-family: fantasy;
+}
+
+h4
+{
+  font-style: italic;
+  font-size: 10px;
+  width: 300px;
+}
+
+p
+{
+  color: #2B4049;
+  font-size: 17px;
+}
+
+img
+{
+  border: 10px solid #6DA7BF;
+}
