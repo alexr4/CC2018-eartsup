@@ -1,0 +1,36 @@
+body
+{
+  font-family: monospace;
+}
+
+h1
+{
+  font-size: 50px;
+}
+
+h2
+{
+  font-size: 35px;
+}
+
+h3
+{
+  font-size: 25px;
+}
+
+p
+{
+  font-size: 20px;
+}
+
+img
+{
+
+}
+
+#Section1
+{
+  width : 95%;
+  margin : auto;
+  hyphens: manual;
+}
