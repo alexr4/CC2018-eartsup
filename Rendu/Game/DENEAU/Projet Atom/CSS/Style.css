@@ -1,0 +1,66 @@
+body{
+  background-color: White;
+  text-align: center;
+}
+
+h1{
+  font-size: 35px;
+  font-family: sans-serif;
+  text-decoration: underline;
+  color: #243F28;
+}
+
+h2{
+  font-size: 30px;
+  font-family: sans-serif;
+  text-decoration: underline;
+  color: #335938;
+}
+
+h3{
+  font-size: 25px;
+  font-family: sans-serif;
+  text-decoration: underline;
+  color: #82DC91;
+}
+
+h4{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #A2DCAC;
+}
+
+#Section-0{
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#Section-1{
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#Section-2{
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#Section-3{
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#Section-4{
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#Section-5{
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#Section-6{
+  font-size: 15px;
+  font-family: sans-serif;
+}
