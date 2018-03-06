@@ -1,0 +1,25 @@
+body{
+  text-align: center;
+  background-color: inherit;
+}
+p{
+  front-size: 35px
+  color: #757575
+  text-decoration: wavy;
+}
+h1{
+  front-size: 35px;
+  color: #4c1b1b;
+}
+h2{
+  front-size: 35px;
+  color: #94000F;
+}
+h3{
+  front-size: 35px;
+  color: #94000F;
+}
+h4{
+  front-size: 35px;
+  color: #000000
+}
