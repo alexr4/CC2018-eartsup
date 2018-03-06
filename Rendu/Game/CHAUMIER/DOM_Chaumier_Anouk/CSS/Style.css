@@ -1,36 +1,51 @@
 body
 {
   font-family: monospace;
+  background-color: #ccfff3;
+  text-align: center;
 }
 
 h1
 {
-  font-size: 50px;
+  text-decoration: overline underline;
+  font-size: 32px;
+  color: #00664e;
 }
 
 h2
 {
-  font-size: 35px;
+  color: #00b389;
+  font-size: 27px;
 }
 
 h3
 {
-  font-size: 25px;
+  color: #5ebaa5;
+  font-size: 22px;
 }
 
 p
 {
   font-size: 20px;
+  color: black;
 }
 
-img
+#SousSection2
 {
-
+  margin-left: 300px;
+  margin-right: 300px;
+  border: solid;
 }
 
-#Section1
+#Section2
 {
-  width : 95%;
-  margin : auto;
-  hyphens: manual;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#SousSection3
+{
+  column-count: 3;
+  column-rule-style: dotted;
+  text-align: left;
 }
