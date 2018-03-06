@@ -1,0 +1,55 @@
+body{
+  background-color:#505050
+}
+h1{
+  color: white;
+  text-align: center;
+  font-family: "Elephant"Arial, sans-serif;
+  font-size: 40px;
+  }
+  h2{
+    color: #ff7800;
+    font-family:"Gabriola Normal"Arial;
+    font-size: 25px;
+    text-align: center;
+    }
+#texte1{
+  color: #d5d5d5;
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+  }
+#blog1{
+  font-style: italic;
+  font-family: "Verdana"Arial;
+  text-align:
+
+}
+.a{
+  margin-left: 550px;
+}
+#texte2{
+  color: #ffffff;
+  font-family:"Helvetica"Arial;
+  text-align: center;
+}
+h3{
+  color: #ff7800;
+  font-family:"Gabriola Normal"Arial;
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
+}
+h4{
+  color: White;
+  font-style: italic;
+  font-family: 'Helvetica';
+  text-align:center;
+  }
+
+  #fin{
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 11px
+  }
