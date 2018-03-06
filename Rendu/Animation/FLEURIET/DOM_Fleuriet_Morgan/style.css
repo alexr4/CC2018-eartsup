@@ -1,0 +1,69 @@
+h1{
+  color:#5B9496;
+  font-size: 50px;
+  font-style: oblique;
+  text-align: center;
+  font-family: "Roboto";
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+h2{
+  color:#5B9496;
+  font-size: 30px;
+  font-style: oblique;
+  text-align: center;
+  font-family: "Roboto";
+  text-decoration: inherit;
+}
+
+h3{
+  color:#5B9496;
+  font-size: 25px;
+  font-style: oblique;
+  font-family: "Roboto";
+  margin-top: 150px;
+}
+
+h4{
+  color:#5B9496;
+  font-size: 20px;
+  font-style: oblique;
+  font-family: "Roboto";
+}
+
+body{
+  background-color:#F6EDD3;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+p{
+  color:#5B9496;
+  font-family: "Roboto";
+}
+
+#orc{
+  margin-left: -40px;
+}
+
+#figorc{
+  margin-left: -40px;
+  margin-right: 300px;
+}
+
+#unnamed{
+  width: 300px;
+}
+
+#kare{
+margin-left: 0px;
+}
+
+#price{
+  margin-left: 0px;
+}
+
+#hor{
+margin-left: 0px;
+}
