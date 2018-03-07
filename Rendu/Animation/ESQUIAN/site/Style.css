@@ -1,0 +1,76 @@
+body{
+  background-color: #F4F0CB;
+  background-image: url(http://123hdwallpaperpic.com/download/20151130/pastel-light-blue-light-pink-1920x1080.jpg);
+background-attachment: fixed;
+text-align: center;
+  margin-left: :300px;
+}
+
+
+
+h1{
+  font-size: 40px;
+  font-family: monospace;
+  text-decoration: underline overline;
+  color: #8DAEB0;
+}
+
+h2{
+  font-size: 25px;
+  font-family: monospace;
+  text-decoration: none;
+  color: #8DAEB0;
+}
+
+h3{
+  font-size: 20px;
+  font-family: monospace;
+  text-decoration: none;
+  color: #8DAEB0;
+}
+
+h4{
+  font-size: 16px;
+  font-family: monospace;
+  color: silver;
+}
+p{
+  width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+#Section-0{
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+#Section-1{
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+#Section-2{
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+#Section-3{
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+#Section-4{
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+#Section-5{
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+#Section-6{
+  font-size: 16px;
+  font-family: fantasy;
+}
