@@ -1,0 +1,23 @@
+<style>
+head{background-color: #0082ff;}
+
+h1{
+  color:#c9e2ee;
+  background-color:#5c7f81;
+  font-size: 50px;
+  font-family: "Roboto";
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;}
+
+  h2
+  {color:#562921;
+    text-align: center;
+    font-family: "Roboto";}
+img
+{width: 350px;margin-left: 200px}
+
+h3{
+  color:#562921;
+    text-align: center;
+    font-family: "Roboto";}
