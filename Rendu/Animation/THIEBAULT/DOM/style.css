@@ -1,0 +1,31 @@
+
+
+
+  body {
+    font-size:20px;
+    font-family: Avenir;
+    text-align: center;
+    background-color: lightblue
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 130px;
+
+  }
+  h1 {
+    font-size:42px;
+    font-family: "Futura";
+    text-align: center;
+  }
+  img {
+    height: 400px;
+  }
+
+  p {
+    text-align: left;
+
+  }
+
+  h2 {
+    text-align: left;
+  }
