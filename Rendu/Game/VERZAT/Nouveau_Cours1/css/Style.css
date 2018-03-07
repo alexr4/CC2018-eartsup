@@ -1,0 +1,60 @@
+h1{
+  color : #333333;
+}
+
+h3{
+  color : #56757a;
+}
+h4{
+  color : #272527;
+}
+h5{
+  color : #56757a;
+}
+h6{
+  color : #7e6d7d;
+}
+
+#Style-1{
+  margin-left: 180px;
+  margin-top: 60px
+  width : 700px;
+}
+
+#Style-2{
+margin-left: 250px;
+color : #56757a;
+width : 600px;
+
+}
+
+#Style-3{
+margin-left: 200px;
+
+}
+
+#Style-4{
+  margin-left: 200px;
+  column-count: 2;
+  width: 700px
+}
+
+#Style-5{
+  margin-left: 200px;
+}
+
+#Style-6{
+  margin-left: 200px;
+}
+
+#Style-7{
+  margin-left: 200px;
+  column-count: 2;
+  width: 700px;
+}
+
+#Style-8{
+  margin-top: 30px;
+  margin-left: 300px;
+  width: 500px;
+}
