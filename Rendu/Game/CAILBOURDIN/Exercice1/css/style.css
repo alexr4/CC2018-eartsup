@@ -1,0 +1,77 @@
+body{
+  background-color: #1c1c1c;
+}
+
+h1{
+  background: #eeeeee;
+  font-family: 'Work Sans', sans-serif;
+  margin: -10px -10px -10px -10px;
+  text-align: center;
+}
+
+h2{
+  color: #dddddd;
+  margin-left: 100px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h3{
+  color: #dddddd;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h4{
+  color: #dddddd;
+  font-family: 'Work Sans', sans-serif;
+}
+
+p{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: white;
+}
+
+a{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: cyan;
+}
+
+#description{
+  margin: 0px 0px 0px 100px;
+  background-color: rgba(10, 10, 10, 0.3);
+}
+
+#introduction{
+  margin: 50px 100px 50px 100px;
+}
+
+#partie-1{
+  margin: 50px 100px 50px 100px;
+}
+
+#partie-2{
+  margin: 50px 100px 50px 100px;
+}
+
+#partie-3{
+  margin: 50px 100px 50px 100px;
+}
+
+#partie-4{
+  margin: 50px 100px 50px 100px;
+}
+
+#partie-5{
+  margin: 50px 100px 50px 100px;
+}
+
+#conclusion{
+  margin: 50px 100px 50px 100px;
+}
