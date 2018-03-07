@@ -1,0 +1,26 @@
+
+body{
+  text-align: center;
+  background-color: #6e7889;
+}
+p{
+  front-size: 35px;
+  color: #ffffff;
+  font-family: monospace;
+}
+h1{
+  front-size: 35px;
+  color: #4c1b1b;
+}
+h2{
+  front-size: 35px;
+  color: #94000F;
+}
+h3{
+  front-size: 35px;
+  color: #94000F;
+}
+h4{
+  front-size: 35px;
+  color: #000000;
+}
