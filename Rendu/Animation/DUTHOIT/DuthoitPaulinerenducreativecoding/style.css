@@ -1,0 +1,33 @@
+
+body{
+  font-family: serif;
+  background-color: #ccf2ff;
+  text-align: center;
+
+}
+
+h1{
+  font-size: 70px;
+}
+h2{
+font-size: 50px;
+}
+h3{
+font-size: 45px;
+}
+h4{
+font-size: 20px;
+}
+
+p{
+  margin: 100px;
+  font-size: 30px;
+  text-align: justify;
+}
+
+#patate{
+  width: 450px;
+}
+#ocra{
+margin: 100px;
+}
