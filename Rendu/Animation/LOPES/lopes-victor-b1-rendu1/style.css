@@ -1,0 +1,52 @@
+body{
+  background-color: gray;
+  color: green;
+  font-size: 15;
+  font-family: Arial, Courier, Impact, sans-serif;
+}
+
+h1{
+  color: #1a83c5;
+  font-size: 40px;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+}
+h2{
+  color: #0196ff;
+  font-size: 30px;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+}
+h3{
+  color: #0060ff;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+}
+img{
+  width: 300px;
+  text-align: center;
+
+}
+p{
+  font-weight:bold;
+}
+
+#bob{
+  color: purple;
+}
+
+#encart{
+  width: 300px;
+  text-align: center;
+  margin-left: 200px;
+  margin: 90px 20px 20px 10px;
+
+}
+
+.section{
+
+}
