@@ -1,0 +1,38 @@
+#encart
+{
+  text-align: center;
+}
+body{
+font-weight: bold;
+  background-image: url(https://i.imgur.com/dBgxm2l.gif);
+  background-attachment: fixed;
+  background-color: #e6ffee
+}
+h1{
+  font-weight: bold;
+text-decoration: overline underline;
+}
+p{
+margin-left: 300px;
+margin-right: 300px;
+}
+h2{
+  font-weight: bold;
+}
+h4{
+  font-weight: bold;
+}
+h5{
+  color: #8c1aff;
+margin-left: 400px;
+margin-right: 400px;
+}
+
+#bob
+{
+  width: 95%;
+  hyphens: manual;
+  text-align: center;
+  column-count: 2;
+  column-rule-style: dashed;
+}
