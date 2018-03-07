@@ -1,0 +1,63 @@
+body
+{
+	background-color : #848DC7;
+}
+
+body
+{
+	color : black;
+}
+
+h1
+{
+	font-family : Impact, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+	text-decoration: overline;
+}
+
+h2
+{
+	font-family : Impact, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+	text-decoration: underline;
+}
+
+h3
+{
+	font-family : Impact, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+
+h4
+{
+	font-family : Impact, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+
+h5
+{
+	font-family : Impact, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+
+h6
+{
+	font-family : Impact, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+
+p
+{
+	font-size : 18px;
+}
+
+body
+{
+  text-align: center;
+}
