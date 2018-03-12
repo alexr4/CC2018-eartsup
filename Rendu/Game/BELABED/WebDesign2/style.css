@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+.contenair{
+  margin : 0 auto;
+  width : 90%;
+  background : red;
+}
+header{
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  background: white;
+  font-family: 'Bowlby One SC', cursive;
+}
+.rules{
+  background: white;
+  font-family: 'Bowlby One SC', cursive;
+}
+.content{
+  background: white;
+}
+.header-col{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Bowlby One SC', cursive;
+}
+#col1{
+  background: white;
+}
+#col2{
+  background: white;
+}
+#col3{
+  background: white;
+}
