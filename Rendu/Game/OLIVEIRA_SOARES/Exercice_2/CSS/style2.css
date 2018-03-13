@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+}
+
+.contenair{
+  margin: 0 auto;
+  width: 90%;
+  background: red;
+}
+
+header{
+  background: blue;
+  display: flex;
+}
+
+.title{
+  background: purple;
+}
+
+.rules{
+  background: yellow,
+}
+
+.content{
+  background: orange;
+}
+
+.header.col{
+  text-align: center;
+  font-size: 34px;
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 800;
+}
+
+#col1{
+  background: blue;
+}
+
+#col2{
+  background: white;
+}
+
+#col3{
+  background: red;
+}
