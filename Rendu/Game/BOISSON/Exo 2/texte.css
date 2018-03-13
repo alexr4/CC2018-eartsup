@@ -1,0 +1,39 @@
+body{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+
+
+#haut_de_page{
+  display: flex;
+  justify-content: space-between;
+}
+
+#introduction{
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+  font-size: 250%;
+  font-family: sans-serif;
+}
+
+#consigne{
+  display: flex;
+  justify-content: center;
+  font-family:monospace;
+}
+
+#consigne_texte{
+  display: flex;
+  justify-content: center;
+  font-family:sans-serif;
+  font-size: 110%;
+}
+
+#bas_de_page{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 80%;
+}
