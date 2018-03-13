@@ -1,0 +1,30 @@
+body{
+  text-align: center;
+  background-image:url("https://images.alphacoders.com/545/thumb-1920-545755.jpg");
+}
+p{
+  front-size: 50px;
+  text-decoration-style: solid;
+  color : #002F2F;
+}
+h1{
+  front-size: 50px;
+  font-family : monospace;
+  border : double;
+  color : #002F2F;
+}
+h2{
+  front-size: 60px;
+  font-family : monospace;
+  color : #046380;
+}
+h3{
+  front-size: 60px;
+  font-family : monospace;
+  color : #046380;
+}
+h4{
+  front-size: 60px;
+  font-family : inherit;
+  color : #4BB5C1;
+}
