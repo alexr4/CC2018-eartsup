@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Varela+Round');
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.MainDiv{
+	margin: 20px auto;
+	width: 58%;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+
+}
+div{
+	font-size: 20px;
+}
+.Div{
+	display: flex;
+	justify-content: space-between;
+}
+.fleche{
+	margin-top: 70px;
+	justify-content: right;
+}
+.header-col{
+	text-align: center;
+	font-size: 15px;
+}
+.title{
+	font-size: 50px;
+	font-weight: bold;
+}
+#tire_consigne{
+	font-style: italic;
+	font-size: 15px;
+}
+#contenu_consigne{
+	font-style: normal;
+	font-size: 20px;
+}
+.rules{
+	margin: 100px 30px 0px 40%;
+	font-style: italic;
+	font-size: 15px;
+}
+.description_image{
+	font-size: 10px;
+	text-align: right;
+}
+.Image_Content{
+	margin-top: 5px;
+	border-left: 200px;
+}
+
