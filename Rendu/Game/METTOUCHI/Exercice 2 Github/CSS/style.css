@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee:400,800');
+body{
+  margin : 0;
+}
+.contenair{
+  margin : 0 auto;
+  width: 90%;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+header{
+  justify-content: space-between;
+  display = flex;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+.header-pol{
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+h1{
+  text-align: left;
+
+  font-size: 10px;
+}
+h2{
+  text-align: center;
+margin-top: -25px;
+  font-size: 10px;
+}
+h3{
+  text-align: right;
+  margin-right: 5%;
+  margin-top: -23px;
+  font-size: 10px;
+}
+.title{
+  font-size: 50px;
+  text-align: justify;
+  margin-left: 5%;
+   font-family: 'Mukta Mahee', sans-serif;
+}
+.slt{
+  font-size: 12px;
+  text-align: justify;
+  margin-left: 72%;
+  margin-top: 20%;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+img{
+margin-left:  -1025px ;
+}
