@@ -1,0 +1,9 @@
+* { margin:0; padding:0; }
+html, body { width:50%; height:50%; overflow: hidden;}
+canvas { display:block; }
+#controls {
+  margin: 30px;
+  position: absolute;
+  top: 0; left: 0;
+  color: white;
+}
