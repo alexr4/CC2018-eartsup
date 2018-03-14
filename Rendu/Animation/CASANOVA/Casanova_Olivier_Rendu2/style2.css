@@ -1,0 +1,62 @@
+
+body
+{
+font-family: Mukta Mahee,Helvetica,Arial,sans-serif;
+}
+
+h1
+{
+font-family: Mukta Mahee,Helvetica,Arial,sans-serif;
+font-size: 40px;
+width: 400px;
+height: 100px;
+margin-left: 200px;
+}
+
+h4
+{
+font-family: Mukta Mahee,Helvetica,Arial,sans-serif;
+width: 300px;
+height: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-right: 150px;
+margin-left: 750px;
+}
+
+h3
+{
+font-family: Mukta Mahee,Helvetica,Arial,sans-serif;
+width: 300px;
+height: 150px;
+text-align: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-right: 150px;
+margin-left: 750px;
+}
+
+h6
+{
+font-family: Mukta Mahee,Helvetica,Arial,sans-serif;
+width: 300px;
+height: 10px;
+text-align: auto;
+margin-top: 20px;
+margin-bottom: 10px;
+margin-right: 50px;
+margin-left: 1280px;
+}
+
+img
+{
+margin-left: 300px;
+}
+
+.newspaper {
+  margin-left: 200px;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    width: 1920px;
+}
