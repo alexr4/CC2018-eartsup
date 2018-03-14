@@ -1,0 +1,48 @@
+
+body{
+  background-color: #2599B0;
+width: 1865px;
+text-align: center;
+
+}
+
+
+<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+.contenair{
+  margin : 0 auto;
+  width : 90%;
+  background : red;
+}
+header{
+  background: silver;
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  background: silver;
+
+  font-size: 50px;
+  font-family: 'Mina', sans-serif;
+}
+.rules{
+  background: silver;
+  font-size: 50px;
+  font-family: 'Mina', sans-serif;
+}
+.content{
+  background: grey;
+}
+.header-col{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Mina', sans-serif;
+}
+#col1{
+  background: silver;
+}
+#col2{
+  background: silver;
+}
+#col3{
+  background: silver;
+}
