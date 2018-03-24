@@ -268,11 +268,11 @@ Pour ce faire nous aurons besoins de éléments suivant :
 * Définir les coordonnées d'origine de la forme
 * Définir le nombre de points composant notre forme
 * Pour chacun de ces points
-* * Définir un rayon aléatoire
+* * Définir un rayon aléatoire entre 100 et 200 pixels
 * * Trouver la position de ce point sur le cercle de sorte à ce que l'ensemble des points soit répartis de manière uniforme
 * Dessiner la forme
 
-Afin de répartir les point de manière uniforme nous allons utiliser le [système de coordonnées polaire](https://fr.wikipedia.org/wiki/Coordonn%C3%A9es_polaires).
+Afin de répartir les point de manière uniforme nous allons utiliser le [système de coordonnées polaires](https://fr.wikipedia.org/wiki/Coordonn%C3%A9es_polaires).
 En géométrie un espace polaire est un espace géométrique à deux dimensions dans lequel les coordonnées d’un point sont définie par une valeur d’angle et une distance (rayon).
 
 ![polar coordinates](http://deuns.chez.com/sciences/harmo/h102.gif)
@@ -321,6 +321,48 @@ On appelle tangente de l’angle aigu , le nombre noté tan(angle) défini par B
 
 ![triangle Rect](http://arivaux.com/leliengraphique/wp-content/uploads/2013/03/Capture-d%E2%80%99%C3%A9cran-2013-03-17-%C3%A0-18.24.47.png)
 
+
+### Retour à la forme
+Nous avons vu plus haut que les coordonnées d'un point sur un cercle sont définies par :
+
+**x = cos(angle) × rayon**
+**y = sin(angle) × rayon**
+
+Nous pouvons donc préciser l'algorithme de notre forme de la manière suivante :
+* Définir les coordonnées d'origine de la forme
+* Définir le nombre de points composant notre forme
+* Pour chacun de ces points
+* * Définir un rayon aléatoire entre 100 et 200 pixels
+* * Définir l'angle du point i par anglei = i * (TWO_PI/nbPoint)
+* * Trouver la position de ce point sur le cercle de sorte à ce que l'ensemble des points soit répartis de manière uniforme
+* Dessiner la forme
+
+Nous traduirons ça dans notre programme de la manière suivante :
+```
+//definition du nombre de points et de l'origine de la forme
+var nbPoints = 100;
+var origineX = width/2;
+var origineY = height/2;
+
+//ouverture de la forme
+beginShape()
+//pour chaque point
+for(var i=0; i<nbPoints; i++){
+	//Répartir l'angle du point i de manière uniforme sur 360°
+	var angle = i * (TWO_PI / nbPoints);
+	//Définir un rayon aléatoire pour le point i
+	var rayon = random(100, 200);
+	//Définir les coordonées x, y du point i
+	var x = cos(angle) * rayon + origineX;
+	var y = sin(angle) * rayon + origineY;
+	//dessiner le sommet i
+	vertex(x, y);
+}
+//fermer la forme
+endShape(CLOSE);
+```
+
+Nous remarquons ici l'utilisation de la méthode ```random(100, 200)``` Cette méthode propre à p5js permet de retourner un nombre aléatoire entre deux valeur x et y.
 
 ## interaction clavier/souris
 
