@@ -439,6 +439,6 @@ function draw(){
 
 ## Variables p5js
 P5js permet également d'accéder à différentes variables telle que : 
-* ```width``` ```height``` : renvoie la largeur et hauteur du canvas
+* ```width``` ```height``` renvoie la largeur et hauteur du canvas
 * ```mouseX``` ```mouseY``` renvoie la position x,y de la souris
 * ```pmouseX``` ```pmouseY``` renvoie la position x,y de la souris à la frame précédente
