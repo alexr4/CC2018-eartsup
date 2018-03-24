@@ -264,6 +264,15 @@ Les formes personnalisée necessitant la description de chaque sommet les compos
 
 ![Procedural Shape](https://www.arivaux.com/prototype/codevember2017/shape.png)
 
+Pour ce faire nous aurons besoins de éléments suivant : 
+* Définir les coordonnées d'origine de la forme
+* Définir le nombre de points composant notre forme
+* Pour chacun de ces points
+* * Définir un rayon aléatoire
+* * Trouver la position de ce point sur le cercle de sorte à ce que l'ensemble des points soit répartis de manière uniforme
+* Dessiner la forme
+
+
 ## interaction clavier/souris
 
 ## Variables p5js
