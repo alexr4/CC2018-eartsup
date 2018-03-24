@@ -238,7 +238,27 @@ pop();
 ```
 
 ## Formes personnalisées
-![Shap types](https://www.arivaux.com/prototype/codevember2017/P5_GeometricTypePrimitives.jpg)
+Si les formes primitives permettent de résaliser de nombreux dessins il y a de nombreux cas dans lesquels il est necessaire de dessiner des formes personnalisé tel que dans l'exemple ci-dessous.
+
+![exemple de forme personnalisée](http://ixd.education/wp-content/uploads/2013/03/trigonometrie2.jpg)
+
+Il est possible de dessiner ces formes avec p5js à l'aide des fonctions ```beginShape([MODE])```, ```vertex(x, y)``` et ```endShape([MODE])```. Ces trois fonctions permettent permettent de dessiner une forme personnalisée où chaque chaque sommet sera décris par la fonction ```vertex(x, y)```
+
+La fonction ```beginShape([MODE])``` permet de définir et ouvrir le dessins de la forme, la fonction ```vertex(x, y)``` permet de décrire les sommets et la fonction ```endShape([MODE])``` permet, quant à elle, de finir la forme. Elles s'utilisent de la manière suivante : 
+
+```
+beginShape();
+vertex(0, 0);
+vertex(40, 0);
+vertex(40, 40);
+vertex(0, 40);
+endShape();
+```
+
+Les fonctions ```beginShape([MODE])``` et ```endShape([MODE])``` peuvent également prendre un paramètre optionnel permettant de définir la manière dont la forme sera dessiné (Points, lignes, quadrilateres, quadrilateres reliés, triangle, triangles reliés, triangle fan et forme fermée)
+
+![Shape types](https://www.arivaux.com/prototype/codevember2017/P5_GeometricTypePrimitives.jpg)
+
 ## Formes procédurales et coordonnées polaires
 
 ## interaction clavier/souris
