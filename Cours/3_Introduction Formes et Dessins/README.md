@@ -365,5 +365,80 @@ endShape(CLOSE);
 Nous remarquons ici l'utilisation de la méthode ```random(100, 200)``` Cette méthode propre à p5js permet de retourner un nombre aléatoire entre deux valeur x et y.
 
 ## interaction clavier/souris
+P5js permet également d'accéder à des fonction d'interaction tel que le clique souris ou les l'appuie sur une touche du clavier. 
+
+### Interaction souris
+Pour définir une interaction souris sur la page de notre programme nous pourrons utiliser les fonctions suivante :
+
+* [```mousePressed()```](https://p5js.org/reference/#/p5/mousePressed) Fonction appelée chaque fois que la souris est cliquée.
+* [```mouseReleased()```](https://p5js.org/reference/#/p5/mouseReleased) Fonction appelée chaque fois que la souris est relachée.
+* [```mouseClicked()```](https://p5js.org/reference/#/p5/mouseClicked) Fonction appelée chaque fois que la souris est cliquée puis relachée.
+* [```mouseWheel()```](https://p5js.org/reference/#/p5/mouseWheel) Fonction executée chaque fois qu'un évènement de scroll est detecté sur la page. La variable ```event.delta``` permet de renvoyer la distance/quantité de scroll effectué, elle peut être positive ou negative.
+* [```mouseDragged()```](https://p5js.org/reference/#/p5/mouseDragged) Fonction appelée chaque fois que la souris est cliquée et déplacée.
+* [```mouseMoved()```](https://p5js.org/reference/#/p5/mouseMoved) Fonction appelée chaque fois que la souris est déplacée sur la page.
+
+Elles s'utilisent en dehors de la fonction ```draw()``` de la manière suivante :
+```
+function mousePressed(){
+	//la souris à été cliqué
+}
+```
+
+Il est également possible de savoir lorsque qu'un évènement souris se produit au sein de la fonction ```draw()```. Pour se faire nous pouvons accéder aux valeur variables suivantes :
+
+* [```mouseIsPressed```](https://p5js.org/reference/#/p5/mouseIsPressed) renvoie vrai/faux sur la souris est pressé ou non.
+* [```mouseButton ```](https://p5js.org/reference/#/p5/mouseButton) renvoie le bouton de la souris pressé. Les valeurs peuvent être ```LEFT```, ```CENTER``` ou ```RIGHT```
+
+### Interaction clavier
+Pour définir une interaction souris sur la page de notre programme nous pourrons utiliser les fonctions suivante :
+
+* [```keyPressed()```](https://p5js.org/reference/#/p5/keyPressed) Fonction appelée à chaque fois qu'une touche du clavier est appuyée
+* [```keyReleased()```](https://p5js.org/reference/#/p5/keyReleased) Fonction appelée à chaque fois qu'une touche du clavier est appuyée puis relachée
+* [```keyType()```](https://p5js.org/reference/#/p5/keyTyped) Fonction appelée à chaque fois qu'une touche du clavier est appuyée. Cette fonction ne prend pas en compte les caractère de type CTRL, SHIFT, ALT...
+
+Comme pour les fonctions souris ces fonctions s'utilisent en dehors de la fonction ```draw()``` de la manière suivante :
+```
+function keyPressed(){
+	//un touche du clavier est appuyé
+}
+```
+
+Il est possible de connaitre la touche appuyé au sein de ces fonction par l'utilisation des variables suivantes :
+* [```keyCode```](https://p5js.org/reference/#/p5/keyCode) renvoie la valeur code de la clé appuyée. La valeurs peuvent être retrouvée via [keyCode.info](http://keycode.info/). Il est également possible de récupérer les valeurs suivante : ```BACKSPACE```, ```DELETE```, ```ENTER```, ```RETURN```, ```TAB```, ```ESCAPE```, ```SHIFT```, ```CONTROL```, ```OPTION```, ```ALT```, ```UP_ARROW```, ```DOWN_ARROW```, ```LEFT_ARROW```, ```RIGHT_ARROW```
+* [```key```](https://p5js.org/reference/#/p5/key) Renvoie la valeur du dernier caractère appuyé
+
+Elles s'utilisent de la manière suivante :
+```
+function keyPressed(){
+	if(key == 'a'){
+		//a est la dernier caractère appuyé
+	}
+	if(keyCode == UP_ARROW){
+		// la touche flech haute a été appuyé
+	}
+}
+```
+
+Il est également possible de savoir lorsque qu'un évènement clavier se produit au sein de la fonction ```draw()```. Pour se faire nous pouvons accéder aux variables/fonctions suivantes :
+
+* [```keyIsDown(code)```](https://p5js.org/reference/#/p5/keyIsDown) Renvoie vrai/faux si la touche définie en paramètre est appuyée
+* [```keyIsPressed```](https://p5js.org/reference/#/p5/keyIsPressed) Renvoie vrai/faux si une touche est appuyée
+
+Elle s'utilisent de la manière suivante :
+```
+function draw(){
+	if(keyIsDown(UP_ARROW)){
+		// la touche flech haute estappuyée
+	}
+
+	if(keyIsPressed == true){
+		//une touche est appuyée
+	}
+}
+```
 
 ## Variables p5js
+P5js permet également d'accéder à différentes variables telle que : 
+* ```width``` ```height``` : renvoie la largeur et hauteur du canvas
+* ```mouseX``` ```mouseY``` renvoie la position x,y de la souris
+* ```pmouseX``` ```pmouseY``` renvoie la position x,y de la souris à la frame précédente
