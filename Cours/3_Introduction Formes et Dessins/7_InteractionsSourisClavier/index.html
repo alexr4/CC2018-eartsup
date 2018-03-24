@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Nomenclature exercice</title>
+  <title>p5js : les fonctions de base</title>
   <link rel="shortcut icon" href="./IMG/favicon.png">
   <link rel="stylesheet" href="./CSS/style.css">
 </head>
@@ -11,25 +11,28 @@
     <header class="margin">
       <div class="header-col" id="col1">2018/03/24</div>
       <div class="header-col" id="col2"><a href="http://www.arivaux.com" target="_blank">Alexandre Rivaux</a></div>
-      <div class="header-col" id="col3">HTML5/JAVASCRIPT</div>
+      <div class="header-col" id="col3">HTML5/JAVASCRIPT/p5js</div>
     </header>
     <div class="title">
       <div class="title-col" id="col1">→</div>
       <div class="title-col" id="col2">
-        <h1>Introduction</br>au DOM & CSS</h1>
+        <h1>p5js :</br>interactions souris & clavier</h1>
       </div>
     </div>
     <div class="rules margin">
       <div class="rules-col" id="col1"></div>
       <div class="rules-col" id="col2">
-        <h2>Consignes de l’exercice :</h2>
-        <p>À partir des référence graphiques fournies et des acquies du cours réaliser une composition graphique symbolisant la vitesse.</p>
+        <h2>mousePressed() & keyPressed()</h2>
+        <p>L'exemple suivant présente la création d'interactions simple sur les évènements clavier et souris à l'aide des fonction <code>mousePressed()</code> et <code>keyPress()</code></p>
       </div>
     </div>
     <div class="content margin">
       <div class="content-row" id="row1">Cours : Creative Coding, <a href="http://max-vermesch.com/" target="_blank">Max Vermesch</a> & <a href="http://www.arivaux.com" target="_blank">Alexandre Rivaux</a>, <a href="http://e-artsup.net" target="_blank">e-art sup 2018</a></div>
-      <div class="content-row" id="row2 canvas-content"></div>
+      <div class="content-row" id="canvas-content"></div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="./JS/IxDKeyboardMouse.js"></script>
 </body>
 </html>

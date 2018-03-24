@@ -9,12 +9,12 @@ P5JS une librairie javascript créée par [Lauren McCarthy](http://lauren-mccart
 Cette librairie a pour objectif de fournir un modèle simple à tous designer, artiste ou développeur en se basant sur les paradigmes déjà établis par processing et proposer un environnement simple dessin. Ainsi nous y retrouverons de nombreuses méthodes proches du framework Java précédemment utilisé.
 
 ## setup() & draw()
-La plupart des programmes se reposent sur l’utilisation de deux fonctions principales : 
+La plupart des programmes se reposent sur l’utilisation de deux fonctions principales :
 
 * **Fonction d’initialisation**. Elle permet de lancer le programme. C’est ici que nous définirons la taille du programme, son mode de dessins ou que nous initialisons nos variables. Dans **p5js** cette fonction s'écrit ```function setup()```
 * **Fonction de boucle**. Fonction se répétant plusieurs fois par seconde. Il s’agit de la répétition/boucle générale permettant de lire le programme frame par frame. Dans **p5js** cette fonction s'écrit ```function draw()```
 
-Ces deux function sont les composante de notre programme. Nous aurons donc :
+Ces deux fonctions sont les composantes de notre programme. Nous aurons donc :
 
 ```
 function steup(){
@@ -83,7 +83,7 @@ Lorsque que l'on créer une surface de dessin via p5js on remarque que cette der
 ```
 
 Il est possible, lorsque l'on créer le canvas, de la positionner dans la page au sein d'une ici. Si on reprend la structure ci-dessus, il serait logique d'ajouter notre surface de dessin à la div **content**. Pour ce faire nous devons, à la création de notre canvas, l'enregistrer dans une variable afin de définir, par la suite, sa div parent par la fonction suivante ```element.parent('className')```.
-Ainsi nous écrirons : 
+Ainsi nous écrirons :
 
 ```
 function setup(){
@@ -93,7 +93,7 @@ function setup(){
 ```
 
 ## Les formes primitives
-P5js dispose de différente formes prmitive permettant de dessiner rapidement certaines formes. Vous povez retrouver l'ensemble de ces formes sur la [référence](https://p5js.org/reference/) de la librairie. Parmis celle-ci on comptera : 
+P5js dispose de différente formes prmitive permettant de dessiner rapidement certaines formes. Vous povez retrouver l'ensemble de ces formes sur la [référence](https://p5js.org/reference/) de la librairie. Parmis celle-ci on comptera :
 
 * ```point(x, y)``` Fonction permettant de dessiner un point dans un espace 2D.
 * ```line(x1, y1, x2, y2)``` Fonction permettant de dessiner une ligne dans un espace 2D.
@@ -244,7 +244,7 @@ Si les formes primitives permettent de résaliser de nombreux dessins il y a de 
 
 Il est possible de dessiner ces formes avec p5js à l'aide des fonctions ```beginShape([MODE])```, ```vertex(x, y)``` et ```endShape([MODE])```. Ces trois fonctions permettent permettent de dessiner une forme personnalisée où chaque chaque sommet sera décris par la fonction ```vertex(x, y)```
 
-La fonction ```beginShape([MODE])``` permet de définir et ouvrir le dessins de la forme, la fonction ```vertex(x, y)``` permet de décrire les sommets et la fonction ```endShape([MODE])``` permet, quant à elle, de finir la forme. Elles s'utilisent de la manière suivante : 
+La fonction ```beginShape([MODE])``` permet de définir et ouvrir le dessins de la forme, la fonction ```vertex(x, y)``` permet de décrire les sommets et la fonction ```endShape([MODE])``` permet, quant à elle, de finir la forme. Elles s'utilisent de la manière suivante :
 
 ```
 beginShape();
@@ -264,7 +264,7 @@ Les formes personnalisée necessitant la description de chaque sommet les compos
 
 ![Procedural Shape](https://www.arivaux.com/prototype/codevember2017/shape.png)
 
-Pour ce faire nous aurons besoins de éléments suivant : 
+Pour ce faire nous aurons besoins de éléments suivant :
 * Définir les coordonnées d'origine de la forme
 * Définir le nombre de points composant notre forme
 * Pour chacun de ces points
@@ -365,7 +365,7 @@ endShape(CLOSE);
 Nous remarquons ici l'utilisation de la méthode ```random(100, 200)``` Cette méthode propre à p5js permet de retourner un nombre aléatoire entre deux valeur x et y.
 
 ## interaction clavier/souris
-P5js permet également d'accéder à des fonction d'interaction tel que le clique souris ou les l'appuie sur une touche du clavier. 
+P5js permet également d'accéder à des fonction d'interaction tel que le clique souris ou les l'appuie sur une touche du clavier.
 
 ### Interaction souris
 Pour définir une interaction souris sur la page de notre programme nous pourrons utiliser les fonctions suivante :
@@ -438,7 +438,7 @@ function draw(){
 ```
 
 ## Variables p5js
-P5js permet également d'accéder à différentes variables telle que : 
+P5js permet également d'accéder à différentes variables telle que :
 * ```width``` ```height``` renvoie la largeur et hauteur du canvas
 * ```mouseX``` ```mouseY``` renvoie la position x,y de la souris
 * ```pmouseX``` ```pmouseY``` renvoie la position x,y de la souris à la frame précédente
