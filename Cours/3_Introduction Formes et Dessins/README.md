@@ -127,7 +127,7 @@ Il est important de noter que sans couleur de fond, le programme dessinera en su
 ![Lorsque je dessine, à chaque frame, un cercle à la position de ma souris sans utiliser la fonction background() je remarque que les dessins se superposent au fil du temps.](http://ixd.education/wp-content/uploads/2013/03/ixd_processingIntro_00.gif)
 _Lorsque je dessine, à chaque frame, un cercle à la position de ma souris sans utiliser la fonction background() je remarque que les dessins se superposent au fil du temps._
 
-!Si pour ce même code j’utilise la fonction background(), alors je dessinerai un fond entre chaque frame. Les dessins des frames précédentes seront effacés et je verrai alors mon cercle se déplacer.](http://ixd.education/wp-content/uploads/2013/03/ixd_processingIntro_01.gif)
+![Si pour ce même code j’utilise la fonction background(), alors je dessinerai un fond entre chaque frame. Les dessins des frames précédentes seront effacés et je verrai alors mon cercle se déplacer.](http://ixd.education/wp-content/uploads/2013/03/ixd_processingIntro_01.gif)
 _Si pour ce même code j’utilise la fonction background(), alors je dessinerai un fond entre chaque frame. Les dessins des frames précédentes seront effacés et je verrai alors mon cercle se déplacer._
 
 ### Couleurs de remplissage et de contour
@@ -171,6 +171,72 @@ Il est également possible d'utiliser un unique paramètre comme valeur RGB afin
 Enfin il est possible d'ajouter un quatrième paramètre aux couleur. Ce dernier correspondra à la couche alpha de la couleur et sera définie entre 0 et 255 comme toute valeur RGB. Ainsi ```fill(0, 0, 255, 127)``` permettra de définir une couleur de remplissage bleu avec un aplha de 50%
 
 ## Transformations et rotations
+Lorsque nous dessinons sur nos écrans, nous travaillons sur une grille, une matrice. Dans le cas d’une réalisation de maquette pour un site web, nous travaillons, par exemple, sur des .psd de 1280*1024 soit une grille de pixels de 1280*1024, c’est notre matrice. Nous plaçons ensuite nos éléments sur cette grille. Il en est de même avec nos programmes où notre grille commence au point d’origine 0, 0 pour finir au point ```width```, ```height```. Nous allons voir comment manipuler cette matrice.
+
+![Matrice du programme](http://ixd.education/wp-content/uploads/2014/02/matrice-01-011.jpg)
+
+Par défaut le point d’origine (0, 0) de notre matrice se trouve au coin supérieur gauche de notre programme mais il peut être facilement déplaçable.
+
+Déplacer une matrice signifie que l’on décale son point d’origine à un autre endroit. Cela nous donne un autre point de vue et change notre système de géométrie.
+
+Il peut être pratique de déplacer son point d’origine au centre du programme, notamment lorsque nous souhaitons réaliser un programme en symétrie. Ainsi dans le cas d’un rectangle de position 10, 10 dans une symétrie axiale, dont le point d’origine sera le centre de notre programme, le second rectangle aura une position de -10, 10 soit l’inverse de la position x du premier rectangle.
+
+![Coordonnées déplacées à width/2 height/2](http://ixd.education/wp-content/uploads/2014/02/matrice-02-02.jpg)
+
+Afin d’effectuer un déplacement de matrice, nous utilisons la function ```translate(x, y);```. Cela aura pour effet de déplacer la matrice de x pixels en latéral et y pixels en vertical. Le point d’origine 0,0 sera alors en x, y. Il est important de savoir que cette méthode est cumulative, c’est à dire que si nous effectuons, tout au long de notre code, les méthodes suivante :
+
+```
+translate(10, 10);
+//code
+translate(10, 10);
+//code
+translate(10, 10)
+//code
+```
+
+Cela aura pour effet de déplacer une première fois notre matrice en 10,10 puis en 20, 20 puis en 30, 30. Nous devrons donc effectuer un déplacement inverse si nous souhaitons positionner la matrice à son premier point d’origine.
+
+![Déplacement de matrice cumulatif](http://ixd.education/wp-content/uploads/2014/02/matrice-03-03.jpg)
+
+Afin d’éviter de nombreuses transformations retour durant notre code, il est possible d’isoler notre déplacement de matrice à l’aide des méthodes suivante :
+
+```
+push();
+translate(10, 10);
+//code
+pop();
+```
+
+```push()``` permet à un instant T d’enregistrer les coordonnées du point d’origine afin de pouvoir les restituer à l’aide de la commande ```pop()```
+
+À l’exécution de ce code, la matrice se déplacera en position x, y lors de la fonction ```translate()```, puis reviendra à son point d’origine lors de la fonction ```pop()```. Cela nous permet donc de changer notre géométrie à un instant T et de dessiner l’ensemble de nos formes voulues dans ce nouveau système de géométrie encadrée par les méthodes ```push()``` et ```pop()```
+
+![push()/pop()](http://ixd.education/wp-content/uploads/2014/02/matrice-04-04.jpg)
+
+La rotation d’un élément est un cas particulier. Pour bien comprendre son fonctionnement revenons au point de vue microscopique de notre espace de travail, le pixel.
+
+Nous souhaitons dessiner un rectangle de position 10, 10 et de taille 10, 10.Puis nous souhaitons effectuer un rotation de 45° de ce même rectangle. Le pixel est un élément dessiné, 0 ou 1, plein ou vide, il ne peut être rempli de manière partielle. Lorsque nous effectuons ce genre de manipulation dans photoshop, notre logiciel dessine notre diagonale sous forme de pixels pleins ou vides.
+
+![Rotation de matrice](http://ixd.education/wp-content/uploads/2014/02/matrice-05-05.jpg)
+
+Cette transformation utilisée par photoshop n’est pas la plus simple à réaliser et processing utilise un autre méthode.
+
+Au lieu de redessiner les pixels de notre rectangle, nous allons effectuer une rotation de notre espace de coordonnées à l’aide la fonction suivante ```rotate(angle)```. **Nous noterons que p5js définit ses angles en radians**. Cette méthode permet donc faire faire une rotation à notre matrice et ce depuis son point d’origine.
+
+![Rotation de matrice](http://ixd.education/wp-content/uploads/2014/02/matrice-06-06.jpg)
+
+Pour obtenir notre rectangle à une véritable position 10, 10 et ayant effectué une rotation à 45° nous devons donc déplacer la matrice un premier temps, puis effectuer la rotation.
+
+![Rotation de matrice](http://ixd.education/wp-content/uploads/2014/02/matrice-07-07.jpg)
+
+Pour ce faire nous utilserons la méthode suivante :
+```
+push();
+translate(10, 10);
+rotate(degrees(45));
+pop();
+```
+
 ## Formes personnalisées
 ## Formes procédurales et coordonnées polaires
 ## interaction clavier/souris
