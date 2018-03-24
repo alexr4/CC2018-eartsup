@@ -272,6 +272,55 @@ Pour ce faire nous aurons besoins de éléments suivant :
 * * Trouver la position de ce point sur le cercle de sorte à ce que l'ensemble des points soit répartis de manière uniforme
 * Dessiner la forme
 
+Afin de répartir les point de manière uniforme nous allons utiliser le [système de coordonnées polaire](https://fr.wikipedia.org/wiki/Coordonn%C3%A9es_polaires).
+En géométrie un espace polaire est un espace géométrique à deux dimensions dans lequel les coordonnées d’un point sont définie par une valeur d’angle et une distance (rayon).
+
+![polar coordinates](http://deuns.chez.com/sciences/harmo/h102.gif)
+
+Ce système de coordonnées et particulière pratique dans la création de systèmes circulaires tels que les pendules, spirales ou autre. Pour réaliser un système polaire il est nécessaire de connaître l’équation nous permettant de positionner un point sur un cercle à partir d’un angle et d’une distance. Avant d'aller plus loin dans le dessin de notre forme et pour mieux comprendre le système de coordonnées polaires il est necessaire de faire un retour sur le rapport trigonométrique
+
+### Le rapport trigonométrique
+La trigonométrie traite des relations entre distances et angles dans les triangles et notamment dans le triangle rectangle. C’est ce dernier qui va nous intéresser plus particulièrement.
+
+Faisons un rapide bon dans le passé concernant ce triangle. Un triangle rectangle se caractérise par un angle droit (90°) et la somme de ses angles est égale à 180°. L’angle droit est donc son angle le plus grand. Enfin le côté opposé à cet angle s’appel l’hypoténuse et se caractérise par le fait qu’il est le côté le plus grand de ce triangle.
+
+![Triangle Rectangle](http://arivaux.com/leliengraphique/wp-content/uploads/2013/03/Capture-d%E2%80%99%C3%A9cran-2013-03-17-%C3%A0-18.24.47.png)
+
+Si on s’intéresse à l’angle BAC et aux fonctions trigonométriques alors nous remarquons que :
+
+**sin(BAC) = a/c**
+**cos(BAC) = b/c**
+**tan(BAC) = a/b**
+
+Nous avons ici les fonctions auxquelles nous allons prêter attention. Allons maintenant plus loin en traçant un cercle dont l’origine sera A et de rayon AB (notre hypothénuse). Partons du principe que notre hypoténuse AB a une valeur de 1. Nous obtenons alors un cercle trigonométrique.
+
+![Polar coordinates](http://arivaux.com/leliengraphique/wp-content/uploads/2013/03/Capture-d%E2%80%99%C3%A9cran-2013-03-17-%C3%A0-18.31.18.png)
+
+Si on observe ce cercle nous remarquons que les coordonnées du point B peuvent être définies de la sorte :
+
+**x = cos(t)**
+**y = sin(t)**
+
+Or nous savons ici que notre hypothénuse à un valeur de 1. Si nous voulons être correcte dans nos cordonnées, nous obtenons :
+
+**x = cos(t) × 1**
+**y = sin(t) × 1**
+
+Nous venons de voir la formule permettant de calculer les coordonnées d’un point sur un cercle. Nous avons ici l’une des formules que nous utiliserons le plus dans nos programmes par la suite.
+
+**x = cos(angle) × rayon**
+**y = sin(angle) × rayon**
+
+Nous venons de voir à quoi les fonctions trigonométriques Sinus et Cosinus pouvaient nous être utile, attardons nous maintenant sur la dernière, la Tangente. La tangente est le rapport du sinus au cosinus, par définition :
+
+**tan(angle) = sin(angle)/cos(angle)**
+
+On appelle tangente de l’angle aigu , le nombre noté tan(angle) défini par BC/AC. Nous savons aussi que la tangente d’un angle est égale au côté opposé / côté adjacent ou dans notre cas à b/a. Pour obtenir notre angle il nous faudra alors obtenir l’inverse de cette tangente. Ainsi l’angle BAC sera égale à :
+
+**angle = atan2(a, b)**
+
+![triangle Rect](http://arivaux.com/leliengraphique/wp-content/uploads/2013/03/Capture-d%E2%80%99%C3%A9cran-2013-03-17-%C3%A0-18.24.47.png)
+
 
 ## interaction clavier/souris
 
