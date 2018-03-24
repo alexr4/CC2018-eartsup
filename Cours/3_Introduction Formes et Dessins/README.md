@@ -260,6 +260,9 @@ Les fonctions ```beginShape([MODE])``` et ```endShape([MODE])``` peuvent égalem
 ![Shape types](https://www.arivaux.com/prototype/codevember2017/P5_GeometricTypePrimitives.jpg)
 
 ## Formes procédurales et coordonnées polaires
+Les formes personnalisée necessitant la description de chaque sommet les composants elle sont souvent générée de manière procédurale. Dans l'exemple suivant nous réaliserons une forme procédurale dont chaque point reparti de manière uniforme sur un cercle de coordonnée identique mais dont le rayon diffère de manière aléatoire.
+
+![Procedural Shape](https://www.arivaux.com/prototype/codevember2017/shape.png)
 
 ## interaction clavier/souris
 
