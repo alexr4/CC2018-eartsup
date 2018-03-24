@@ -238,6 +238,9 @@ pop();
 ```
 
 ## Formes personnalisées
+![Shap types](https://www.arivaux.com/prototype/codevember2017/P5_GeometricTypePrimitives.jpg)
 ## Formes procédurales et coordonnées polaires
+
 ## interaction clavier/souris
+
 ## Variables p5js
