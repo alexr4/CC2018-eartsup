@@ -7,4 +7,4 @@
 ### Manipuler une chaine de caractère
 ### Manipulation typographique avec **opentype.js**
 ## GUI : Graphics User Interface
-###Import et utilisation de **DAT.GUI**
+### Import et utilisation de **DAT.GUI**
