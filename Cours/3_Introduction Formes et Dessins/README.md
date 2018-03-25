@@ -460,3 +460,14 @@ P5js permet également d'accéder à différentes variables telle que :
 * ```width``` ```height``` renvoie la largeur et hauteur du canvas
 * ```mouseX``` ```mouseY``` renvoie la position x,y de la souris
 * ```pmouseX``` ```pmouseY``` renvoie la position x,y de la souris à la frame précédente
+
+## Exemples :
+* [P5js : bases](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/0_Bases)
+* [P5js : Formes primitives](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/1_FormesPrimitives)
+* [P5js : Sur-impression](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/2_SurImpression)
+* [P5js : Couleurs](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/3_Couleurs)
+* [P5js : Transformation et rotation](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/4_TransformationEtRotation)
+* [P5js : Formes personnalisées](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/5_FormesPersonnalisees)
+* [P5js : Formes procédurales](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/6_FormesProcedurales)
+* [P5js : Interactions clavier/souris](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/7_InteractionsSourisClavier)
+* [P5js : Exemple](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/8_ExerciceExemple)
