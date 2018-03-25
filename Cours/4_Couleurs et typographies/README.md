@@ -6,4 +6,5 @@
 ### Écrire sur le canvas
 ### Manipuler une chaine de caractère
 ### Manipulation typographique avec **opentype.js**
-## Import et utilisation de **DAT.GUI**
+## GUI : Graphics User Interface
+###Import et utilisation de **DAT.GUI**
