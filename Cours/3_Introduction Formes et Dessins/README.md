@@ -257,12 +257,12 @@ endShape();
 
 Les fonctions ```beginShape([MODE])``` et ```endShape([MODE])``` peuvent également prendre un paramètre optionnel permettant de définir la manière dont la forme sera dessiné (Points, lignes, quadrilateres, quadrilateres reliés, triangle, triangles reliés, triangle fan et forme fermée)
 
-![Shape types](https://www.arivaux.com/prototype/codevember2017/P5_GeometricTypePrimitives.jpg)
+![Shape types](https://www.arivaux.com/preprod/cc-2018/P5_GeometricTypePrimitives.jpg)
 
 ## Formes procédurales et coordonnées polaires
 Les formes personnalisée necessitant la description de chaque sommet les composants elle sont souvent générée de manière procédurale. Dans l'exemple suivant nous réaliserons une forme procédurale dont chaque point reparti de manière uniforme sur un cercle de coordonnée identique mais dont le rayon diffère de manière aléatoire.
 
-![Procedural Shape](https://www.arivaux.com/prototype/codevember2017/shape.png)
+![Procedural Shape](https://www.arivaux.com/preprod/cc-2018/codevember2017/shape.png)
 
 Pour ce faire nous aurons besoins de éléments suivant :
 * Définir les coordonnées d'origine de la forme
