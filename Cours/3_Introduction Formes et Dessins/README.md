@@ -111,6 +111,24 @@ function draw(){
 }
 ```
 
+### RectMode(mode) ellipseMode(mode) : le point d'ancrage
+Par défaut le point d'ancrage de la forme primitive ```rect(x, y, w, h)``` est le coin haut gauche de la forme alors que celui de ```ellipse(x, y, w, h)``` est le centre de l'ellipse.
+Il est possible de changer la position de ces points d'ancrages par l'utilisation des fonctions ```rectMode(mode)``` et ```ellipseMode(mode)```. Le paramètre peut être :
+
+* ```CENTER``` les deux premiers paramètres de la forme (x, y) seront interprétés comme le centre de la forme
+* ```RADIUS``` les deux premiers paramètres de la forme (x, y) seront interprétés comme le centre de la forme, le troisième et quatrième paramètre (w, h) seront interprétés comme la moitié de la largeur et hauteur (rayon) de la forme
+* ```CORNER``` les deux premiers paramètres de la forme (x, y) seront interprétés comme le coin haut gauche de la forme
+* ```CORNERS``` les deux premiers paramètres de la forme (x, y) seront interprétés comme un coin de la forme, le troisième et quatrième paramètre (w, h) seront interprétés comme la position du coin opposé
+
+Ces fonction s'utilisent de la manière suivante :
+```
+rectMode(CENTER);
+rect(width/2 - 100, height/2, 100, 100);
+
+ellipseMode(CENTER);
+ellipse(width/2 + 100, height/2, 100, 100);
+```
+
 ## Background, couleur de remplissage et contour
 ### Background
 Il est possible de définir la couleur de fond du canvas par l'utilisation de la fonction ```background(r, g, b)```. Cette fonction permettant de remplir la surface de dessin d'une couleur elle sera appelée en première dans la fonction ```draw()``` soit :
