@@ -13,4 +13,6 @@ Votre visuel devra faire preuve d'un sens graphics affiné. Il se composera des 
 
 # Références graphiques :
 
-Pour cet exercices vous pourrez vous inspirez du mouvement graphique du [**Bauhaus**](https://fr.wikipedia.org/wiki/Bauhaus) ou du mouvement artistique [**De Stijl**](https://fr.wikipedia.org/wiki/De_Stijl)
+Pour cet exercices vous pourrez vous inspirez du mouvement graphique du [**Bauhaus**](https://fr.wikipedia.org/wiki/Bauhaus), du mouvement artistique [**De Stijl**](https://fr.wikipedia.org/wiki/De_Stijl) ou du [**design suisse**](http://www.designishistory.com/home/swiss/)
+
+![Brokmann-Rand-Crouwel](https://www.arivaux.com/preprod/cc-2018/20180325_GD_References.jpg)

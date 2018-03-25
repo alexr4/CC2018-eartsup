@@ -52,6 +52,7 @@ li {list-style-type: none;}
 li:before {
 	content: "—  "; /* caractère UTF-8 */
 }
+
 .contenair{
   margin : 0 auto;
   width : 90%;
@@ -114,6 +115,7 @@ here we use .class > #nod in order to select an element inside the .title-col di
   text-align: right;
   font-style: italic;
   font-size: 11px;
+  height: 30px;
 }
 
 .header-col{
