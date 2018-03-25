@@ -126,7 +126,7 @@ function draw(){
 //function which init the shapes varibales
 function initShape(){
   shapeMode = round(random(2)); //define a random shape mode between 0 and 2
-  boundingBox = width * 1.25; //define the size of the square boundingBox. Here the get the larger side of the canvas in order to fill it with the grid
+  boundingBox = width * random(0.5, 1.5); //define the size of the square boundingBox. Here the get the larger side of the canvas in order to fill it with the grid
   numberOfCols = round(random(10, 20)); //define the number of columns into the grid
   resCol = boundingBox / numberOfCols; //define the resolution of a column
   margin = resCol / random(5, 20); //define the size of the margin
