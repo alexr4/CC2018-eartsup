@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>p5js : fill() et stroke()</title>
+  <title>Couleurs : RGB vs CMJN</title>
   <link rel="shortcut icon" href="./IMG/favicon.png">
   <link rel="stylesheet" href="../../NOMENCLATURE/CSS/style.css">
 </head>
@@ -16,14 +16,16 @@
     <div class="title">
       <div class="title-col" id="col1">→</div>
       <div class="title-col" id="col2">
-        <h1>p5js :</br>Couleurs</h1>
+        <h1>RGB vs CMJN</h1>
       </div>
     </div>
     <div class="rules margin">
       <div class="rules-col" id="col1"></div>
       <div class="rules-col" id="col2">
-        <h2>fill(), stroke(), noFill(), noStroke()</h2>
-        <p>L'exemple suivant présente l'utilisation des fonction <code>fill(r, g, b)</code>, <code>stroke(r, g, b)</code>, <code>noFill()</code>, <code>noStroke()</code> et <code>strokeWeight(x)</code>.</p>
+        <h2>Couleurs additives vs soustractives</h2>
+        <p>L'exemple suivant présente la différence entre le modèle de couleur RGB (à gauche) et CMNJ (à droite).</p>
+        <p>Le premier se base sur un mélange de lumière, les couleurs sont dite <em>additive</em>.<br>Le second se base sur un mélange de matière (pigment), les couleurs sont dites <em>soustractives</em></p>
+        <p>Le mode RGB est le mode de couleur défini pour tous les affichages numériques (écrans) alors que le CMJN est défini pour les affichages imprimés.</p>
       </div>
     </div>
     <div class="content margin">
@@ -33,6 +35,6 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
-  <script src="./JS/colors.js"></script>
+  <script src="./JS/RGB-CMYK.js"></script>
 </body>
 </html>

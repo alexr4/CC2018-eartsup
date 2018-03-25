@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>p5js : fill() et stroke()</title>
+  <title>Couleurs : les illusions</title>
   <link rel="shortcut icon" href="./IMG/favicon.png">
   <link rel="stylesheet" href="../../NOMENCLATURE/CSS/style.css">
 </head>
@@ -16,14 +16,19 @@
     <div class="title">
       <div class="title-col" id="col1">→</div>
       <div class="title-col" id="col2">
-        <h1>p5js :</br>Couleurs</h1>
+        <h1>Illusions des couleurs</h1>
       </div>
     </div>
     <div class="rules margin">
       <div class="rules-col" id="col1"></div>
       <div class="rules-col" id="col2">
-        <h2>fill(), stroke(), noFill(), noStroke()</h2>
-        <p>L'exemple suivant présente l'utilisation des fonction <code>fill(r, g, b)</code>, <code>stroke(r, g, b)</code>, <code>noFill()</code>, <code>noStroke()</code> et <code>strokeWeight(x)</code>.</p>
+        <h2>Identiques ? Différentes ?</h2>
+        <p>L'exemple suivant démontre les illusions possibles dans la perception des couleurs : </p>
+        <ul>
+          <li>Sur l'exemple du haut chaque carré semble être rempli de la couleur du fond opposé. En réalité leurs couleurs sont identiques et différentes des fonds.</li>
+          <li>Sur l'exemple du bas chaque carré semble avoir la même couleur. En réalité leurs couleurs diifèrent.</li>
+        </ul>
+        <p><strong>Cliquez sur le canvas pour comparer les couleurs</strong></p>
       </div>
     </div>
     <div class="content margin">
@@ -33,6 +38,6 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
-  <script src="./JS/colors.js"></script>
+  <script src="./JS/ColorIllusion.js"></script>
 </body>
 </html>
