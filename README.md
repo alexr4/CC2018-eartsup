@@ -24,4 +24,4 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * [HTLM5 introduction 1/2](https://alexr4.github.io/CC2018-eartsup/Cours/1_Introduction%20HTML5%20(1-2)/Exercice)
 * * [Contenu texte](https://alexr4.github.io/CC2018-eartsup/Cours/1_Introduction%20HTML5%20(1-2)/ContenuTexte)
 * [Guess the Number](https://alexr4.github.io/CC2018-eartsup/Cours/2_Introduction%20HTML5%20(2-2)/GuessTheNumber/)
-* [Introduction aux formes et dessin avec p5js](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/Exercice)
+* [Games : Introduction aux formes et dessin avec p5js](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/ExerciceGame)
