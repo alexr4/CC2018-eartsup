@@ -37,12 +37,12 @@ function draw(){
   fill(255);
   text("noiseStaticX : "+noiseStaticX, width * 1/4, height * 0.5/4 - 10);
   fill(255 * noiseStaticX);
-  rect(width * 1/4, height * 1/4, square * 2, square * 2);
+  rect(width * 1/4, height * 1/4, square * 1, square * 1);
 
   fill(255);
   text("noiseDynamicX : "+nf(noiseDynamicX, 1, 7), width * 3/4, height * 0.5/4 - 10);
   fill(255 * noiseDynamicX);
-  rect(width * 3/4, height * 1/4, square * 2, square * 2);
+  rect(width * 3/4, height * 1/4, square * 1, square * 1);
 
   /*Le bruit perlin est un bruit à plusieurs dimensions,
    c'est à dire que nous pouvons lui donner plus de variation ajoutant des dimensions.
