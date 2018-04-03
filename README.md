@@ -31,3 +31,6 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * [Guess the Number](https://alexr4.github.io/CC2018-eartsup/Cours/2_Introduction%20HTML5%20(2-2)/GuessTheNumber/)
 * [Games : Introduction aux formes et dessin avec p5js](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/ExerciceGame)
 * [Games : Grilles, résursions et aléatoires](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/ExerciceGame)
+
+## Nomenclature des exercices :
+* [Nomenclature HTML](https://alexr4.github.io/CC2018-eartsup/Cours/NOMENCLATURE/)
