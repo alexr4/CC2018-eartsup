@@ -19,6 +19,11 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * * [P5js : Formes procédurales](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/6_FormesProcedurales)
 * * [P5js : Interactions clavier/souris](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/7_InteractionsSourisClavier)
 * * [P5js : Exemple](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/8_ExerciceExemple)
+* [Grilles, résursions et aléatoires](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles Recursions et Aleatoires/)
+* * [P5js : Grille polaire uniforme](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles Recursions et Aleatoires/PolarGrid)
+* * [P5js : Bruit brownien](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles Recursions et Aleatoires/Random)
+* * [P5js : Bruit perlin](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles Recursions et Aleatoires/PerlinNoise)
+* * [P5js : Exemple de jeu](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles Recursions et Aleatoires/GameExemple)
 
 ## Exercices
 * [HTLM5 introduction 1/2](https://alexr4.github.io/CC2018-eartsup/Cours/1_Introduction%20HTML5%20(1-2)/Exercice)
