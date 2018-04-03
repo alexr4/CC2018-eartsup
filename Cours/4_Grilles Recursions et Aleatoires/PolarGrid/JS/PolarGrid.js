@@ -25,12 +25,11 @@ function draw(){
   for(var i=0; i<numberOfInnerCircle; i++){
     var ni = i/numberOfInnerCircle;
     var rad = radius * ni;
-    var diameter = TWO_PI * rad * 2.0;
-    var numberOfArc = floor(diameter / res);
-    for(var j=0; j<numberOfArc; j++){
-      var modi = (i%2) * 2.0 - 1.0;
-
-      var theta = (j/numberOfArc) * TWO_PI + ni * HALF_PI * 0.5;
+    var perimeter = TWO_PI * rad * 2.0;
+    var numberOfElement = floor(perimeter / res);
+    for(var j=0; j<numberOfElement; j++){
+      var theta = (j/numberOfElement) * TWO_PI;
+      theta += ni * HALF_PI * 0.5;
       var x = cos(theta) * rad + ox;
       var y = sin(theta) * rad + oy;
       ellipse(x, y, res * 0.35, res * 0.35);
