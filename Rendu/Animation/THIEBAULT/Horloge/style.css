@@ -1,0 +1,21 @@
+body{
+    width:340px;
+    margin:auto;
+    background-color: rgb(148,169,194);
+
+}
+
+h1{
+  margin-top: 50;
+  font-family: Avenir;
+  font-weight: 600;
+  font-size: 72;
+  text-align: center;
+}
+
+p{
+  font-family: Avenir;
+  font-weight: 200;
+  font-size: 36;
+  text-align: center;
+}
