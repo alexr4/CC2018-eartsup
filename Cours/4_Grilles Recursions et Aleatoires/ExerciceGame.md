@@ -150,4 +150,7 @@ if(px >= rx - rw/2 && px <= rx + rw/2 && py >= ry - rh/2 && py <= ry + rh/2){
 ```
 
 # Références graphiques :
-![Ash Thorp, Creative Director](https://www.arivaux.com/preprod/cc-2018/AshThorp.jpg)
+![Ash Thorp, Creative Director](https://www.arivaux.com/preprod/cc-2018/AshThorp_0.jpg)
+![Ash Thorp, Creative Director](https://www.arivaux.com/preprod/cc-2018/AshThorp_1.jpg)
+![Ash Thorp, Creative Director](https://www.arivaux.com/preprod/cc-2018/AshThorp_2.jpg)
+![Ash Thorp, Creative Director](https://www.arivaux.com/preprod/cc-2018/AshThorp_3.jpg)
