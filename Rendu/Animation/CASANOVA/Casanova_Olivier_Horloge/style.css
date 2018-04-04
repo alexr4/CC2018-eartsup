@@ -1,0 +1,21 @@
+body{
+    width:340px;
+    margin:auto;
+    background-color: rgb(0,73,153);
+
+}
+
+h1{
+  margin-top: 140;
+  font-family: Helvetica,monospace,Avenir;
+  font-weight: 600;
+  font-size: 72;
+  text-align: center;
+}
+
+p{
+  font-family: Helvetica,monospace,Avenir;
+  font-weight: 200;
+  font-size: 36;
+  text-align: center;
+}
