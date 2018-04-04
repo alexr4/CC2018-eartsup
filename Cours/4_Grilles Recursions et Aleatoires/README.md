@@ -127,7 +127,153 @@ Ce qui nous donnera le motif suivant :
 
 ![Grille polaire uniforme](https://www.arivaux.com/preprod/cc-2018/GrillePolaireUniforme.png)
 
-## Récursion et boucles
+## La Récursion
+
+Le principe de la récursion est d'effectuer une action en boucle en appelant une function à l'intérieur d'elle même.
+
+Ainsi un exemple de base serait :
+
+
+````
+void uneFunction(){
+ uneFunction();
+}
+````
+
+Ce code ne génère aucun résultat, mais la function est effectuée en boucle jusqu'à l'arrêt du programme.
+
+Ainsi en appelant une function à l'intérieur d'elle même nous créerons une boucle qui sera possible d'arrêté à l'aide de condition.
+L'autre avantage c'est qu'il sera ainsi possible de faire passer des variables pour effectuer des calculs et donc modifier les valeurs à chaque boucle.
+
+
+````
+function setup(){
+  drawCircle(width/2,height/2,200);
+}
+
+function drawCircle(x, y, radius) {
+  ellipse(x, y, radius, radius);
+  if(radius > 2) {
+    radius *= 0.75f;
+    drawCircle(x, y, radius);
+  }
+}
+````
+
+Dans cet exemple la function commence par dessiner un cercle, elle regarde ensuite si le rayon est supérieur à 2px , si c'est le cas la valeur dans la variable rayon est modifié et la function est rappelé pour effectuer une nouvelle fois les mêmes opérations.
+
+Il est vrai que nous pourrions effectuer la même opération avec les bouche **for** ou **while** mais l'intérêt des récursions vient lorsque nous souhaitons créer des subdivisions presque infinies.
+Car rien n'empêche la function de s'appeler plus d'une fois à l'intérieur d'elle même. Ainsi une function pourrait lors de son exécution s'appeler 2 fois. Chacune de ces deux fois se rappellerait deux fois ......
+
+
+![Image of Circle](https://s17.postimg.org/698wfjocf/circle.png)
+
+````
+function setup() {
+  createCanvas(900, 600);
+drawCircle(width/2, height/2, 900);
+}
+
+function drawCircle(x, y, radius) {
+  noFill();
+  ellipse(x, y, radius, radius);
+  if(radius > 8) {
+    drawCircle(x + radius/2, y, radius/2);
+    drawCircle(x - radius/2, y, radius/2);
+    drawCircle(x, y + radius/2, radius/2);
+    drawCircle(x, y - radius/2, radius/2);
+  }
+}
+
+````
+
+Dans cet exemple la function est appelée une première fois puis s'appelle quatre fois, chaque appel rappelle 4 fois, etc etc jusqu'a que la condition n’est plus respectée.
+À chaque nouvel appel de la function les variables de tailles et de positions sont modifiées pour créer un pattern géométrique.
+
+Un autre exemple appelé Cantor d'après le nom de sont créateur un mathématicien Allemand.
+
+
+![Image of Cantor](https://s17.postimg.org/hycw3in0v/Fire_Shot_Capture_19_-_-_file_C_Users_maxly_Documents_Cours_J.png)
+
+````
+function setup() {
+  createCanvas(900, 600);
+  cantor(0,0,900);
+}
+function cantor( x, y, len) {
+  if (len >= 1) {
+    line(x,y,x+len,y);
+    y += 20;
+    cantor(x,y,len/3);
+    cantor(x+len*2/3,y,len/3);
+  }
+}
+````
+
+### Tree
+
+Un des exemples les plus utilisés pour présenter la récursion est l'arbre.
+Voici son code :
+![Image of Tree](http://natureofcode.com/book/imgs/chapter08/ch08_exc07.png)
+
+
+````
+// Recursive Tree Processing
+// Daniel Shiffman <http://www.shiffman.net>
+
+function setup() {
+  createCanvas(400, 300);
+  background(255);
+  // Start the tree from the bottom of the screen
+  translate(width/2, height);
+  stroke(0);
+  branch(60);
+}
+
+function draw() {
+
+
+}
+
+function branch(len) {
+  strokeWeight(2);
+
+  line(0, 0, 0, -len);
+  // Move to the end of that line
+  translate(0, -len);
+
+  len *= 0.66;
+  // All recursive functions must have an exit condition!!!!
+  // Here, ours is when the length of the branch is 2 pixels or less
+  if (len > 2) {
+    push();    // Save the current state of transformation (i.e. where are we now)
+    rotate(PI/5);   // Rotate by theta
+    branch(len);       // Ok, now call myself to draw two new branches!!
+    pop();     // Whenever we get back here, we "pop" in order to restore the previous matrix state
+
+    // Repeat the same thing, only branch off to the "left" this time!
+    push();
+    rotate(-PI/5);
+    branch(len);
+    pop();
+  }
+  delay
+}
+````
+
+Cet exemple utilise la même technique que ceux précédemment présentés. La différence vient du fait qu'a la place de dessiner l'objet à tel ou tel position nous avons besoin d'utiliser les function de transformation pour faire bouger le plan de travail.
+
+Dans un premier temps la fonction est appelée et vient dessiner la base de l'arbre. Nous allons ensuite déplacer le plan de travail pour que le 0,0 se trouve au bout de la branche précédemment créer.
+Nous vérifions que la longueur est plus grande que 2px puis nous faisons faire une rotation à notre plan de travail dans un sens avant d'appeler une nouvelle fois la fonction.
+Pour créer la branche dans l'autre sens nous recommencerons cette action.
+Nous pouvons remarquer que nous utilisons des ``push()`` et ``pop()`` pour que les rotations ne soient prises en compte que par les appels de fonction voulus.
+
+L'appel à la fonction branch ce faisant entre ``push()`` et ``pop()`` ça sera tous les objets dessinés par la fonction qui seront affectés par cette rotation. Ce qui permet de créer les branches de l'arbre.
+
+Maintenant que nous avons créé un arbre symétrique, que se passerait-il si nous rajoutions du random pour que les arbres soient différents.
+
+![Image of tree](https://s17.postimg.org/6d2pvt99b/tree.png)
+https://codepen.io/rickyeckhardt/pen/Gkpez
 
 ## Aléatoires browniens et perlin
 Nous pouvons facilement ajouter une variation graphique à un visuel par l’utilisation d’une valeur pseudo-aléatoire.
