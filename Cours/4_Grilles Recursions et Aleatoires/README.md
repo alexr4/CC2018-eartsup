@@ -1,6 +1,153 @@
 # Grilles, récursions et aléatoires
 
 ## Grilles cartésiennes
+La grille est l’un des éléments principaux du design graphique, on la retrouve dans de nombreux domaines tel que :
+
+La mise en page
+Les frises
+Les pavage (ou pattern)
+Compositions d’images
+…
+
+En design graphique la grille est un structure (souvent en 2 dimensions) réalisé par partir d’un série d’intersection entre des éléments (généralement des ligne horizontale et vertical). Pour en savoir plus sur la grille de mise en page je vous invite à vous rendre sur le site de l’atelier ![Nun](https://www.nundesign.fr/transmettre/espace-pedagogique/fondamentaux/grille-de-mise-en-page-principe-et-utilisation#sthash.eAxbuj34.dpuf) :
+
+La grille de mise en page a été théorisée par le graphiste suisse Joseph Muller Brockmann dans les année 1960, notamment dans son ouvrage Grid Systems in Graphic Design. Elle permet de découper le format dans sa largeur (et plus tard dans sa hauteur) en plusieurs parties égales, séparées par des espaces verticaux. L’usage des colonnes ainsi créées permet de travailler avec des « zones », proportionnelles entre elles, ce que l’œil du lecteur perçoit immédiatement.
+
+Dans le cas d’un motif ou d’un frise, la grille permet de définir la structure en 1, 2 ou 3 dimensions de répétition d’une forme (1 dimension pour la frise et 2 pour le motif). On retrouve l’utilisation de ces motifs dans de nombreux travaux graphiques tel que :
+
+![Grille cartésienne](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_1.jpg)
+
+En géométrie, rappelons qu'un espace cartésien est un espace géométrique permettant de définir la position d’un point dans un espace munie d’un repère cartésien définie par droite x, y et z (horizontal, vertical, et en profondeur)
+
+![Espace cartésien](http://ixd.education/wp-content/uploads/2013/10/2_environnement1-1024x538.jpg)
+Afin de réaliser notre motif nous allons utiliser ce système de grille afin de définir les coordonnées de notre motif à répéter sur les axe x et y.
+
+Pour cette exercice nous utiliserons un motif simple, le rectangle.
+![Rect](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_2.jpg)
+
+Cette forme est définie par les variables suivantes :
+* Coordonnées x,y placées en son centre
+* Taille définie par une largeur et une hauteur
+
+### La frise
+Dans un premier temps nous allons réaliser une frise. Une frise est un répétition, sur un axe, d’un motif. Dans notre cas nous réaliserons notre frise sur l’axe X.
+
+![frise](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_3.jpg)
+
+La frise étant composé d’une répétition de motif nous pouvons la réaliser en utilisant un structure itérative. En effet ces structure nous permettent de réaliser une répétition d’action (ici le dessin d’un rectangle). Si nous regardons notre frise de prêt nous pouvons la décomposer de la sorte
+
+* Définir le nombre de répétition des motifs :
+* Pour un nombre i étant égale à 0; Ce nombre i étant toujours inférieur à 5; Et ce nombre s’incrémentant de 1;
+Pour chacun de ce nombre :
+* * Nous définissons une position x étant égale à la position précédent + un certain écart (ici la largeur d’un rectangle)
+* * Nous dessinons ce rectangle
+
+Nous traduirons cela dans p5js de la manière suivante :
+
+```
+var x = 0;
+var y = height/2;
+var largeur = 50;
+for (var i=0; i<5; i++) {
+    var newX = x + i * largeur;
+    rect(newX, y, largeur, largeur);
+}
+```
+
+### Le modulo
+Nous pouvons facilement réaliser une frise à plusieurs motif tel que défini par le modèle suivant :
+![modulo](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_4.jpg)
+
+Si nous pouvons définir cette frise par les instruction suivantes :
+* Définir le nombre de répétition des motifs :
+* Pour un nombre i étant égale à 0; Ce nombre i étant toujours inférieur à 6; Et ce nombre s’incrémentant de 1; Pour chacun de ce nombre :
+* * Nous définissons une position x étant égale à la position précédent + un certain écart (ici la largeur d’un rectangle)
+* * Une fois sur deux nous dessinons un rectangle ou une ellipse
+
+Le problème principale étant de résoudre le problème “Une fois sur deux”; pour ce faire nous utiliserons le modulo (%). Le modulo (%), en programmation, permettant d’obtenir le reste d’une division.
+Par exemple si la division de 5 par 2 donne le résultat 2, nous aurons un reste de 1. Ainsi le modulo de 5 par 2 nous renverra le résultat 1.
+
+```
+5/2 = 2 avec un reste de 1
+5%2 = 1 soit le reste de la division de 5 par 2
+```
+Lorsque nous effectuons un modulo sur un suite de nombre E divisée par une certain nombre X nous obtenons un résultat intéressant. En effet le modulo nous renverra une suite de résultat se répétant en fonction du dénominateur (diviseur). Ainsi nous obtenons les résultats suivant :
+
+```
+→ Soit une suite de nombre allant de 0 à 5 en incrémentant de 1
+→ Soit un dénominateur X
+
+Si X = 2
+  0%2 = 0
+  1%1 = 1
+  2%2 = 0
+  3%2 = 1
+  4%2 = 0
+  …
+Si X = 3
+  0%3 = 0
+  1%3 = 1
+  2%3 = 2
+  3%3 = 0
+  4%3 = 1
+  5%3 = 2
+  ...
+Si X = 4
+  0%4 = 0
+  1%4 = 1
+  2%4 = 2
+  3%4 = 3
+  4%4 = 0
+  5%4 = 1
+  6%4 = 2
+  7%4 = 3
+  ...
+```
+
+Nous pouvons donc facilement définir notre changement de forme une fois sur deux par l’utilisation d’un modulo de 2 (%2) et d’un condition. En effet il nous suffit de savoir si le modulo de l’itération en cours (défini par i) renvoie un nombre pair (0) ou impaire (0). Dans le premier cas nous dessinerons un rectangle, sinon nous dessinerons une ellipse.
+
+```
+for (var i=1; i<5; i++) {
+    float newX = x + i * largeur;
+    if (i%2 == 0) {
+      ellipseMode(CORNER);
+      ellipse(newX, y, largeur, hauteur);
+    } else {
+      rect(newX, y, largeur, hauteur);
+    }
+  }
+```
+
+### Le pavage
+Nous allons maintenant réaliser un pavage. Un pavage est une répétition d’un motif sur plus d’un axe. Il s’agit d’une évolution de la frise. Ici nous réaliserons un pavage sur deux dimensions
+
+![Pavage](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_5.jpg)
+
+Lorsque nous observons le pavage nous remarquons qu’il s’agit d’une répétition de la frise que nous avons précédemment réalisé. En d’autre terme nous pourrions dire :
+
+_Un pavage est la répétition d’une frise qui est elle même la répétition d’un motif (inception!!!!)._
+
+Si un pavage est la répétition d’un répétition nous pouvons donc le définir de la manière suivante :
+* Définir le nombre de répétition des frise :
+* Pour un nombre i étant égale à 0; Ce nombre i étant toujours inférieur à 5; Et ce nombre s’incrémentant de 1;
+* * Définir le nombre de répétition des motifs :
+* * Pour un nombre j étant égale à 0; Ce nombre j étant toujours inférieur à 5; Et ce nombre s’incrémentant de 1; Pour chacun de ce nombre :
+* * * Nous définissons une position x étant égale à la position précédent + un certain écart (ici la largeur d’un rectangle)
+* * * À chaque nouvelle frise nous définissons une position y étant égale à la position précédent + un certain écart (ici la hauteur d’un rectangle)
+* * * Nous dessinons ce rectangle
+
+soit à l'aide de p5js :
+```
+for (var i=0; i<3; i++) {
+    for (var j=0; j<5; j++) {
+      var newX = x + j * largeur;
+      var newY = y + i * hauteur;
+      rect(newX, newY, largeur, hauteur);
+    }
+  }
+```
+
+Comme pour la frise, nous pouvons ajouter diverse variations à notre frise tel qu’une marge séparant les formes, une variation de couleur, de tailles…
 
 ## Grilles polaires
 Nous l’avons vu la grille cartésienne est un élément permettant de réaliser des répétition de motif sur les axes XY que ce soit des frises ou des pavages. Cependant il ne s’agit pas du seul système de coordonnées possible. Parmi les différents systèmes de coordonnées il en est un que nous retrouvons régulièrement dans les arts graphique, le VFX ou les jeux vidéo : le système de coordonnées polaires (voir [cours d'introduction aux formes et dessins](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/)).
