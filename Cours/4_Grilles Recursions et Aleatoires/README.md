@@ -9,7 +9,7 @@ Les pavage (ou pattern)
 Compositions d’images
 …
 
-En design graphique la grille est un structure (souvent en 2 dimensions) réalisé par partir d’un série d’intersection entre des éléments (généralement des ligne horizontale et vertical). Pour en savoir plus sur la grille de mise en page je vous invite à vous rendre sur le site de l’atelier ![Nun](https://www.nundesign.fr/transmettre/espace-pedagogique/fondamentaux/grille-de-mise-en-page-principe-et-utilisation#sthash.eAxbuj34.dpuf) :
+En design graphique la grille est un structure (souvent en 2 dimensions) réalisé par partir d’un série d’intersection entre des éléments (généralement des ligne horizontale et vertical). Pour en savoir plus sur la grille de mise en page je vous invite à vous rendre sur le site de l’atelier [Nun](https://www.nundesign.fr/transmettre/espace-pedagogique/fondamentaux/grille-de-mise-en-page-principe-et-utilisation#sthash.eAxbuj34.dpuf) :
 
 La grille de mise en page a été théorisée par le graphiste suisse Joseph Muller Brockmann dans les année 1960, notamment dans son ouvrage Grid Systems in Graphic Design. Elle permet de découper le format dans sa largeur (et plus tard dans sa hauteur) en plusieurs parties égales, séparées par des espaces verticaux. L’usage des colonnes ainsi créées permet de travailler avec des « zones », proportionnelles entre elles, ce que l’œil du lecteur perçoit immédiatement.
 
