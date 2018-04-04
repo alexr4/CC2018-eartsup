@@ -23,6 +23,7 @@ En géométrie, rappelons qu'un espace cartésien est un espace géométrique pe
 Afin de réaliser notre motif nous allons utiliser ce système de grille afin de définir les coordonnées de notre motif à répéter sur les axe x et y.
 
 Pour cette exercice nous utiliserons un motif simple, le rectangle.
+
 ![Rect](https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_2.jpg)
 
 Cette forme est définie par les variables suivantes :
@@ -56,6 +57,7 @@ for (var i=0; i<5; i++) {
 
 ### Le modulo
 Nous pouvons facilement réaliser une frise à plusieurs motif tel que défini par le modèle suivant :
+
 ![modulo](https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_4.jpg)
 
 Si nous pouvons définir cette frise par les instruction suivantes :
