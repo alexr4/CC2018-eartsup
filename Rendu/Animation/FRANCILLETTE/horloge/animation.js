@@ -99,7 +99,7 @@ function draw() {
   stroke(50);
   strokeWeight(0);
   ellipseMode(CENTER);
-  ellipse(0, 0, 350, 350);
+  ellipse(0, 0, 325, 325);
   fill(210);
   strokeWeight(2);
   ellipse(0, 0, 290, 290);
