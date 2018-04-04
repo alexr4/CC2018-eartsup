@@ -15,15 +15,15 @@ La grille de mise en page a été théorisée par le graphiste suisse Joseph Mul
 
 Dans le cas d’un motif ou d’un frise, la grille permet de définir la structure en 1, 2 ou 3 dimensions de répétition d’une forme (1 dimension pour la frise et 2 pour le motif). On retrouve l’utilisation de ces motifs dans de nombreux travaux graphiques tel que :
 
-![Grille cartésienne](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_1.jpg)
+![Grille cartésienne](https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_1.jpg)
 
 En géométrie, rappelons qu'un espace cartésien est un espace géométrique permettant de définir la position d’un point dans un espace munie d’un repère cartésien définie par droite x, y et z (horizontal, vertical, et en profondeur)
 
-![Espace cartésien](http://ixd.education/wp-content/uploads/2013/10/2_environnement1-1024x538.jpg)
+![Espace cartésien](https://ixd.education/wp-content/uploads/2013/10/2_environnement1-1024x538.jpg)
 Afin de réaliser notre motif nous allons utiliser ce système de grille afin de définir les coordonnées de notre motif à répéter sur les axe x et y.
 
 Pour cette exercice nous utiliserons un motif simple, le rectangle.
-![Rect](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_2.jpg)
+![Rect](https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_2.jpg)
 
 Cette forme est définie par les variables suivantes :
 * Coordonnées x,y placées en son centre
@@ -32,7 +32,7 @@ Cette forme est définie par les variables suivantes :
 ### La frise
 Dans un premier temps nous allons réaliser une frise. Une frise est un répétition, sur un axe, d’un motif. Dans notre cas nous réaliserons notre frise sur l’axe X.
 
-![frise](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_3.jpg)
+![frise](https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_3.jpg)
 
 La frise étant composé d’une répétition de motif nous pouvons la réaliser en utilisant un structure itérative. En effet ces structure nous permettent de réaliser une répétition d’action (ici le dessin d’un rectangle). Si nous regardons notre frise de prêt nous pouvons la décomposer de la sorte
 
@@ -56,7 +56,7 @@ for (var i=0; i<5; i++) {
 
 ### Le modulo
 Nous pouvons facilement réaliser une frise à plusieurs motif tel que défini par le modèle suivant :
-![modulo](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_4.jpg)
+![modulo](https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_4.jpg)
 
 Si nous pouvons définir cette frise par les instruction suivantes :
 * Définir le nombre de répétition des motifs :
@@ -121,7 +121,7 @@ for (var i=1; i<5; i++) {
 ### Le pavage
 Nous allons maintenant réaliser un pavage. Un pavage est une répétition d’un motif sur plus d’un axe. Il s’agit d’une évolution de la frise. Ici nous réaliserons un pavage sur deux dimensions
 
-![Pavage](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_5.jpg)
+![Pavage](https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/generation_5.jpg)
 
 Lorsque nous observons le pavage nous remarquons qu’il s’agit d’une répétition de la frise que nous avons précédemment réalisé. En d’autre terme nous pourrions dire :
 
