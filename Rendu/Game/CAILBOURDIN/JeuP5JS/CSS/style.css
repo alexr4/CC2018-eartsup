@@ -1,0 +1,50 @@
+body {
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  bottom: 10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #2f3640;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
+#Titre {
+  height: 7%;
+  margin: auto;
+  background: #353b48;
+  text-align: center;
+  color: #CCFFFF;
+}
+
+#Description {
+  margin: auto;
+  position: fixed;
+  font-size: 13px;
+  text-align: left;
+  top: 10%;
+  left: 3%;
+  line-height: 18px;
+}
+
+#GameWindow {
+  position: fixed;
+  top: 30%;
+  bottom: 8%;
+  left: 20%;
+  width : 60%;
+  height: 60%;
+}
+
+.Bas {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+}
