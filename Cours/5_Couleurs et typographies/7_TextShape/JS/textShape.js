@@ -12,7 +12,9 @@ var randomSeed;
 //The preload functiuon allow to load assets before the setup call
 function preload() {
   //here we load the .ttf model of the font in order to compute its vector path
-  font = loadFont('./FONTS/MuktaMahee-ExtraBold.ttf');
+  //font = loadFont('./FONTS/MuktaMahee-ExtraBold.ttf');
+  //here we load the file from a online repository which provide CORS authorization
+  font = loadFont("https://www.arivaux.com/preprod/cc-2018/MuktaMahee-Bold.ttf");
 }
 
 function setup(){
