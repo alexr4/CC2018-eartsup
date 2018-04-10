@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div id="scoreboard">
+        <ul>
+            X : <span id="score_x"></span></br>
+            Ties : <span id="score_tie"></span></br>
+            O : <span id="score_o"></span></br>
+        </ul>
+    </div>
+    <div id="reset">
+        <button id="resetScore">Reset score</button>
+        <button id="resetGame">New Game</button>
+    </div>
+    <canvas id="game" width="500" height="500">
+        This text is displayed if your browser does not support HTML5 Canvas.
+    </canvas>
+    <script async src="Mini-Jeu.js"></script>
+</body>
+</html>
