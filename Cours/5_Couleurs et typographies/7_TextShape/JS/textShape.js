@@ -64,6 +64,8 @@ function setup(){
   randomSeed = random(0, 1000);
   noiseSeed(100);
   eta = random(0.05);
+
+  background(0);
 }
 
 function draw(){
@@ -90,6 +92,7 @@ function draw(){
 
     ellipse(p.x, p.y, size, size);
   }
+
 }
 
 
@@ -102,6 +105,7 @@ function keyPressed(){
     randomSeed = random(0, 1000);
     noiseSeed(randomSeed);
     eta = random(0.05);
+    background(0);
   }
 }
 
