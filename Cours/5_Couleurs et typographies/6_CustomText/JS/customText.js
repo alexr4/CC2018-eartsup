@@ -62,9 +62,19 @@ function draw(){
 
 
 function keyPressed(){
-  if(keyCode > 32){
-    textArray.push(key);
+  //we list of keyCode here : https://gist.github.com/tylerbuchea/8011573
+  var key = keyCode;
+  //we remap the key code in order to prevent to consider le numpad as a char and not a number
+  if(key >= 96 && key <= 105){
+    key -= 48;
+  }else{
   }
+  var char = String.fromCharCode(key);
+  //if keyCode is a lower case we lowercase the char
+  if(key >= 65 && key <= 90){
+    char = char.toLowerCase();
+  }
+  textArray.push(char);
 }
 
 function windowResized(){
