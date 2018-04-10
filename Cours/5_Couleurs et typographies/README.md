@@ -10,7 +10,9 @@
 * Color Scheme
 ![Color Scheme](https://www.arivaux.com/preprod/cc-2018/ColorScheme.png)
 ### Cercle chromatique et schémas de couleurs
+
 ## Typographies
+
 ### Écrire sur le canvas
 ![Simple texte](https://www.arivaux.com/preprod/cc-2018/simpleText.png)
 ![Texte size](https://www.arivaux.com/preprod/cc-2018/TextSize.png)
@@ -18,5 +20,7 @@
 ![Color Scheme](https://www.arivaux.com/preprod/cc-2018/string%20manipulation.png)
 ### Manipulation typographique avec **p5.Font**
 ![p5.Font](https://www.arivaux.com/preprod/cc-2018/p5Font.png)
+
+(?)
 ## GUI : Graphics User Interface
 ### Import et utilisation de **DAT.GUI**
