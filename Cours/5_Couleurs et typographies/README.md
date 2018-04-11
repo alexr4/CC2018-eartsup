@@ -139,3 +139,13 @@ La méthode nous reverra alors un objet pour lequel nous pourrons interroger les
 * ```bounds.h``` hauteur h de la bounding box
 
 ![p5.Font](https://www.arivaux.com/preprod/cc-2018/p5Font.png)
+
+## Exemples :
+* [RGB vs CMNJ](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/0_RGB-CMYK/)
+* [Couleurs et Illusions](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/1_ColorIllusion/)
+* [RGB, HSB, HSL](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/2_RGB_HSB_HSL/)
+* [Schémas de couleurs](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/3_ColorSchemes/)
+* [Texte : affiche et mise en forme simple](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/4_SimpleText/)
+* [Texte : calcul de taille d'un texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/5_TextSize/)
+* [Texte : manipulation de texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/6_CustomText/)
+* [Texte : manipulation de forme](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/7_TextShape/)
