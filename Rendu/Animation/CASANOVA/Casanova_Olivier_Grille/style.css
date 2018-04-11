@@ -1,0 +1,50 @@
+
+body
+{
+  color: black;
+  background-color: white;
+}
+
+h1{
+  color:#C9E8E0;
+font-size: 60px;
+font-family: Courier,Helvetica,Arial, sans-serif;
+font-style: normal;
+text-align: center;
+
+}
+h2{
+  font-size: 45px;
+  font-family: Helvetica,Arial, sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+h3{
+  font-size: 35px;
+  font-family: Courier,Helvetica,Arial, sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+h4{
+  font-size: 20px;
+  font-family: Helvetica,Arial, sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+ div{
+    text-align: center;
+    width: 1600px;
+    padding: 50px;
+    border: 6px solid #9B68C2;
+    margin: 140;
+    font-family: Helvetica,sans-serif;
+}
+p{
+  color:#3D5070
+  overflow: hidden;
+  font-size: 16px;
+  font-family: Helvetica,Arial, sans-serif;
+  font-style: normal;
+
+}
