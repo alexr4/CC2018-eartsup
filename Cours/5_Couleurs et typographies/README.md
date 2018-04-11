@@ -55,9 +55,23 @@ La méthodes ```split(text, param)``` permet de diviser une chaîne de caractèr
 Pour l'exemple suivant nous utiliserons en texte de référence la citation de [Paul Rand](http://www.paul-rand.com) suivante :
 >There are no formulas in creative work. I do many variations, which is a question of curiosity. I arrive at many different configurations-some just slight variations, others more radical-of an original idea. It is a game of evolution.
 
+Si nous souhaitons compter le nombre de mots utiliser dans cette citation il nous suffira de diviser le texte en en tavleau de mots et d'en demander sa taille. Chaque mot étant séparé d'une espace, nous utiliserons celle-ci comme spérateur de notre méthode.
 
+```
+var quotes = "There are no formulas in creative work. I do many variations, which is a question of curiosity. I arrive at many different configurations-some just slight variations, others more radical-of an original idea. It is a game of evolution.";
+var wordsArray = split(quotes, " ");
+var numberOfWord = wordsArray.length;
+```
 
+Nous noterons également qu'il est possible de diviser une chaîne de caractère en tableau de caractère si notre séparateur est défini comme vide. Nous récupérons ainsi un tableau contenant l'ensemble des caractères (espces et ponctuation incluses).
 
-![Color Scheme](https://www.arivaux.com/preprod/cc-2018/string%20manipulation.png)
+```
+var quotes = "There are no formulas in creative work. I do many variations, which is a question of curiosity. I arrive at many different configurations-some just slight variations, others more radical-of an original idea. It is a game of evolution.";
+var charArray = split(quotes, "");
+var numberOfChar = charArray.length;
+```
+
+![Manipulation typo](https://www.arivaux.com/preprod/cc-2018/string%20manipulation.png)
+
 ### Manipulation typographique avec **p5.Font**
 ![p5.Font](https://www.arivaux.com/preprod/cc-2018/p5Font.png)
