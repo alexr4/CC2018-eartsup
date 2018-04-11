@@ -24,6 +24,15 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * * [P5js : Bruit brownien](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/Random)
 * * [P5js : Bruit perlin](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/PerlinNoise)
 * * [P5js : Exemple de jeu](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/GameExemple)
+* [Couleurs & Typographie](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/)
+* * [RGB vs CMNJ](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/0_RGB-CMYK/)
+* * [Couleurs et Illusions](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/1_ColorIllusion/)
+* * [RGB, HSB, HSL](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/2_RGB_HSB_HSL/)
+* * [Schémas de couleurs](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/3_ColorSchemes/)
+* * [Texte : affiche et mise en forme simple](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/4_SimpleText/)
+* * [Texte : calcul de taille d'un texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/5_TextSize/)
+* * [Texte : manipulation de texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/6_CustomText/)
+* * [Texte : manipulation de forme](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/7_TextShape/)
 
 ## Exercices
 * [HTLM5 introduction 1/2](https://alexr4.github.io/CC2018-eartsup/Cours/1_Introduction%20HTML5%20(1-2)/Exercice)
@@ -31,6 +40,7 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * [Guess the Number](https://alexr4.github.io/CC2018-eartsup/Cours/2_Introduction%20HTML5%20(2-2)/GuessTheNumber/)
 * [Games : Introduction aux formes et dessin avec p5js](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/ExerciceGame)
 * [Games : Grilles, résursions et aléatoires](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/ExerciceGame)
+* [Games : Couleurs & Typographie](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/Exercices)
 
 ## Nomenclature des exercices :
 * [Nomenclature HTML](https://alexr4.github.io/CC2018-eartsup/Cours/NOMENCLATURE/)
