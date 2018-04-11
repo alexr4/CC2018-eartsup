@@ -48,6 +48,16 @@ var hauteur = textAscent() + textDescent();
 ```
 
 ### Manipuler une chaine de caractère
+Au dela de la mise en forme de texte il est possible de manipuler une chaine de caractère afin de la composer. Cela permet par exemple, à partir d'un paragraphe, de lister et compter le nombre de mot, ou de décomposer le texte en caractère afin de dessiner chaque caractère indépendamment.
+
+La méthodes ```split(text, param)``` permet de diviser une chaîne de caractères à partir d'un séparateur pour fournir un tableau de sous-chaînes. Le premier paramètre **text** est le texte à diviser, le second **param** défini le séparateur à utiliser pour scinder le texte.
+
+Pour l'exemple suivant nous utiliserons en texte de référence la citation de [Paul Rand](http://www.paul-rand.com) suivante :
+>There are no formulas in creative work. I do many variations, which is a question of curiosity. I arrive at many different configurations-some just slight variations, others more radical-of an original idea. It is a game of evolution.
+
+
+
+
 ![Color Scheme](https://www.arivaux.com/preprod/cc-2018/string%20manipulation.png)
 ### Manipulation typographique avec **p5.Font**
 ![p5.Font](https://www.arivaux.com/preprod/cc-2018/p5Font.png)
