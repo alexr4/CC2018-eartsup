@@ -111,7 +111,7 @@ Nous pouvons donc facilement définir notre changement de forme une fois sur deu
 
 ```
 for (var i=1; i<5; i++) {
-    float newX = x + i * largeur;
+    var newX = x + i * largeur;
     if (i%2 == 0) {
       ellipseMode(CORNER);
       ellipse(newX, y, largeur, hauteur);
