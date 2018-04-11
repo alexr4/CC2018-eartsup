@@ -133,9 +133,9 @@ var bounds = font.textBounds('Hello World!', 0, 0, 75);
 
 La méthode nous reverra alors un objet pour lequel nous pourrons interroger les variables suivantes :
 
-* ````bounds.x``` position x de la bounding box
-* ````bounds.y``` position y de la bounding box
-* ````bounds.w``` largeur w de la bounding box
-* ````bounds.h``` hauteur h de la bounding box
+* ```bounds.x``` position x de la bounding box
+* ```bounds.y``` position y de la bounding box
+* ```bounds.w``` largeur w de la bounding box
+* ```bounds.h``` hauteur h de la bounding box
 
 ![p5.Font](https://www.arivaux.com/preprod/cc-2018/p5Font.png)
