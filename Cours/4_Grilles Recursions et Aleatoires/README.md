@@ -19,7 +19,7 @@ Dans le cas d’un motif ou d’un frise, la grille permet de définir la struct
 
 En géométrie, rappelons qu'un espace cartésien est un espace géométrique permettant de définir la position d’un point dans un espace munie d’un repère cartésien définie par droite x, y et z (horizontal, vertical, et en profondeur)
 
-![Espace cartésien](https://www.arivaux.com/generativedesign/wp-content/uploads/2013/10/2_environnement1-1024x538.jpg)
+![Espace cartésien](https://www.arivaux.com/preprod/cc-2018/2_environnement1-1024x538.jpg)
 
 Afin de réaliser notre motif nous allons utiliser ce système de grille afin de définir les coordonnées de notre motif à répéter sur les axe x et y.
 
