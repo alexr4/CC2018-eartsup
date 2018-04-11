@@ -22,4 +22,3 @@ Votre travail devra faire preuve d'un sens graphique affiné. Il se composera de
 ![Ting-An Ho](https://www.arivaux.com/preprod/cc-2018/Ting-An%20Ho.jpg)
 ![Ting-An Ho](https://www.arivaux.com/preprod/cc-2018/Ting-An%20Ho/609fc344571979.58232f82a34be.gif)
 ![Ting-An Ho](https://www.arivaux.com/preprod/cc-2018/Ting-An%20Ho/d7402044571979.58232f82f3b51.gif)
-![Ting-An Ho](https://www.arivaux.com/preprod/cc-2018/Ting-An%20Ho/e86ff044571979.58349c8b34590.gif)
