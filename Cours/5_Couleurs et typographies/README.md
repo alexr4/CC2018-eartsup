@@ -1,15 +1,15 @@
 # Couleurs et typographies
 ## Couleurs
 ### La base de la théorie des couleurs
-* RGB vs CMJN -> addition vs soustraction
+> RGB vs CMJN -> addition vs soustraction
 ![CMJN vs RGB](https://www.arivaux.com/preprod/cc-2018/CMJN-RGB.png)
-* Illusion de Couleurs
+> Illusion de Couleurs
 ![Color Illusion](https://www.arivaux.com/preprod/cc-2018/colorIllusion.png)
-* RGB/HSB/HSL
+> RGB/HSB/HSL
 ![RGB, HSB, HSL](https://www.arivaux.com/preprod/cc-2018/RGB-HSB-HSL.png)
-* Color Scheme
-![Color Scheme](https://www.arivaux.com/preprod/cc-2018/ColorScheme.png)
+
 ### Cercle chromatique et schémas de couleurs
+![Color Scheme](https://www.arivaux.com/preprod/cc-2018/ColorScheme.png)
 ## Typographies
 S'il est possible d'écrire et afficher du texte au sein d'une page HTML il est également possible d'en dessiner sur la surface de dessin qu'est l'objet ```<canvas>```. Cela permet ainsi de dessiner et afficher des interfaces par dessus le ```canvas``` ou mainpuler une chaine de caractère afin d'en changer son affichage ou son tracé.
 
