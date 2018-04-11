@@ -24,7 +24,7 @@ P5js permet d'afficher un texte sur la surface de dessin par l'utilisation de la
 
 Si aucune fonction d'affichage ne définie les paramètres le texte sera afficher avec une typographie, une taile et un alignement gauche par défaut. Pour changer les paramètre d'affichage nous utiliserons les méthodes suivante :
 
-* ````textAlign(Horizontal, [Vertical])``` définie l'alignement horizontal et vertical d'un texte où :
+* ```textAlign(Horizontal, [Vertical])``` définie l'alignement horizontal et vertical d'un texte où :
 * * Horizontal peut etre définie comme ```LEFT```, ```RIGHT``` ou ```CENTER```
 * * Vertical [option] peut être défini comme ```TOP```, ```BOTTOM```, ```CENTER``` ou ```BASELINE```
 * ```textSize(taille)``` définie le corps du texte en pixels
@@ -32,7 +32,20 @@ Si aucune fonction d'affichage ne définie les paramètres le texte sera affiche
 * ```textFont(font)``` définie la typographie utilisée pour le texte. La typographie peut être chargée dans le programme via l'utilisation de la fonction ```loadFont(url)``` (voir référence)[https://p5js.org/reference/#/p5/loadFont] ou appelé depuis le css par l'utilisation de son nom de la manière suivante ```textFont('georgia')```
 * ```textStyle(style)``` définie le style de texte. Les styles sont ```NORMAL```, ```BOLD``` et ```ITALIC```
 
-![Simple texte](https://www.arivaux.com/preprod/cc-2018/simpleText.png)
+p5js permet également de récupérer les information de taille d'un texte telle que sa largeur ou sa hauteur, saouvent necessaire pour le dessin d'interfaces de datavisualization. Afin de connaitre la largeur d'un texte nous utiliserons la méthode ```textWidth(texte)``` qui renverra la taille du texte envoyé en paramètre. Nous noterons qu'il est necesseraire de définir en amont les paramètres d'affichage du texte sans quoi la largeur renvoyée sera calculé pour un typographie et taille de base du programme.
+
+La hauteur d'un texte se décompose en deux éléments : la hauteur des hampes ascendante et descendante.
+![line height](https://upload.wikimedia.org/wikipedia/hu/a/a1/Fontmetrik%C3%A1k.png)
+
+Pour connaître ces taille avec p5js nous utiliserons les méthodes suivante :
+* ```textAscent()``` renvoie la hauteur ascendante en pixels de la typographie utilisée
+* ```textDescent()``` renvoie la hauteur descendante en pixels de la typographie utilisée
+
+Ainsi pour connaitre la hauteur complète d'un ligne nous réaliserons le calcul suivant :
+
+```
+var hauteur = textAscent() + textDescent();
+```
 ![Texte size](https://www.arivaux.com/preprod/cc-2018/TextSize.png)
 ### Manipuler une chaine de caractère
 ![Color Scheme](https://www.arivaux.com/preprod/cc-2018/string%20manipulation.png)
