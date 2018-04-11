@@ -74,4 +74,68 @@ var numberOfChar = charArray.length;
 ![Manipulation typo](https://www.arivaux.com/preprod/cc-2018/string%20manipulation.png)
 
 ### Manipulation typographique avec **p5.Font**
+Au delà de la manipulation de la chaîne de caractère nous pouvons également manipuler le tracé d'un texte et de se typographie par l'utilisation de l'objet p5.Font. Cet objet de p5js est une implémentation de la librairie [opentype.js](https://opentype.js.org/) permettant de parser et mainpuler des typographies aux formats **OpenType (OTF)** et **True Type (TTF)**. Par son utilisation nous pourrons récupérer le tracé vectoriel d'un texte sous forme d'un tableau de coordonées pour créer, manipuler, interagir ou animer avec le tracé du texte.
+
+Pour fonctionner la librairie aura besoins de charger dans sa mémoire l'ensemble de la typographie, aussi nous ne pourrons pas utiliser d'appels de typographies chargées en css, ces dernières étant encodées pour le DOM. Aussi la première étape consiste à charger la typographie à manipuler de la manière suivante :
+
+```
+var font;
+function preload(){
+  font = loadFont("./MuktaMahee-Bold.ttf");
+}
+```
+
+Nous nottons ici l'utilisation de la fonction ```preload()```. Cette fonction, appelée avant le ```setup()``` est utiliser afin de gérer le chargement de fichiers et assets de manière asynchrone. Si cette fonction est utilisée le ```setup()``` attendra la fin de chargement des assets avant de passer au ```draw()```.
+
+Un fois la typographie chargée nous pouvons utiliser la méthode ```p5.Font.textToPoints(text, x, y, taille, [options])``` afin de calculer la liste de points composant notre texte pour une typographie et taille donnée. Les paramètres sont les suivants :
+
+* **text** texte dont nous souhaitons calculer le tracé
+* **x** position x du text (nous noterons ici que l'alignement est un alignement gauche)
+* **y** position y du text (nous noterons ici que l'alignement est un alignement sur la ligne de base)
+* **taille** corps du texte
+* [option] Objet définissant la résolution du tracé. Il se compose des variables suivantes :
+* * ```sampleFactor``` Ratio du nombre de point par tracé. Par défaut ce paramètre est **0.25**. Plus le paramètre sera grand plus nous aurons de points sur le tracé.
+* * ```simplifyThreshold``` Si ce paramètre est différent de **0** alors des valeurs colinéaires seront retirées du tableau de points. Des points sont dit colinéaires s'ils sont tous sur la même droite D.
+
+Ainsi pour obtenir notre liste de coordonées nous écrirons :
+
+```
+var pointsList = font.textToPoints('Hello World!', 0, 0, 75, {
+    sampleFactor: 0.25,
+    simplifyThreshold: 0
+  });
+```
+
+Nous pourrons alors naviguer dans la liste de points par l'utilisation d'une boucle ```for``` afin de manipuler ou dessiner notre tracé de la manière suivante :
+
+```
+for(var i=0; i<pointsList.length; i++){
+  var point = pointsList[i];
+  ellipse(p.x, p.y, 4, 4);
+}
+```
+
+Nous noterons ici que le tableau ```pointsList````est un tableau de coordonée 2D. Aussi nous pouvons récupérer indépendamment les coordonées x et y par l'appel des variable de chaque objet présent dans le tableau où :
+
+* ```pointsList[i].x``` correspond à la position x du point i
+* ```pointsList[i].y``` correspond à la position y du point i
+
+De la même manière nous pourrons récupérer la _bounding box_ (boite) du texte par l'utilsation de la méthode ```p5.Font.textBounds(text, x, y, taille)```. Les paramètres sont les suivants :
+
+* **text** texte dont nous souhaitons calculer le tracé
+* **x** position x du text (nous noterons ici que l'alignement est un alignement gauche)
+* **y** position y du text (nous noterons ici que l'alignement est un alignement sur la ligne de base)
+* **taille** corps du texte
+
+```
+var bounds = font.textBounds('Hello World!', 0, 0, 75);
+```
+
+La méthode nous reverra alors un objet pour lequel nous pourrons interroger les variables suivantes :
+
+* ````bounds.x``` position x de la bounding box
+* ````bounds.y``` position y de la bounding box
+* ````bounds.w``` largeur w de la bounding box
+* ````bounds.h``` hauteur h de la bounding box
+
 ![p5.Font](https://www.arivaux.com/preprod/cc-2018/p5Font.png)
