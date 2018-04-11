@@ -42,7 +42,7 @@ function setup()
   //Bouton Start
   BT_StartX = 10;
   BT_StartY = 10;
-  BT_StartM = 10;
+  BT_StartM = 100;
   noStroke();
   textSize(14);
   textStyle(ITALIC);
@@ -51,7 +51,7 @@ function setup()
   BT_StartText = 'START';
   var startTextWidth = textWidth(BT_StartText);
   BT_StartW = startTextWidth + BT_StartM * 2;
-  BT_StartH = 30;
+  BT_StartH = 100;
 }
 
 function draw()
@@ -59,7 +59,7 @@ function draw()
   background(40);
   if(!gameStarted && !gameOver) //Debut du jeu
   {
-    displayStartButton(targetWidth/2, targetHeight/2, 0);
+    displayStartButton(targetWidth/2 - 100, targetHeight/2 - 50, 0);
   }
   if(!gameOver && gameStarted) //Si on a pas perdu et que le jeu est lancé
   {
@@ -227,7 +227,7 @@ function movePlayer() //Controle au clavier
 function displayStartButton(x, y, m)
 {
   noStroke();
-  textSize(14);
+  textSize(25);
   textStyle(ITALIC);
   textAlign(CENTER, CENTER);
   textFont('monospace');
