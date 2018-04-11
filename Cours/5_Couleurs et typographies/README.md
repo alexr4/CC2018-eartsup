@@ -46,7 +46,7 @@ Ainsi pour connaitre la hauteur complète d'un ligne nous réaliserons le calcul
 ```
 var hauteur = textAscent() + textDescent();
 ```
-![Texte size](https://www.arivaux.com/preprod/cc-2018/TextSize.png)
+
 ### Manipuler une chaine de caractère
 ![Color Scheme](https://www.arivaux.com/preprod/cc-2018/string%20manipulation.png)
 ### Manipulation typographique avec **p5.Font**
