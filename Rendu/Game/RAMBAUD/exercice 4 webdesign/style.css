@@ -1,0 +1,107 @@
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('Roboto-Medium.ttf');
+}
+
+body {
+    background: url('img/wall.jpg') no-repeat -180px -100px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+#logo {
+	text-align: center;
+}
+
+#game {
+	width: 350px;
+	height: 350px;
+	margin: 22px auto 22px auto;
+	background: rgb(18, 132, 220);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#game button {
+	width: 102px;
+	height: 102px;
+	float: left;
+	margin: 7px;
+	background: ;
+}
+
+#game div {
+        width: 350px;
+        text-align: center;
+}
+
+#gameStatus {
+	width: 360px;
+	height: auto;
+	background: rgb(18, 132, 220);
+	border-radius: 5px;
+	margin: auto;
+	padding: 5px;
+	color: #DDD;
+	text-align: center;
+}
+
+#gameStatus a {
+	color: rgb(200, 200, 0);
+	font-weight: bold;
+}
+
+#gameStatus img {
+	width: 20px;
+	height: auto;
+}
+
+@media screen and (min-height: 700px) {
+
+#credits {
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.5);
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-align: right;
+}
+
+#credits p {
+	margin: 15px 22px 10px 0px;
+}
+
+#credits img {
+	width: 150px;
+	margin: -5px 5px 0px 0px;
+}
+
+}
+
+@media screen and (max-height: 700px) {
+	#credits {display: none;}
+}
+
+#selecteur {
+	width: 350px;
+	height: 240px;
+	margin: 22px auto 22px auto;
+	background: rgb(18, 132, 220);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#selecteur button {
+	width: 102px;
+	height: 102px;
+	float: left;
+	margin: 7px;
+	font-size: 12px;
+	background: ;
+}
+
+#selecteur img {
+	display: block;
+	margin: auto;
