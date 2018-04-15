@@ -264,4 +264,18 @@ function windowResized(){
   var targetWidth = contentDiv.offsetWidth;
   var targetHeight = targetWidth / resolution;
   resizeCanvas(targetWidth, targetHeight);
+
+  noStroke();
+  textSize(14);
+  textStyle(ITALIC);
+  textAlign(CENTER, CENTER);
+  textFont('monospace');
+
+  replayM = 10;
+  replayText = "(Click to replay)";
+  var replayTextWidth = textWidth(replayText);
+  replayW = replayTextWidth + replayM * 2;
+  replayH = 30;
+  replayX =  width/2  - replayW * 0.5;
+  replayY = height - replayH - replayM * 2;
 }
