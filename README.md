@@ -20,7 +20,9 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * * [P5js : Interactions clavier/souris](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/7_InteractionsSourisClavier)
 * * [P5js : Exemple](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/8_ExerciceExemple)
 * [Grilles, résursions et aléatoires](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/)
+* * [P5js : Grille Cartésienne](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/CartesianGrid/)
 * * [P5js : Grille polaire uniforme](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/PolarGrid)
+* * [P5js : Recursion](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/Recursion/)
 * * [P5js : Bruit brownien](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/Random)
 * * [P5js : Bruit perlin](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/PerlinNoise)
 * * [P5js : Exemple de jeu](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/GameExemple)
@@ -33,6 +35,7 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * * [Texte : calcul de taille d'un texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/5_TextSize/)
 * * [Texte : manipulation de texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/6_CustomText/)
 * * [Texte : manipulation de forme](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/7_TextShape/)
+* * [Texte : Guess the letter](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/8_TextGame/)
 
 ## Exercices
 * [HTLM5 introduction 1/2](https://alexr4.github.io/CC2018-eartsup/Cours/1_Introduction%20HTML5%20(1-2)/Exercice)

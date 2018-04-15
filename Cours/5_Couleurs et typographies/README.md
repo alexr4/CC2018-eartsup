@@ -149,3 +149,4 @@ La méthode nous reverra alors un objet pour lequel nous pourrons interroger les
 * [Texte : calcul de taille d'un texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/5_TextSize/)
 * [Texte : manipulation de texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/6_CustomText/)
 * [Texte : manipulation de forme](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/7_TextShape/)
+* [Texte : Guess the letter](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/8_TextGame/)
