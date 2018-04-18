@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+#black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  clip: rect(0 100vw 100vh 0);
+}
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  line-height: 60px;
+  font-family: "Roboto Condensed";
+  text-align: right;
+}
+#text span {
+  color: #000;
+}
+#text2 {
+  position: absolute;
+  top: 60%;
+  left: 51.1%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  line-height: 60px;
+  font-family: "Roboto Condensed";
+  text-align: right;
+}
+#text2 span {
+  color: black;
+}
