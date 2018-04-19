@@ -44,6 +44,7 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * [Games : Introduction aux formes et dessin avec p5js](https://alexr4.github.io/CC2018-eartsup/Cours/3_Introduction%20Formes%20et%20Dessins/ExerciceGame)
 * [Games : Grilles, résursions et aléatoires](https://alexr4.github.io/CC2018-eartsup/Cours/4_Grilles%20Recursions%20et%20Aleatoires/ExerciceGame)
 * [Games : Couleurs & Typographie](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/Exercices)
+* * [Games : Guess the letter : Modèle](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/9_TextGameModel/)
 
 ## Nomenclature des exercices :
 * [Nomenclature HTML](https://alexr4.github.io/CC2018-eartsup/Cours/NOMENCLATURE/)

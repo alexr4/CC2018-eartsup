@@ -150,3 +150,4 @@ La méthode nous reverra alors un objet pour lequel nous pourrons interroger les
 * [Texte : manipulation de texte](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/6_CustomText/)
 * [Texte : manipulation de forme](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/7_TextShape/)
 * [Texte : Guess the letter](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/8_TextGame/)
+* [Texte : Guess the letter : Modèle](https://alexr4.github.io/CC2018-eartsup/Cours/5_Couleurs%20et%20typographies/9_TextGameModel/)
