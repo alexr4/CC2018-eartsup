@@ -1,4 +1,3 @@
-
 # Déplacement Simple
 ![enter image description here](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/sim0-1.gif)
 
