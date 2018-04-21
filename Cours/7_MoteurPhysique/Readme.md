@@ -33,9 +33,9 @@ Avant de plonger plus loin dans les moteurs physiques et autres forces il est im
 ### Addition de vecteurs
 Soit deux vecteurs A(15, 20) et B(4,6). Soit C le résultat de leur addition. Alors C correspond à l’addition de leurs composants entre eux :
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AaddBC.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AaddBCx.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AaddBCy.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AaddBC.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AaddBCx.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AaddBCy.gif"><br>
 <img src="https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/03_CC-02.jpg">
 </p>
 
