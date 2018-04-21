@@ -388,8 +388,8 @@ En animation le **easing** — appelé spacing en animation — est la composant
 * Le **timing** est le temps d'animation. Par exemple, le temps que mettra un objet à parcourir une distance.
 * Le **spacing** — appelé easing en programmation — correspond à l'acceleration dans le temps. Par exemple, une balle qui chute en 2 secondes aura une acceleration de mouvement, c'est à dire que cette dernière semblera rester plus longtemps à la position de départ avant de chuter et atteindre le sol. À l'inverse, lors du rebonds cette dernière semblera decélerer, c'est à dire rester plus longtemps dans les airs, en suspension à la fin du rebond, avant de retomber.
 
-Vous pouvez retrouver les bases de l'animation sur les vidéo Ted Ed suivante :
-[![TED Education :Les bases de l'animation : L'art du timing et de l'espacement ](http://img.youtube.com/vi/KRVhtMxQWRs/0.jpg)](http://www.youtube.com/watch?v=KRVhtMxQWRs)
+Vous pouvez retrouver les bases de l'animation sur la vidéo Ted Ed suivante : [Les bases de l'animation : L'art du timing et de l'espacement](http://www.youtube.com/watch?v=KRVhtMxQWRs)
+[![TED Education : Les bases de l'animation : L'art du timing et de l'espacement ](http://img.youtube.com/vi/KRVhtMxQWRs/0.jpg)](http://www.youtube.com/watch?v=KRVhtMxQWRs)
 
 En programmation les méthodes de easing consistent en un lot de différents calculs permettant d'adoucir une valeur, par exemple notre déplacement. Il s'agit donc de faire varier l'eacceleration d'un élément en fonction du temps ou de la distance à parcourir.
 
