@@ -14,5 +14,6 @@ La géométrie vectorielle est aujourd’hui une base des moteurs physiques. Ell
 
 ## Définition d’un vecteur
 En mathématiques, en particulier en géométrie euclidienne, un vecteur est un objet géométrique possédant une magnitude (longueur) et une direction. Un vecteur est généralement représenté par une flèche pointant une direction. Nous reconnaissons un vecteur par son écriture :
-
+<p align="center">
 ![Vector](https://arivaux.com/preprod/cc-2018/Vectors/vector.gif)
+</p>
