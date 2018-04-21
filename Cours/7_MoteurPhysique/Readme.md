@@ -38,3 +38,27 @@ Soit deux vecteurs A(15, 20) et B(4,6). Soit C le résultat de leur addition. Al
 <img src="https://arivaux.com/preprod/cc-2018/Vectors/AaddBCy.gif"></br>
 <img src="https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/03_CC-02.jpg">
 </p>
+
+Soit avec p5js :
+```
+var A = createVector(15, 20);
+var B = createVector(4, 6);
+var C = p5.Vector.add(A, B);
+```
+
+### Soustraction de vecteurs
+Soit deux vecteurs A(15, 20) et B(4,6). Soit C le résultat de leur soustraction. Alors C correspond à la soustraction de leurs composants entre eux :
+
+<p align="center">
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBC.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBCx.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBCy.gif"></br>
+<img src="https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/03_CC-03.jpg">
+</p>
+
+Soit avec p5js :
+```
+var A = createVector(15, 20);
+var B = createVector(4, 6);
+var C = p5.Vector.sub(A, B);
+```
