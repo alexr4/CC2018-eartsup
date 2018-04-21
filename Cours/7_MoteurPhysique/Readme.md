@@ -50,9 +50,9 @@ var C = p5.Vector.add(A, B);
 Soit deux vecteurs A(15, 20) et B(4,6). Soit C le résultat de leur soustraction. Alors C correspond à la soustraction de leurs composants entre eux :
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBC.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBCx.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBCy.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBC.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBCx.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AsubBCy.gif"><br>
 <img src="https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/03_CC-03.jpg">
 </p>
 
@@ -69,14 +69,14 @@ La multiplication et division sont des opérations différentes quand il s’agi
 Soit le vecteur A(15, 20) et n(2)  son scalaire. Soit C le résultat de la multiplication de A par n et C’ le résultat de la division de A par n. Alors C et C’ correspondent respectivement à la multiplication et division des composants de A par n :
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AtimeC.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AtimeCx.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AtimeCy.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AtimeC.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AtimeCx.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AtimeCy.gif"><br>
 </p>
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AdivC.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AdivCx.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AdivCy.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AdivC.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AdivCx.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AdivCy.gif"><br>
 </p>
 <p align="center">
 <img src="https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/03_CC-04-1024x588.jpg">
@@ -94,25 +94,25 @@ var C_ = p5.Vector.div(A, n);
 Comme nous l’avons vu juste, la multiplication et division d’un vecteur par un scalaire modifie sa longueur, c’est-à-dire sa magnitude, sans en changer sa direction. Lors de certaines opérations il est également utile de connaître la magnitude de ce vecteur. La magnitude d’un vecteur s’écrit de la manière suivante :
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/Amag.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/Amag.gif"><br>
 </p>
 
 Soit le vecteur A(15, 20). Quelle est la magnitude m de A?
 <p align="center">
-<img src="https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/03_CC-05.jpg"></br>
+<img src="https://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/03_CC-05.jpg"><br>
 </p>
 
 Si on observe le vecteur ci-dessus on remarque que ce dernier peut être décrit comme le triangle rectangle ABC dont la longueur du côté opposé à l’angle CBA est a = 20 et  dont la longueur du côté adjacent à l’angle CBA est b = 15. Enfin le côté c correspond à l’hypoténuse du triangle ABC. Or on sait par le théorème de Pythagore que l’hypoténuse est égale à la racine de l’addition du coté opposé au carré par le côté adjacent au carré soit :
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AmagCHypo0.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AmagCHypo0.gif"><br>
 </p>
 
 Nous pouvons alors définir que la magnitude du vecteur A est définie par le calcul suivant
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AmagC.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AmagCHypo.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AmagC.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AmagCHypo.gif"><br>
 </p>
 
 Soit avec p5js :
@@ -125,15 +125,15 @@ var c = A.mag();
 Normaliser un vecteur signifie ramener sa magnitude à une valeur de 1. Ce calcul permet de standardiser afin de n’obtenir que sa direction indépendamment de sa longueur. Le vecteur résultant de cette opération est appelé vecteur unitaire. Il s’écri de la manière suivante :
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/Anormalization.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/Anormalization.gif"><br>
 </p>
 
 Soit le vecteur A(15, 20). Quel le vecteur û correspondant au vecteur unitaire de A
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/Anormalization.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/Anormalizationx.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/Anormalizationy.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/Anormalization.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/Anormalizationx.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/Anormalizationy.gif"><br>
 </p>
 
 Soit avec p5js :
@@ -230,9 +230,9 @@ dy = mouseY - element.y
 Or nous savons que la soustraction entre deux vecteurs correspond à la soustraction de chacun des composants des deux vecteurs entre eux. Nous pouvons alors définir que le vecteur D est défini par :
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/MsubED.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/MsubEDx.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/MsubEDy.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/MsubED.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/MsubEDx.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/MsubEDy.gif"><br>
 </p>
 
 Où **M** est le vecteur de position de la souris, **E** le vecteur de position de l’élément et **D** est le vecteur de direction pointant de l’élément vers la souris. Soit en P5JS :
@@ -246,8 +246,8 @@ De cette manière nous obtenons alors le vecteur pointant de l’élément à la
 Pour ce faire nous allons définir le vecteur unitaire Û de D par le biais d’une normalisation. Notre vecteur d’accélération sera alors égal au vecteur unitaire Û multiplié par la vitesse **s**, soit :
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/Dnormalisation.gif"></br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/Aus.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/Dnormalisation.gif"><br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/Aus.gif"><br>
 </p>
 
 Soit en P5JS :
@@ -296,8 +296,8 @@ _«La force d’un objet est définie par son accélération multipliée par sa 
 À partir de cette loi nous pouvons alors définir le comportement d’ajout de force, c’est-à-dire le comportement permettant de modifier l’accélération A d’un objet selon une force F.
 
 <p align="center">
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/FAm.gif"></br>ou</br>
-<img src="https://arivaux.com/preprod/cc-2018/Vectors/AFm.gif"></br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/FAm.gif"><br>ou<br>
+<img src="https://arivaux.com/preprod/cc-2018/Vectors/AFm.gif"><br>
 </p>
 
 Ainsi dans P5JS, si nous souhaitons soumettre notre objet à une force nous écrirons :
