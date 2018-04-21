@@ -2,25 +2,25 @@
 # Déplacement Simple
 ![enter image description here](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/sim0-1.gif)
 
-Les systèmes de particules sont des systèmes graphiques récurrents dans le milieu des arts graphique, que ce soit comme système graphique pur ou en tant que simulation d’éléments tels que de la fumée, des explosions ou de la poussière. D’un point de vue conceptuel, une particule est un élément évoluant dans un espace à travers plusieurs comportements tels que le déplacement, le rebond, la sensibilité à la gravité… À cet élément nous pourrons par la suite attacher des visuels ou des formes afin de donner vie à notre système.
+Les systèmes de particules sont des systèmes graphiques récurrents dans le milieu des arts graphique, que ce soit comme système graphique pur ou en tant que simulation d’éléments tels que de la fumée, des explosions ou de la poussière. D’un point de vue plus conceptuel, une particule est un élément évoluant dans un espace à travers plusieurs comportements tels que le déplacement, le rebond, la sensibilité à la gravité… À cet élément nous pourrons par la suite attacher des visuels, des animations ou des formes afin de donner vie à notre système.
 
 ![enter image description here](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/simulation_00.jpg)
-### Introduction au mouvement
+## Introduction au mouvement
 Nous l’avons vu une particule est caractérisée par divers comportements, son principal comportement étant le déplacement dans l’espace. Le déplacement d’un élément dans un espace 2D se caractérise par une évolution, frame par frame de sa position x et y. Dans un espace 2D nous pouvons le symboliser de la manière suivante :
 ![enter image description here](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/simulation_01.jpg)
 
-Soit un point P caractérisé par une position x et y
-Soit une vitesse de x speedX et une vitesse de y speedY
+Soit un point P caractérisé par une position ```x``` et ```y``` dans un espace cartésien.
+Soit une vitesse de x ```speedX``` et une vitesse de y ```speedY```
 
-À chaque frame nous incrémentons respectivement les valeurs x et y de leur vitesse speed x et speed y.
+À chaque frame nous incrémentons respectivement les valeurs x et y de leurs vitesses speed x et speed y.
 
 Nous aurons donc besoin deux plusieurs variables pour créer ce déplacement.
-Dans un premier temps deux variables x et y qui enregistrerons la position de l’élément. Ceci nous permettra donc de dessiner l'élement à sa position mais aussi de pouvoir modifier et utiliser ces informations dans notre programme.
+Dans un premier temps deux variables x et y qui enregistreront la position de l’élément. Ceci nous permettra donc de dessiner l'élement à sa position mais aussi de pouvoir modifier et utiliser ces informations dans notre programme.
 
-Nous aurons aussi besoin de deux variables qui viendront modifier les position enregistré pour que notre particule ce déplace.
+Nous aurons aussi besoin de deux variables qui viendront modifier les positions enregistrés pour que notre particule ce déplace.
 
 Soit dans notre programme P5JS :
-````
+```
 var x;
 var y;
 var speedX;
@@ -30,15 +30,16 @@ function update(){
   x += speedX;
   y += speedY;
 }
- ````
+```
 Par cette méthode nous avons donc créé un comportement de déplacement qu’il nous suffira d’appeler dans la boucle de notre programme afin de mettre à jour la position de notre élément.
 
-Nous avons dans cet exemple créer une function **update()** qui nous sers à modifier la position par d'autre valeurs. Cette variable est créer par convention dans la plupart des programmes, elle intervient généralement avant la function **draw()** dans les languages de programmation l'incorporant par défaut (C++, C#...) et il faudra d'appeler au début de notre function **draw()** dans les langage de programmation qui ne l'aurai pas.
-Comme sont nom l'indique cette function update ou "de mise à jours" permet de faire toute les modifications dont nous avons besoin sur nos élement. Nous les déssinerons ensuite grâce à la function draw().
-Cette façon de faire nous permet d'avoir un code plus lisible et d'optimiser notre code.
+Nous avons dans cet exemple créer une function ```update()``` qui nous sers à modifier la position par d'autre valeurs. Le nom de cette fonction est créer par convention, en effet nous retrouverons ce nom dans la plupart des programmes tels que Unity3D, Unreal... Elle intervient avant le dessin de la forme. Dans notre programme, nous appelerons cette fonction au sein de la fonction ```draw()```.
+Comme sont nom l'indique cette function update ou "de mise à jours" permet de faire toutes les modifications dont nous avons besoin sur nos élements. Nous les déssinerons ensuite grâce à la function ```draw()```.
+De cette manière nous obtiendrons un code plus lisible.
 
 Voici ce qui se passe si nous écrivons la totalité de notre code :
-````
+
+```
 var x;
 var y;
 var speedX;
@@ -66,15 +67,15 @@ function update(){
   x += speedX;
   y += speedY;
 }
-````
+```
 
-Vous pouvez voir que nous désinons notre élement au centre de notre scene dans le **setup()**, nous initialiseront aussi les variables qui viendrons modifier notre position.
+Vous pouvez voir que nous désinons notre élement au centre de notre scene dans le ```setup()```, nous initialiseront aussi les variables qui viendrons modifier notre position.
 
-Ensuite nous appeler la function update() dans dans le draw() pour modifier la position et nous dessinerons notre ellipse.
+Ensuite nous appelons la function ```update()``` dans dans le ```draw()``` pour modifier la position et nous dessinerons notre ellipse.
 
 Dans l’exemple ci-dessus nous avons réalisé un déplacement linéaire, c’est-à-dire un comportement où la position s’incrémente de manière uniforme selon une vitesse constante. Il est également possible de mettre à jour la position à travers un comportement plus aléatoire, qu’il soit chaotique ou doux. Pour se faire nous pouvons utiliser l’aléatoire brownien ou perlin vu dans les précédents cours.
 
-````
+```
 //déplacement aléatoire chaotique de 1 pixel en x et 1
 function update(){
   speedX = random(-1, 1);
@@ -90,16 +91,16 @@ function update(){
   x += speedX;
   y += speedY;
 }
-````
+```
 
-### **Création de comportements**
-Dans l’exemple ci-dessus nous avons écrit notre déplacement sous la forme d’une fonction que nous avons par la suite appelée dans notre boucle **draw()**. Nous avons créé ce que l’on appelle un comportement : celui de se mouvoir. Nous pouvons ajouter divers comportements à notre particule tels que le fait de grossir ou de se réduire.  
+## Création de comportements
+Dans l’exemple ci-dessus nous avons écrit notre déplacement sous la forme d’une fonction que nous avons par la suite appelée dans notre boucle ```draw()```. Nous avons créé ce que l’on appelle un comportement : celui de se mouvoir. Nous pouvons ajouter divers comportements à notre particule tel que le fait de grossir ou de se réduire.  
 
-L’un des comportements les plus utilisés est celui de la limitation de la particule à l’espace de la scène par rebond. Cette fonction décrit le comportement qu’aura notre particule lorsque celle-ci atteint les limites de la scène. Dans ce cas celle-ci rebondira, c’est-à-dire ira dans le sens inverse. Pour ce faire, lorsque cette dernière atteint les limites de la scène nous inversons la vitesse en x ou y.
+L’un des comportements les plus utilisés est celui de la limitation de la particule à l’espace de la scène par rebonds. Cette fonction décrit le comportement qu’aura notre particule lorsque celle-ci atteindra les limites de la scène. Dans ce cas celle-ci rebondira, c’est-à-dire ira dans le sens inverse. Pour ce faire, lorsque cette dernière atteint les limites de la scène nous inversons la vitesse en ```x``` ou ```y``` en fonction de la limite atteinte.
 
 ![enter image description here](http://www.arivaux.com/generativedesign/wp-content/uploads/2017/02/simulation_03.jpg)
 
-````
+```
 function checkEdges(){
   if(x < 0 || x > width){
     speedX *= -1;
@@ -108,12 +109,13 @@ function checkEdges(){
     speedY *= -1;
   }
 }
-````
+```
 
-Nous utiliseront donc une function appelée checkEdges pour vérifier que notre particule sois à l'intérieur de la scène. S'il dépasse les bordures, nous multiplierons la variable modifiant la valeurs de position par **-1** ce qui permettra de faire partir la particule dans l'autre sens et donc "rebondir".
-Si nous rajoutons cette function à l’exemple précédent en écrivant sont appel dans l'**update** nous verrons que notre cercle rebondit sur les bords de notre scène. Nous remarquerons aussi que le rebondissement intervient une fois que le centre du cercle est au bord et non pas les bords du cercle.
-Pour que le comportement ce déclenche lorsque les bords du cercle rencontre le bord de la scène il faudra rajouter le rayon du cercle à  notre calcul :
-````
+Nous utilisons donc une fonction que nous appelerons ```checkEdges``` pour vérifier que notre particule soit à l'intérieur de la scène. Si celle-ci dépasse les bordures, nous multiplierons la variable de vitesse par **-1** ce qui permettra de faire partir la particule dans l'autre sens et donc "rebondir".
+Si nous rajoutons cette fonction à l’exemple précédent en écrivant son appel dans la fonction ```draw()``` nous verrons que notre cercle rebondit sur les bords de notre scène. Nous remarquons aussi que le rebondissement intervient une fois que le centre du cercle est au bord et non pas les bords du cercle. Cela s'explique par le fait que nous comparons les position ```x``` et ```y``` de l'ellipse, soit son centre.
+Pour que le comportement se déclenche lorsque le bord du cercle rencontre le bord de la scène il faudra rajouter le rayon du cercle à  notre calcul  soit :
+
+```
 var x;
 var y;
 var speedX;
@@ -133,6 +135,7 @@ function setup(){
 function draw(){
   background(127);
   update();
+	checkEdges();
 
   fill(255);
   stroke(0);
@@ -142,7 +145,6 @@ function draw(){
 function update(){
   x += speedX;
   y += speedY;
-	checkEdges();
 }
 
 function checkEdges(){
@@ -153,55 +155,61 @@ function checkEdges(){
     speedY *= -1;
   }
 }
-````
+```
 
-Maintenant que nous avons vu comment faire ce déplacer et rebondir une particule, nous allons voir comment effectuer cette action avec un nombre X de particule.
+Maintenant que nous créé les deux premier comportement ```update()``` et ```checkEdges()``` permettant de déplacer et faire rebondir la particule, nous allons voir comment effectuer cette action avec un nombre **X** de particules.
 
-### Variable et objets
+## Variable et objets
 
-Comme nous l'avons vu, le javascript est un langage non typé, à ce titre tous les élement sont des variables **var**, ainsi cette variable pourra contenir un chiffre, comme un caractère, comme un texte, comme un tableaux contenant plusieurs chiffres mais aussi un objet contenant d'autre variable et function.
-Nous utiliserons donc cette spécificité pour créer des objets "variable".
+Le javascript est un langage non typé, à ce titre tous les élement sont des variables ```var```, ainsi cette variable pourra contenir un chiffre, un caractère, un texte ou un tableaux contenant plusieurs chiffres mais également un objet contenant d'autre variables et fonctions. Nous utiliserons donc cette spécificité pour créer des objets "variable".
 
-### **** Algorithm tips : les Objets (Classes) ****
+### Les Objets (Classes)
 
-Si nous avons vu comment réaliser des comportements simples nous ignorons toujours comment l’appliquer à un lot d’éléments. Pour ce faire nous allons utiliser un méthode : la création de classe. Une classe est un modèle de description d’un objet.
+Si nous avons vu comment réaliser des comportements simples nous ignorons toujours comment l’appliquer à un lot d’éléments. Pour ce faire nous allons utiliser une méthode : la création de classe. Une classe est un modèle de description d’un objet.
 
-Celle-ci nous permet de créer un modèle que nos particules utiliseront, ce modèle permettra à chaque particules d'avoir les mêmes "comportement" et possibilité, mais chacune aura des attribut (variable) propre. Ainsi même si chaque particule partagera le même modèle chaque particule aura une position différentes, une taille différentes, une couleurs différentes, une vitesse différentes... Bien sur si vous en avez l'envie.
+Un objet est directement inspiré du monde réel. En effet nous sommes entouré d’objets et chacun de ces objets a des propriétés propres. Par exemple nous avons les objets « téléphones ». Chacun de ses objets « téléphones » sont définis par le fait qu’ils ont tous des variables communes telle qu'une taille, une couleur ou encore une marque. Ces objets on également des fonctions communes tel que le fait de pouvoir passer des communications vocales par le biais d’un réseau téléphonique ou encore envoyer des messages écrits. Mais ils possèdent aussi des variables qui leur sont propre comme le fait d’être tactile ou pas, d’avoir des poids et des tailles qui diffèrent… Bref nos téléphones sont des objets appartenant à une même classe, la classe « Téléphone ».
 
-En javascript les classes prennent une syntaxe particulière. En effet, javascript étant un langage non typé il ne dispose d’aucune déclaration de type classe. Ces dernière prendront donc la forme de fonctions imbriquées.
+Ce paradigme de developpement est appelé **programmation orientée objet** _Object Oriented Programming (OOP)_
+
+Nous utilsons donc une classe afin de créer un modèle que nos particules utiliseront, ce modèle permettra à chaque particule d'avoir les mêmes "comportements", mais chacune aura des attributs (variables) propre. Ainsi même si chaque particule partagera le même modèle chaque particule aura une position différente, une taille différente, une couleur différente, une vitesse différente... si le modèle le décrit.
+
+En javascript les classes prennent des syntaxes particulières. En effet, javascript étant un langage non typé et prototype il permet de créer de différente manière les classe. Ici nous verrons la déclarartion de classe encapsulé.Une classe encapsulé est un déclaration de fonctions décrivant notre objet à l'aide de variables et fonctions propre
 
 La classe prendra la forme suivante :
 
-````
+```
 var nomDeLaClass = function(param1, parma2){
-    this.variable1;
+    this.variable1 = valeur;
 
-    this.comportement1 = function();
+    this.comportement1 = function(){
+
+    };
 }
-````
+```
 
 Nous noterons différentes observations :  
 
-1.  Une classe JS ne possède pas de constructeur comme en JAVA
+1.  Une classe JS ne possède pas de constructeur comme dans les langages typés tel que JAVA, C#, C++... À noter que ES6 permet l'utilisation de type, ainsi nous pourrons retrouver des déclarations proches des langages typé. Nous n'utilserons pas les types ici.
 2.  L’ensemble des fonctions et variables sont désignées par l’indicateur **_this._** Permettant d’indiquer à notre à notre programme que cette variable appartient à cette classe.
 
-Ainsi la **variable1** existera pour toute les particules mais sa valeurs pourra changer pour chacune d'elle.
+Ainsi la **variable1** existera pour toutes les particules mais sa valeurs pourra changer pour chacune d'elle.
 
 
 La création d’un objet dans le programme se fera par la suite de la manière suivante :
-````
+```
 var objet;
 
 function setup(){
   createCanvas(640, 320);
   var objet= new nomDeLaClass(width/2, height/2);
 }
-````
+```
 
-Ainsi l’élément **objet** à été créer en utilisant le modèle créer précédemment. Et peut donc utiliser toute les variables et function créer par le modèle tout en ayant des valeurs différentes.
+Ainsi l’élément **objet** a été créer en utilisant le modèle créé précédemment. Et peut donc utiliser toutes les variables et fonctions créé par le modèle tout en ayant des valeurs différentes.
 
 Dans le cas de notre programme nous pouvons alors réaliser la classe particule regroupant nos comportements précédents de la manière suivante :
-````
+
+```
 var Particle = function(x_, y_, radius_){
   this.speedX = random(-2, 2);
   this.speedY = random(-2, 2);
@@ -213,6 +221,7 @@ var Particle = function(x_, y_, radius_){
     this.x += this.speedX;
     this.y += this.speedY;
   }
+
   this.display = function(){
   	ellipse(this.x, this.y, this.radius, this.radius);
   }
@@ -227,13 +236,13 @@ var Particle = function(x_, y_, radius_){
   }
 
 }
-````
+```
 
-L'exemple précédent est donc une Class Particle, celle-ci peut donc devenir un modèle pour les élements que nous souhaitons ajouter sur notre scène. Ils auront donc accès au même variables bien que leurs valeurs seront unique à chacun deux et au même function "comportement".
+L'exemple précédent est donc une classe **Particle**, celle-ci peut donc devenir un modèle pour les élements que nous souhaitons ajouter sur notre scène. Ils auront donc accès aux même variables bien que leurs valeurs soient uniquse à chacun d'eux et aux mêmes fonctions "comportement".
 
-Une fois notre classe créer nous devons ensuite en créer plusieurs sur la scène. Afin d’instancier plusieurs objets nous utiliserons un tableau de la manière suivante :
+Une fois notre classe créé nous devons ensuite en créer plusieurs sur la scène. Afin d’instancier plusieurs objets nous utiliserons un tableau de la manière suivante :
 
-````
+```
 var particleList = [];
 
 function setup(){
@@ -243,13 +252,13 @@ function setup(){
     particleList.push(p);
   }
 }
-````
-Nous avons donc créer 30 élément ayant pour modèle la class Particule. Tous nos élément ont pour position de départ le centre de notre scène "width/2, height/2" ainsi qu'un rayon de 5px.
-Nos élément une fois créer sont ajouté à un tableaux ce qui nous permettra de les atteindre dans le programme.
+```
+Nous avons donc créé 30 éléments ayant pour modèle la classe **Particule**. Tous nos élément ont pour position de départ le centre de notre scène ```width/2, height/2``` ainsi qu'un rayon de 5px.
+Nos éléments une fois créés sont ajoutés à un tableaux ce qui nous permettra de les atteindre dans le programme.
 
-Enfin nous utiliserons un boucle for dans notre draw afin de mettre à jour les comportements de nos particules et les afficher
+Enfin nous utiliserons une boucle ```for()``` dans notre ```draw()``` afin de mettre à jour les comportements de nos particules et les afficher.
 
-````
+```
 function draw(){
   background(127);
   for(var i=0; i<particleList .length; i++){
@@ -259,29 +268,53 @@ function draw(){
    	p.display();
   }
 }
-````
+```
 
 ### Collision entre éléments
 
-Tous comme il est possible de tcheck la collision avec le bord de l'écran, il nous est possible de voir si les particules se rentre l'une dans l'autre. Pour ce faire nous n'aurons qu'a rajouter une function à notre **objet**
+Tous comme il est possible de vérifier la collision avec le bord de l'écran, il nous est possible de vérifier si les particules se rentrent l'une dans l'autre. Pour ce faire nous n'avons qu'à ajouter une function à notre **classe**
 
-````
-  this.checkCollision = function(ArrayPart,index){
-  	for(let i = 0; i<ArrayPart.length;i++){
-      let distance = this.position.dist(ArrayPart[i].position);
-      if(distance < this.radius && index!=i){
+```
+  this.checkCollision = function(ArrayPart, index){
+  	for(var i = 0; i<ArrayPart.length;i++){
+      var dx = this.x - ArrayPart[i].x; //longueur c en x
+      var dy = this.y - ArrayPart[i].y; //longueur c en y
+      var dxCube = dx * dx;
+      var dyCube = dy * dy;
+      var dist = sqrt(dxCube + dyCube);
+      if(dist < this.radius && index!=i){
       	this.speedY*=-1;
         this.speedX*=-1;
       }
     }
   }
-````
+```
 
-Ainsi cette function aura besoin du tableau contenant toutes les particules ainsi que de l'index de la particule en cours pour agir.
-Cette function tcheck la distance entre notre particule et toute les autres particules et vérifie si celle-ci est inférieur au rayon. Si c'est le cas, les particules parte dans l'autre sens.
-Pour ce faire nous utiliseront la function **dist()** qui existe avec les **Vector**.
+Ainsi cette fonction aura besoin du tableau contenant toutes les particules ainsi que de l'index de la particule en cours pour agir.
+Cette fonction vérifie la distance entre notre particule et toute les autres particules du tableau puis vérifie si celle-ci est inférieur au rayon. Si c'est le cas, les particules parte dans l'autre sens.
+Pour ce faire nous utiliseront calculons la distance entre deux points à l'aide d'une fonction trigonométrique.
 
-### Les Vector
+#### Calculer la distance entre deux points
+Pour calculer la distance entre deux points ```A``` et ```B``` il suffit de calculer l'hypothénuse du triangle ```ABC``` où ```C.x = B.x``` et ```C.y = A.y```
+
+![Rapport trigonométrique](http://arivaux.com/leliengraphique/wp-content/uploads/2013/03/Capture-d%E2%80%99%C3%A9cran-2013-03-17-%C3%A0-18.24.47.png)
+
+Nous pourrons alors utiliser le théorème de pythagore pour calculer la distance AB. En effet selon le théorème de Pythagore la taille de l'hypothénuse est donnée par la formule : ```c = √(a * a + b * b)``` soit, avec p5 js ```AB = sqrt(BC * BC + AC * AC)```
+
+```
+var Ax = 10;
+var Ay = 20;
+var Bx = 100;
+var By = 200;
+
+var dx = x1 - x2; //longueur c en x
+var dy = y1 - y2; //longueur c en y
+var dxCube = dx * dx;
+var dyCube = dy * dy;
+var dist = sqrt(dxCube + dyCube);
+```
+
+### Les Vecteurs
 Un vector permet de stocker des coordonnée X,Y et Z. Ceux-ci viennent avec plein de formule mathématique permettant de simplifier notre code. Les vectors sont la base des systèmes de particules mais nous les verrons dans le prochain chapitres sur le mouvement, pour le moment considéré l'est comme des position.
 
 ### Collision en vector
