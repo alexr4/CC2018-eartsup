@@ -391,3 +391,5 @@ element.applyForce(friction);
 Nous remarquons ici que nous avons simplifié la force normal par une valeur unitaire de 1. En effet notre système évoluant dans un espace rectangulaire la force normal sera toujours égale à N(0,1) que nous pourrons simplifier par 1.0 pour plus d’aisance dans notre code.
 
 Nous obtenons alors un comportement plus proche de la réalité où nous objets rebondissent jusqu’à être plaqués au sol.
+
+plops
