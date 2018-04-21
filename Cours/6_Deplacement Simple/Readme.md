@@ -277,14 +277,16 @@ Tous comme il est possible de vérifier la collision avec le bord de l'écran, i
 ```
   this.checkCollision = function(ArrayPart, index){
   	for(var i = 0; i<ArrayPart.length;i++){
-      var dx = this.x - ArrayPart[i].x; //longueur c en x
-      var dy = this.y - ArrayPart[i].y; //longueur c en y
-      var dxCube = dx * dx;
-      var dyCube = dy * dy;
-      var dist = sqrt(dxCube + dyCube);
-      if(dist < this.radius && index!=i){
-      	this.speedY*=-1;
-        this.speedX*=-1;
+      if(i != index){
+        var dx = this.x - ArrayPart[i].x; //longueur c en x
+        var dy = this.y - ArrayPart[i].y; //longueur c en y
+        var dxCube = dx * dx;
+        var dyCube = dy * dy;
+        var dist = sqrt(dxCube + dyCube);
+        if(dist < this.radius + ArrayPart[i].radius){
+        	this.speedY*=-1;
+          this.speedX*=-1;
+        }
       }
     }
   }
@@ -315,11 +317,12 @@ var dist = sqrt(dxCube + dyCube);
 ```
 
 ### Les Vecteurs
-Un vector permet de stocker des coordonnée X,Y et Z. Ceux-ci viennent avec plein de formule mathématique permettant de simplifier notre code. Les vectors sont la base des systèmes de particules mais nous les verrons dans le prochain chapitres sur le mouvement, pour le moment considéré l'est comme des position.
 
-### Collision en vector
+En mathématiques, en particulier en géométrie euclidienne, un vecteur est un objet géométrique possédant une magnitude (longueur) et une direction. Un vecteur est généralement représenté par une flèche pointant une direction. Un vecteur permet de stocker des coordonnée X,Y et Z. P5js permet d'utiliser des vecteurs ainsi que de nombreuses fonctions permetant de simplifier leur opérartions. Dans le prochain chapitre nous verrons comment utiliser des vecteurs afin de créer un premier moteur physique.
 
-Voici donc à quoi ressemblera notre code si ont utilisent les **Vector** :
+### Collision en vecteur
+
+Voici donc à quoi ressemblera notre code si ont utilisent les **Vecteur** :
 ````
 var particleList = [];
 
@@ -379,20 +382,55 @@ var Particle = function(x_, y_, radius_){
 ````
 
 ## Easing
+Lorsque qu'on objet chute, son mouvement n'est pas linéaire et ce dernier effectue une acceleration. Si cette objet rebondi, de même il effectuera une deceleration lors de son rebonds. Ces variations de vitesses sont définis comme un **easing**. C'est ce dernier qui rend le mouvement d'un objet plus réel.
+
+En animation le **easing** — appelé spacing en animation — est la composante clée avec le **timing** permettant de créer un mouvement.
+* Le **timing** est le temps d'animation. Par exemple, le temps que mettra un objet à parcourir une distance.
+* Le **spacing** — appelé easing en programmation — correspond à l'acceleration dans le temps. Par exemple, une balle qui chute en 2 secondes aura une acceleration de mouvement, c'est à dire que cette dernière semblera rester plus longtemps à la position de départ avant de chuter et atteindre le sol. À l'inverse, lors du rebonds cette dernière semblera decélerer, c'est à dire rester plus longtemps dans les airs, en suspension à la fin du rebond, avant de retomber.
+
+Vous pouvez retrouver les bases de l'animation sur les vidéo Ted Ed suivante :
+[![TED Education :Les bases de l'animation : L'art du timing et de l'espacement ](http://img.youtube.com/vi/KRVhtMxQWRs/0.jpg)](http://www.youtube.com/watch?v=KRVhtMxQWRs)
+
+En programmation les méthodes de easing consistent en un lot de différents calculs permettant d'adoucir une valeur, par exemple notre déplacement. Il s'agit donc de faire varier l'eacceleration d'un élément en fonction du temps ou de la distance à parcourir.
+
+Dans l'exemple suivante nous allons mettre en place deux fonctions de easing simple : une acceleration et un deceleration. Pour cela nous allons reprendre notre class particule et crééer une nouvelle fonction permettant de modifiant la vitesse de X et Y en fonction de la distance séparant la particule d'une cible à atteindre, d'un timing et d'un spacing.
+
+L'agorithme peut être déccomposé de la manière suivante :
+```
+var dx = target - position;
+var vitesse = (dx * easing) * timing;
+```
+
+Où **dx** est la distance séparant la particule de sa cible, **easing** est la valeur de easing de l'animation et **timing** le temps de l'animation. Dans le cas de notre particule nous pourrons l'écrire de la manière suivante :
+
+```
+this.goTo = function(targetX_, targetY_, easing_, timing_, temps_){
+  var timing = (temps_ % timing_) / timing_;
+
+  var dx = targetX_ - this.x;
+  var dy = targetY_ - this.y;
+  this.speedX = (dx * easing_) * timing;
+  this.speedY = (dy * easing_) * timing;
+}
+```
+Ici nous envoyons en paramètres une position cible ```targetX````et ```targetY```, une valeur de ```easing``` **supérieur à 1.0 pour une acceleration et decelaration et inférieur à 1.0 pour une déceleration**; un temps maximum d'animation et le temps écoulé de l'animation.
+La ligne ```var timing = (temps_ % timing_) / timing_;``` permet alors de calculer la temps normalisé de l'animation.
+
+L'exemple ci-dessus n'est qu'un exemple simple de courbe de easing mais il existe de nombreuses courbes de easing différente. Robert Penner, qui est l'un des pionner en terme d'équation de easing explique sont approche de manière assez simple [ici](http://upshots.org/actionscript/jsas-understanding-easing)
 ![enter image description here](http://78.media.tumblr.com/5944bcf4f7fe9c0c99f7a593f233731a/tumblr_mj7bx09MDo1s5nl47o2_r1_500.gif)
 
-Vous avez surement déjà utilisé le easing en animation pour changer la vitesse d'un élément pendant sont déplacement. Nous allons maintenant utiliser les functions de easing pour que le déplacement de nos élements sois moin linéaire.
-
-Vous trouverez à ce lien un fichier comportant un grand nombre de function de easing déjà écrite : https://github.com/alexr4/easingFunction
+Il n'est cependant pas necessaire d'implémenter des fonction de easing. Nous pouvons facilement utiliser des librairie telle que [JQuery](https://jquery.com/) ou [TweenMax](https://greensock.com/tweenmax).
+Vous pouvez également utiliser le snippet de cours **_easingFunction_** vous fournissant un lot de fonction de easing normalisées. Vous trouverez ce fichier sur le repository GitHub suivant : [https://github.com/alexr4/easingFunction](https://github.com/alexr4/easingFunction)
+Vous pouvez également utiliser le lien CDNS suivant pour l'ajouter dynamiquement à votre projet :
+[https://cdn.rawgit.com/alexr4/easingFunction/master/easing.js](https://cdn.rawgit.com/alexr4/easingFunction/master/easing.js)
 
 Télécharger le fichier et ajouter le dans votre dossier de travail au dessus de votre sketch. Créer ensuite un lien vers celui-ci dans votre fichier html comme vous l'avez fait pour le fichier **sketch**
 
-``<script src="./js/easing.js">``
+```<script src="./js/easing.js">```
 
-En important le fichier de cette façon vous avez maintenant accès à toute les function directement dans votre code.
+En important le fichier de cette façon vous avez maintenant accès à toute les functions directement dans votre code.
 
-````
-
+```
 function setup(){
 	createCanvas(windowWidth, windowHeight);
 }
@@ -401,63 +439,63 @@ function draw(){
 	background(0);
 	fill(255)
 	noStroke();
-	let tempsMax = 4000;
-	let timer = (millis() % tempsMax) / tempsMax;
+	var tempsMax = 4000;
+	var timer = (millis() % tempsMax) / tempsMax;
 
-	let begin = 40;
-	let end = width - begin * 2;
-	let offsety = 20;
-	let lx = begin + timer * end;
+	var begin = 40;
+	var end = width - begin * 2;
+	var offsety = 20;
+	var lx = begin + timer * end;
 	ellipse(lx, offsety, 10, 10);
 
-	let inQuadx = begin + inQuad(timer) * end;
+	var inQuadx = begin + inQuad(timer) * end;
 	ellipse(inQuadx, offsety * 2, 10, 10);
 
-	let outQuadx = begin + outQuad(timer) * end;
+	var outQuadx = begin + outQuad(timer) * end;
 	ellipse(outQuadx, offsety * 3, 10, 10);
 
-	let inoutQuadx = begin + inoutQuad(timer) * end;
+	var inoutQuadx = begin + inoutQuad(timer) * end;
 	ellipse(inoutQuadx, offsety * 4, 10, 10);
 
 
-	let outExpx = begin + outExp(timer) * end;
+	var outExpx = begin + outExp(timer) * end;
 	ellipse(outExpx, offsety * 5, 10, 10);
 
 	colorMode(HSB);
-	let hueBegin = 100;
-	let hueEnd = 100;
-	let hue = hueBegin + outCirc(timer) * hueEnd;
-	let size = outQuintic(timer) * 200;
+	var hueBegin = 100;
+	var hueEnd = 100;
+	var hue = hueBegin + outCirc(timer) * hueEnd;
+	var size = outQuintic(timer) * 200;
 	fill(hue, 100, 100)
 	ellipse(width/2, height/2, size, size);
  }
-````
+```
 
-Les functions de easing marche avec du temps normalisé. Une valeur normalisé est une valeurs entre **0 et 1**.
-Ainsi en temps normalisé **0 =  le début de notre animation** et **1 = la fin de notre animation**.
+Ces fonctions de easing marchent avec des valeurs de temps normalisés. Une valeur normalisée est une valeurs ramenée à un rang de **0.0 à 1.0**.
+Ainsi en temps normalisé **0.0 =  le début de notre animation** et **1.0 = la fin de notre animation**.
 
-````
-	let tempsMax = 4000;
-	let timer = (millis() % tempsMax) / tempsMax;
-````
+```
+	var tempsMax = 4000;
+	var timer = (millis() % tempsMax) / tempsMax;
+```
 Ainsi dans ce code nous commençons par donner le temps de notre animation, ici 4 secondes.
-La deuxième variable est la valeur qui sera envoyé dans les functions de easing. Le calcul présent convertie le temps en temps normalisé. Ainsi si ``millis()`` qui nous donne le temps en milliseconde depuis le début de notre sketch = 2000 et que le temps maximum inscrit plutôt = 4000 alors le temps normalisé sera de 0.5 car nous somme à la moitier de l'animation (4000-2000 = 2000).
+La deuxième variable est la valeur qui sera envoyée dans les fonctions de easing. Le calcul présent convertie le temps en temps normalisé. Ainsi si ```millis()``` qui nous donne le temps en milliseconde depuis le début de notre sketch = 2000 et que le temps maximum inscrit plutôt = 4000 alors le temps normalisé sera de 0.5 car nous somme à la moitié de l'animation (4000-2000 = 2000).
 
-Pour normalisé un temps nous utiliseront cette formule : ``(millis() % tempsMax) / tempsMax;``
+Pour normaliser un temps nous utiliseront cette formule : ```(millis() % tempsMax) / tempsMax;```
 
-````
-	let begin = 40;
-	let end = width - begin * 2;
-	let offsety = 20;
-````
+```
+	var begin = 40;
+	var end = width - begin * 2;
+	var offsety = 20;
+```
 Dans la deuxième partie nous choisissons la position de début, la position de fin et l'interval en y (position vertical).
 
-````
-	let inQuadx = begin + inQuad(timer) * end;
+```
+	var inQuadx = begin + inQuad(timer) * end;
 	ellipse(inQuadx, offsety * 2, 10, 10);
-````
+```
 
-Pour finir nous utilisons les function de easing, dans cette exemple la function inQuad.
-Pour avoir la position nous utiliseront donc la position de départ + la position calculé par la function de easing * la position de fin.
+Pour finir nous utilisons les fonctions de easing, dans cette exemple la fonction inQuad.
+Pour avoir la position nous utiliserons donc la position de départ + la position calculée par la fonction de easing * la position de fin.
 
-Nous utiliseront ensuite le résultat de notre calcule pour déplacer notre ellipse sur l'axe **X**.
+Nous utiliseront ensuite le résultat de notre calcul pour déplacer notre ellipse sur l'axe **X**.

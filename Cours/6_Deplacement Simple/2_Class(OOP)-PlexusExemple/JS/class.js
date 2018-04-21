@@ -25,7 +25,7 @@ function setup(){
       particles.push(new Particle(x, y, radius));
     }
   }
-
+  background(20);
 }
 
 function isAvailbale(x_, y_, r_, array_){
@@ -46,14 +46,30 @@ function isAvailbale(x_, y_, r_, array_){
 }
 
 function draw(){
-  background(220);
+  background(20, 50);
+  var maxDist = 150;
 
   for(var i=0; i<particles.length; i++){
     var p = particles[i];
     p.checkEdges();
     p.checkCollision(particles, i);
     p.update();
-    p.display();
+    for(var j=0; j<particles.length; j++){
+      if(i != j){
+        var neighbors = particles[j];
+        var dx = p.x - neighbors.x;
+        var dy = p.y - neighbors.y;
+        var dxCube = dx * dx;
+        var dyCube = dy * dy;
+        var dist = sqrt(dxCube + dyCube);
+        if(dist <= maxDist){
+          var opacity = (1.0 - (dist / maxDist)) * 255;
+          stroke(255, opacity);
+          noFill();
+         line(p.x, p.y, neighbors.x, neighbors.y);
+        }
+      }
+    }
   }
 }
 

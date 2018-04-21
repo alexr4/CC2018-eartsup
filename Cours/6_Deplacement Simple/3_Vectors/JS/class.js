@@ -63,33 +63,32 @@ var Particle = function(x_, y_, radius_){
   this.speedX = random(-1, 1);
   this.speedY = random(-1, 1);
   this.radius = radius_;
-  this.x = x_;
-  this.y = y_;
+  this.position = createVector(x_, y_);
 
   //déclaration de la fonction update
   this.update = function(){
-    this.x += this.speedX;
-    this.y += this.speedY;
+    this.position.x += this.speedX;
+    this.position.y += this.speedY;
   }
 
   this.display = function(){
-    ellipse(this.x, this.y, this.radius * 2, this.radius * 2);
+    ellipse(this.position.x, this.position.y, this.radius * 2, this.radius * 2);
   }
 
   this.checkEdges = function(){
-    if(this.x <= this.radius || this.x >= width - this.radius){
-      if(this.x < this.radius){
-        this.x = this.radius;
+    if(this.position.x <= this.radius || this.position.x >= width - this.radius){
+      if(this.position.x < this.radius){
+        this.position.x = this.radius;
       }else{
-        this.x = width - this.radius;
+        this.position.x = width - this.radius;
       }
       this.speedX *= -1;
     }
-    if(this.y <= this.radius || this.y >= height - this.radius){
-      if(this.y < this.radius){
-        this.y = this.radius;
+    if(this.position.y <= this.radius || this.position.y >= height - this.radius){
+      if(this.position.y < this.radius){
+        this.position.y = this.radius;
       }else{
-        this.y = height - this.radius;
+        this.position.y = height - this.radius;
       }
       this.speedY *= -1;
     }
@@ -98,16 +97,16 @@ var Particle = function(x_, y_, radius_){
   this.checkCollision = function(ArrayParticles, index){
     for(var i=0; i<ArrayParticles.length; i++){
       if(i != index){
-        var dx = this.x - ArrayParticles[i].x;
-        var dy = this.y - ArrayParticles[i].y;
+        var dx = this.position.x - ArrayParticles[i].position.x;
+        var dy = this.position.y - ArrayParticles[i].position.y;
         var dxCube = dx * dx;
         var dyCube = dy * dy;
         var dist = sqrt(dxCube + dyCube);
         if(dist <= this.radius + ArrayParticles[i].radius){
           var maxOverlap = this.radius + ArrayParticles[i].radius;
           var overlap = (maxOverlap) - dist;
-          this.x += overlap * (dx / maxOverlap);
-          this.y += overlap * (dx / maxOverlap);
+          this.position.x += overlap * (dx / maxOverlap);
+          this.position.y += overlap * (dx / maxOverlap);
           this.speedX *=-1;
           this.speedY *=-1;
         }

@@ -1,7 +1,12 @@
 var contentDiv = document.getElementById('row1');
 var resolution = 1920.0 / 1080.0;
 
+var margin;
 var particles;
+var targetX;
+var targetY;
+var temps;
+var startTime;
 
 function setup(){
   var targetWidth = contentDiv.offsetWidth;
@@ -9,49 +14,35 @@ function setup(){
   var canvas = createCanvas(targetWidth, targetHeight);
   canvas.parent("canvas-content");
 
+  margin = 60;
   particles = [];
-  var nbParticles = 100;
-  for(var i=0; i<nbParticles; i++){
-    var radius = random(10, 15);
-    var x = random(radius, width-radius);
-    var y = random(radius, height-radius);
-    //first we check if the position is available
-    if(particles.length > 0){
-      var posAvailable = isAvailbale(x, y, radius, particles);
-      if(posAvailable == true){
-        particles.push(new Particle(x, y, radius));
-      }
-    }else{
-      particles.push(new Particle(x, y, radius));
-    }
-  }
+  particles.push(new Particle(width/2, height/2- margin, 40));
+  particles.push(new Particle(width/2, height/2+ margin, 40));
 
+  targetX = random(margin, width - margin);
+  targetY = height/2;
+  startTime = 0;
+  temps = 0;
+
+  colorMode(HSB)
 }
 
-function isAvailbale(x_, y_, r_, array_){
-  var bool = true;
-  for(var i=0; i<array_.length; i++){
-    var dx = x_ - array_[i].x;
-    var dy = y_ - array_[i].y;
-    var dxCube = dx * dx;
-    var dyCube = dy * dy;
-    var dist = sqrt(dxCube + dyCube);
-    if(dist <= r_ + array_[i].radius){
-      bool = false;
-      break;
-    }
-  }
 
-  return bool;
-}
 
 function draw(){
-  background(220);
+  background(0, 0, 95);
+  temps = (millis() * 0.001) - startTime;
+
+  noStroke();
+  fill(0, 75, 100);
+  ellipse(targetX, targetY - margin, margin * 0.5, margin * 0.5);
+  ellipse(targetX, targetY + margin, margin * 0.5, margin * 0.5);
+
+  particles[0].goTo(targetX, targetY - margin, 0.1, 4, temps);
+  particles[1].goTo(targetX, targetY + margin, 1.5, 4, temps);
 
   for(var i=0; i<particles.length; i++){
     var p = particles[i];
-    p.checkEdges();
-    p.checkCollision(particles, i);
     p.update();
     p.display();
   }
@@ -60,25 +51,41 @@ function draw(){
 
 var Particle = function(x_, y_, radius_){
   //déclaration des variables
-  this.speedX = random(-1, 1);
-  this.speedY = random(-1, 1);
+  this.speedX = random(-2, 2);
+  this.speedY = 0.0;//random(-2, 2);
   this.radius = radius_;
   this.x = x_;
   this.y = y_;
 
   //déclaration de la fonction update
+  this.goTo = function(targetX_, targetY_, easing_, timing_, temps_){
+    var timing = (temps_ % timing_) / timing_;
+
+    var dx = targetX_ - this.x;
+    var dy = targetY_ - this.y;
+    this.speedX = (dx * easing_) * timing;
+    this.speedY = (dy * easing_) * timing;
+  }
+
   this.update = function(){
     this.x += this.speedX;
     this.y += this.speedY;
   }
 
+
   this.display = function(){
+    noFill();
+    stroke(200, 75, 100);
     ellipse(this.x, this.y, this.radius * 2, this.radius * 2);
+    line(this.x - this.radius * 0.75, this.y, this.x +  - this.radius * 1.25, this.y);
+    line(this.x + this.radius * 0.75, this.y, this.x +  + this.radius * 1.25, this.y);
+    line(this.x, this.y - this.radius * 0.75, this.x, this.y - this.radius * 1.25);
+    line(this.x, this.y + this.radius * 0.75, this.x, this.y + this.radius * 1.25);
   }
 
   this.checkEdges = function(){
     if(this.x <= this.radius || this.x >= width - this.radius){
-      if(this.x < this.radius){
+      if(this.x <= this.radius){
         this.x = this.radius;
       }else{
         this.x = width - this.radius;
@@ -86,7 +93,7 @@ var Particle = function(x_, y_, radius_){
       this.speedX *= -1;
     }
     if(this.y <= this.radius || this.y >= height - this.radius){
-      if(this.y < this.radius){
+      if(this.y <= this.radius){
         this.y = this.radius;
       }else{
         this.y = height - this.radius;
@@ -114,6 +121,13 @@ var Particle = function(x_, y_, radius_){
       }
     }
   }
+}
+
+function mousePressed(){
+  console.log("--------------")
+  startTime = millis() * 0.001;
+  targetX = random(margin, width - margin);
+  targetY = random(margin, height - margin);
 }
 
 function windowResized(){
