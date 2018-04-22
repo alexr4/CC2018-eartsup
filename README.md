@@ -56,7 +56,7 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * * [Moteurs Physiques : direction](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/9_Direction)
 * * [Moteurs Physiques : ajout de force](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/10_Newton_AddForce)
 * * [Moteurs Physiques : gravité et vent](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/11_Gravity+Wind)
-* * [Moteurs Physiques : friction](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/12_friction)
+* * [Moteurs Physiques : friction](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/12_Friction)
 
 ## Exercices
 * [HTLM5 introduction 1/2](https://alexr4.github.io/CC2018-eartsup/Cours/1_Introduction%20HTML5%20(1-2)/Exercice)
