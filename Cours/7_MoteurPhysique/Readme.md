@@ -239,7 +239,7 @@ Où **M** est le vecteur de position de la souris, **E** le vecteur de position 
 
 ```
 var mousePos = createVector(mouseX, mouseY);
-var direction = p5.Vector.sub(mouse, location);
+var direction = p5.Vector.sub(mousePos, location);
 ```
 
 De cette manière nous obtenons alors le vecteur pointant de l’élément à la souris et de magnitude égale à la distance séparant les deux éléments. Il nous reste à définir le vecteur d’accélération pointant dans la même direction que D mais disposant d’une certaine vitesse **s**.
@@ -254,7 +254,7 @@ Soit en P5JS :
 ```
 direction.normalize();
 var s = 0.5;
-var acceleration = p5.Vector.mult(d, s);
+var acceleration = p5.Vector.mult(direction, s);
 ```
 
 Nous obtenons alors un vecteur d’accélération constante en direction de la souris qu’il nous reste à appliquer à notre élément de la manière suivante :
@@ -329,8 +329,8 @@ Ainsi si nous souhaitons créer ces deux forces et soumettre notre élément à 
 ```
 var wind = createVector(noise(frameCount), 0.0);
 var gravity = createVector(0.0, 0.1);
-element.applyForce(wind);
-element.applyForce(gravity);
+element.applyForce(wind.copy());
+element.applyForce(gravity.copy());
 element.update();
 ```
 
@@ -391,3 +391,6 @@ element.applyForce(friction);
 Nous remarquons ici que nous avons simplifié la force normal par une valeur unitaire de 1. En effet notre système évoluant dans un espace rectangulaire la force normal sera toujours égale à N(0,1) que nous pourrons simplifier par 1.0 pour plus d’aisance dans notre code.
 
 Nous obtenons alors un comportement plus proche de la réalité où nous objets rebondissent jusqu’à être plaqués au sol.
+
+## Pour aller plus loin
+Les moteurs physiques sont fait d'un grand nombre de forces différentes et il est évidement possible de créer ses propres forces afin de créer son propre monde avec ses propres règles physique (gravité inversé, grande friction...). Pour aller plus loin dans ce domaine qu'est la simulation naturelle je vous invite à explorer, lire et expérimenter l'ouvrage de [Daniel Shiffman : _Nature of Code_](http://natureofcode.com/book/)
