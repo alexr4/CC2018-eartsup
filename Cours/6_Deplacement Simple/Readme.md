@@ -498,3 +498,11 @@ Pour finir nous utilisons les fonctions de easing, dans cette exemple la fonctio
 Pour avoir la position nous utiliserons donc la position de départ + la position calculée par la fonction de easing * la position de fin.
 
 Nous utiliseront ensuite le résultat de notre calcul pour déplacer notre ellipse sur l'axe **X**.
+
+## Exemples
+* [Animation 1/2 : Déplacements simples](https://alexr4.github.io/CC2018-eartsup/Cours/6_Deplacement%20Simple/0_SimpleMoving/)
+* [Animation 1/2 : Class (OOP)](https://alexr4.github.io/CC2018-eartsup/Cours/6_Deplacement%20Simple/1_Class(OOP))
+* [Animation 1/2 : Plexus](https://alexr4.github.io/CC2018-eartsup/Cours/6_Deplacement%20Simple/2_Class(OOP)-PlexusExemple)
+* [Animation 1/2 : Vecteurs](https://alexr4.github.io/CC2018-eartsup/Cours/6_Deplacement%20Simple/3_Vectors)
+* [Animation 1/2 : Easing simple](https://alexr4.github.io/CC2018-eartsup/Cours/6_Deplacement%20Simple/4_EasingSimple)
+* [Animation 1/2 : Easing librairie](https://alexr4.github.io/CC2018-eartsup/Cours/6_Deplacement%20Simple/5_EasingLibrary)

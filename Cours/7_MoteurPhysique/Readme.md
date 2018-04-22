@@ -394,3 +394,18 @@ Nous obtenons alors un comportement plus proche de la réalité où nous objets 
 
 ## Pour aller plus loin
 Les moteurs physiques sont fait d'un grand nombre de forces différentes et il est évidement possible de créer ses propres forces afin de créer son propre monde avec ses propres règles physique (gravité inversé, grande friction...). Pour aller plus loin dans ce domaine qu'est la simulation naturelle je vous invite à explorer, lire et expérimenter l'ouvrage de [Daniel Shiffman : _Nature of Code_](http://natureofcode.com/book/)
+
+## Exemples
+* [Vecteurs : additions](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/0_VectorAddition)
+* [Vecteurs : soustraction](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/1_VectorSubstraction)
+* [Vecteurs : multiplication](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/2_VectorMultiplication)
+* [Vecteurs : division](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/3_VectorDivision)
+* [Vecteurs : magnitude](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/4_VectorMag)
+* [Vecteurs : normalisation](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/5_VectorNormal)
+* [Moteurs Physiques : location + velocity = mouvement](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/6_LocAddVelocity)
+* [Moteurs Physiques : acceleration](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/7_Acceleration)
+* [Moteurs Physiques : particules](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/8_Particles)
+* [Moteurs Physiques : direction](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/9_Direction)
+* [Moteurs Physiques : ajout de force](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/10_Newton_AddForce)
+* [Moteurs Physiques : gravité et vent](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/11_Gravity+Wind)
+* [Moteurs Physiques : friction](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/12_Friction)
