@@ -42,7 +42,7 @@ Comme pour le _box art_ l'animation de l'écran d'accueil est souvent un moyen s
 <img src="https://78.media.tumblr.com/tumblr_m7o3782iNS1qm88llo1_540.gif">
 <img src="https://78.media.tumblr.com/tumblr_m5docqTs2h1qm88llo1_r1_540.gif">
 </p>
-_sources : [Nes title Screens](http://nestitlescreens.tumblr.com)_
+_Sources :_ [Nes title Screens](http://nestitlescreens.tumblr.com)
 
 ## Le jeu video
 Votre jeux vidéo devra revisiter un des célèbres jeux précédements cités. Vous en reprendrez le game design afin de le faire évoluer tant dans le gameplay que dans l'univers graphique. Il sera basé sur le principe de l'arcade; c'est-à-dire composé de un ou plusieers niveaux très courts, de mécanismes de contrôle intuitifs et simples, et d'une difficulté de jeu qui augmente rapidement. Votre jeu sera solo.
