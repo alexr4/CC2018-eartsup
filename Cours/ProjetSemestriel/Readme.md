@@ -27,10 +27,22 @@ Si aujourd'hui l'univers d'un jeux vidéo s'exprime pleinnement à travers le we
 
 Votre affiche pourra s'inspirer des cette approche pour dépasser les limite et contrainte graphique liée à la technique. Vous y explorerez l'univers du monde que vous souhaitez mettre en place avec votre jeu.
 
+![Cover art](https://www.arivaux.com/preprod/cc-2018/Covers.jpg)
+
 ## Animation d'introduction et Title Screen
 L'animation d'introduction et _Title Screen_ correspondent à la première animation que le joueur découvre en allumant sa console ou son jeu. Cette animation permet de présenter les bases narratives du jeu et son univers graphique avant de se finir sur une interface animée de manière cyclique à partir de laquelle le joueur pourra lancer une partie.
 
 Comme pour le _box art_ l'animation de l'écran d'accueil est souvent un moyen simple de plonger le joueur dans l'univers qui l'attends par la suite.
+
+<p align="center">
+<img src="https://78.media.tumblr.com/tumblr_lq745fhUvM1qm88llo1_540.gif">
+<img src="https://78.media.tumblr.com/tumblr_lolegpR9wD1qm88llo1_540.gif">
+<img src="https://78.media.tumblr.com/522acc1e9ac62fb5ced438d10d8d0ecc/tumblr_np6n6uZv1R1qm88llo1_540.gif">
+<img src="https://78.media.tumblr.com/b7b6eb1b99cbf57b241c75b742a55ad4/tumblr_mvsozbkPdj1qm88llo1_540.gif">
+<img src="https://78.media.tumblr.com/tumblr_m7o3782iNS1qm88llo1_540.gif">
+<img src="https://78.media.tumblr.com/tumblr_m5docqTs2h1qm88llo1_r1_540.gif">
+</p>
+_sources : [Nes title Screens](http://nestitlescreens.tumblr.com)_
 
 ## Le jeu video
 Votre jeux vidéo devra revisiter un des célèbres jeux précédements cités. Vous en reprendrez le game design afin de le faire évoluer tant dans le gameplay que dans l'univers graphique. Il sera basé sur le principe de l'arcade; c'est-à-dire composé de un ou plusieers niveaux très courts, de mécanismes de contrôle intuitifs et simples, et d'une difficulté de jeu qui augmente rapidement. Votre jeu sera solo.
