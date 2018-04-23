@@ -35,7 +35,8 @@ L'animation d'introduction et _Title Screen_ correspondent à la première anima
 Comme pour le _box art_ l'animation de l'écran d'accueil est souvent un moyen simple de plonger le joueur dans l'univers qui l'attends par la suite.
 
 <p align="left">
-<img src="https://78.media.tumblr.com/tumblr_lq745fhUvM1qm88llo1_540.gif" width="25%" height="25%"><img src="https://78.media.tumblr.com/tumblr_lolegpR9wD1qm88llo1_540.gif" width="25%" height="25%">
+<img src="https://78.media.tumblr.com/tumblr_lq745fhUvM1qm88llo1_540.gif" width="25%" height="25%">
+<img src="https://78.media.tumblr.com/tumblr_lolegpR9wD1qm88llo1_540.gif" width="25%" height="25%">
 <img src="https://78.media.tumblr.com/522acc1e9ac62fb5ced438d10d8d0ecc/tumblr_np6n6uZv1R1qm88llo1_540.gif" width="25%" height="25%">
 <img src="https://78.media.tumblr.com/b7b6eb1b99cbf57b241c75b742a55ad4/tumblr_mvsozbkPdj1qm88llo1_540.gif" width="25%" height="25%">
 <img src="https://78.media.tumblr.com/tumblr_m7o3782iNS1qm88llo1_540.gif" width="25%" height="25%">
