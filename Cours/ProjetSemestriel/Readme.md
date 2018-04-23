@@ -40,6 +40,18 @@ Le projet sera a réaliser en groupe de **4** à **3** personnes.
 Chaque groupe devra mélanger des étudiants des sections **Games** et **Animation**
 
 ### Affiche :
-Format : **1920 × 2714**
-Résolution **72 DPI**
-Color Mode : **RGB**
+* Format : **1920 × 2714**
+* Résolution **72 DPI**
+* Color Mode : **RGB**
+* Contenu texte : Le nom de votre jeu, le nom du jeu revisité, les prénoms et noms des étudiants composant le groupe
+
+### Animation d'introduction
+* Format : 4/3 (voir contrainte du jeu)
+* Durée : supérieur à 10 secondes
+* Intégration : votre animation d'intro devant se finir par l'écran titre animé, ces éléments seront intégrées aux Jeux
+* Technologies : animation générative, svg/canvas ou sprites
+
+### Jeux vidéo
+* Format : 4/3
+* Langages : HTML5 (html, css, js)
+* Librairies : [p5.js](https://p5js.org/), [p5.collier](https://github.com/bmoren/p5.collide2D), [p5.play](http://p5play.molleindustria.org/), [bodymovin/lottie](https://github.com/airbnb/lottie-web)... ou toute autre librairie que vous jugerez necessaire.
