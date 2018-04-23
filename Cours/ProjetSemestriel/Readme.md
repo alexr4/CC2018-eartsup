@@ -43,15 +43,24 @@ Chaque groupe devra mélanger des étudiants des sections **Games** et **Animati
 * Format : **1920 × 2714**
 * Résolution **72 DPI**
 * Color Mode : **RGB**
-* Contenu texte : Le nom de votre jeu, le nom du jeu revisité, les prénoms et noms des étudiants composant le groupe
+* Contenu texte : **Le nom de votre jeu, le nom du jeu revisité, les prénoms et noms des étudiants composant le groupe.**
 
 ### Animation d'introduction
-* Format : 4/3 (voir contrainte du jeu)
-* Durée : supérieur à 10 secondes
-* Intégration : votre animation d'intro devant se finir par l'écran titre animé, ces éléments seront intégrées aux Jeux
-* Technologies : animation générative, svg/canvas ou sprites
+* Format : **4/3 (voir contrainte du jeu)**
+* Durée : **supérieur à 10 secondes**
+* Intégration : **votre animation d'intro devant se finir par l'écran titre animé, ces éléments seront intégrées aux Jeux**
+* Technologies : **animation générative, svg/canvas ou sprites**
 
 ### Jeux vidéo
-* Format : 4/3
-* Langages : HTML5 (html, css, js)
-* Librairies : [p5.js](https://p5js.org/), [p5.collier](https://github.com/bmoren/p5.collide2D), [p5.play](http://p5play.molleindustria.org/), [bodymovin/lottie](https://github.com/airbnb/lottie-web)... ou toute autre librairie que vous jugerez necessaire.
+* Format : **4/3**
+* Langages : **HTML5 (html, css, js)**
+* Librairies : **[p5.js](https://p5js.org/), [p5.collier](https://github.com/bmoren/p5.collide2D), [p5.play](http://p5play.molleindustria.org/), [bodymovin/lottie](https://github.com/airbnb/lottie-web)... ou toute autre librairie que vous jugerez necessaire.**
+
+## Planning et suivi :
+Votre travail sera a réaliser en dehors des cours. Les cours restant seront dédiés à l'acquisition de concepts avancés pour chaque section ainsi qu'au suivi. Le dernier cours sera dédié à la présentation des projets sur les **2 dernières heures**.
+
+* 24 Avril 2018 : Présentation du sujet & composition des groupes
+* 25 Avril 2018 : Animation 2/2 : Moteurs physiques (cours)
+* 02 Mai 2018 : Introduction à Arduino (Game) et Animation web avancée (Animation) (cours)
+* 15 Mai 2018 : Suivi du projet
+* 16 Mai 2018 : Présentations
