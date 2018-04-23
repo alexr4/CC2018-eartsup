@@ -36,13 +36,13 @@ Comme pour le _box art_ l'animation de l'écran d'accueil est souvent un moyen s
 
 <p align="left">
 <img src="https://78.media.tumblr.com/tumblr_lq745fhUvM1qm88llo1_540.gif" width="50%" height="50%">
-<img src="https://78.media.tumblr.com/tumblr_lolegpR9wD1qm88llo1_540.gif">
-<img src="https://78.media.tumblr.com/522acc1e9ac62fb5ced438d10d8d0ecc/tumblr_np6n6uZv1R1qm88llo1_540.gif">
-<img src="https://78.media.tumblr.com/b7b6eb1b99cbf57b241c75b742a55ad4/tumblr_mvsozbkPdj1qm88llo1_540.gif">
-<img src="https://78.media.tumblr.com/tumblr_m7o3782iNS1qm88llo1_540.gif">
-<img src="https://78.media.tumblr.com/tumblr_m5docqTs2h1qm88llo1_r1_540.gif">
+<img src="https://78.media.tumblr.com/tumblr_lolegpR9wD1qm88llo1_540.gif" width="50%" height="50%">
+<img src="https://78.media.tumblr.com/522acc1e9ac62fb5ced438d10d8d0ecc/tumblr_np6n6uZv1R1qm88llo1_540.gif" width="50%" height="50%">
+<img src="https://78.media.tumblr.com/b7b6eb1b99cbf57b241c75b742a55ad4/tumblr_mvsozbkPdj1qm88llo1_540.gif" width="50%" height="50%">
+<img src="https://78.media.tumblr.com/tumblr_m7o3782iNS1qm88llo1_540.gif" width="50%" height="50%">
+<img src="https://78.media.tumblr.com/tumblr_m5docqTs2h1qm88llo1_r1_540.gif" width="50%" height="50%">
 </p>
-_Sources :_ [Nes title Screens](http://nestitlescreens.tumblr.com)
+Sources : [Nes title Screens](http://nestitlescreens.tumblr.com)
 
 ## Le jeu video
 Votre jeux vidéo devra revisiter un des célèbres jeux précédements cités. Vous en reprendrez le game design afin de le faire évoluer tant dans le gameplay que dans l'univers graphique. Il sera basé sur le principe de l'arcade; c'est-à-dire composé de un ou plusieers niveaux très courts, de mécanismes de contrôle intuitifs et simples, et d'une difficulté de jeu qui augmente rapidement. Votre jeu sera solo.
