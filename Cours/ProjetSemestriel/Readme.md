@@ -42,6 +42,7 @@ Comme pour le _box art_ l'animation de l'écran d'accueil est souvent un moyen s
 <img src="https://78.media.tumblr.com/tumblr_m7o3782iNS1qm88llo1_540.gif" width="25%" height="25%">
 <img src="https://78.media.tumblr.com/tumblr_m5docqTs2h1qm88llo1_r1_540.gif" width="25%" height="25%">
 </p>
+
 Sources : [Nes title Screens](http://nestitlescreens.tumblr.com)
 
 ## Le jeu video
