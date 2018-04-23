@@ -28,3 +28,18 @@ Si aujourd'hui l'univers d'un jeux vidéo s'exprime pleinnement à travers le we
 Votre affiche pourra s'inspirer des cette approche pour dépasser les limite et contrainte graphique liée à la technique. Vous y explorerez l'univers du monde que vous souhaitez mettre en place avec votre jeu.
 
 ## Animation d'introduction et Title Screen
+L'animation d'introduction et _Title Screen_ correspondent à la première animation que le joueur découvre en allumant sa console ou son jeu. Cette animation permet de présenter les bases narratives du jeu et son univers graphique avant de se finir sur une interface animée de manière cyclique à partir de laquelle le joueur pourra lancer une partie.
+
+Comme pour le _box art_ l'animation de l'écran d'accueil est souvent un moyen simple de plonger le joueur dans l'univers qui l'attends par la suite.
+
+## Le jeu video
+Votre jeux vidéo devra revisiter un des célèbres jeux précédements cités. Vous en reprendrez le game design afin de le faire évoluer tant dans le gameplay que dans l'univers graphique. Il sera basé sur le principe de l'arcade; c'est-à-dire composé de un ou plusieers niveaux très courts, de mécanismes de contrôle intuitifs et simples, et d'une difficulté de jeu qui augmente rapidement. Votre jeu sera solo.
+
+## Contraintes
+Le projet sera a réaliser en groupe de **4** à **3** personnes.
+Chaque groupe devra mélanger des étudiants des sections **Games** et **Animation**
+
+### Affiche :
+Format : **1920 × 2714**
+Résolution **72 DPI**
+Color Mode : **RGB**
