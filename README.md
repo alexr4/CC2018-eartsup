@@ -69,3 +69,6 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 
 ## Nomenclature des exercices :
 * [Nomenclature HTML](https://alexr4.github.io/CC2018-eartsup/Cours/NOMENCLATURE/)
+
+## Projet Semestriel
+* [Sujet du semestre](https://alexr4.github.io/CC2018-eartsup/Cours/ProjetSemestriel/)
