@@ -94,3 +94,15 @@ Votre travail sera a réaliser en dehors des cours. Les cours restant seront dé
 * 02 Mai 2018 : Introduction à Arduino (Game) et Animation web avancée (Animation) (cours)
 * 15 Mai 2018 : Suivi du projet
 * 16 Mai 2018 : Présentations
+
+## Groupe
+
+| **TRANSIT** Asteroids | **Shenima** Space Invader | **JG** Asteroids | **Fighter** Pacman |  **Top1** Copter |     **overLATE** Joust    |
+|:---------------------:|:-------------------------:|:----------------:|:------------------:|:----------------:|:-------------------------:|
+| Tristant Cailbourdin  | Raphaêl Niveau            | Julien Kopoin    | Anouk Chaumier     | Franscico Soares | Nelson Moulin Christopher |
+| Yoann Mary            | Philippine Meaux St Marc  | Thierry Lam      | Elise Villenave    | Valentin Deneau  | Rodrigues Jeremy          |
+| Reda Bentayeb         | Leo Rambaud               | Lenny Hurret     | Augustin Verzat    | Jason Saint-Foi  | Buffard Gianni            |
+| Pauline Duthoit       | Titouane Richard          | Erwan Mettouchi  | Jimmy Lambourion   | Guillaume Legall | Boisson Quentin           |
+| Jeffrey Din           | Jonathan Esquian          | Belabed Ilias    | Fabien Franciette  | Mouad Cheddad    | Coumond Timothé           |
+| Morgan Fleriet        | Olivier Casanova          | Romain Guiton    | Cassandra Hemery   | Thibault Widehem | Thiebault Marius          |
+|                       | Lopes Victor              |                  | Arnaud Lotton      |                  |                           |
