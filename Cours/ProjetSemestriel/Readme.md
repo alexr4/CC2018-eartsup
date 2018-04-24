@@ -44,10 +44,10 @@ Comme pour le _box art_ l'animation de l'écran d'accueil est souvent un moyen s
 </p>
 
 ### Animation avant interface :
-* Multi jeux NES : https://www.youtube.com/watch?v=O-sVsGSwAbY
-* Pokemon : https://www.youtube.com/watch?v=G9-XZQqs63w
-* Duck Tales 2 : https://www.youtube.com/watch?v=j6DlLauw0-U
-* Final Fantasy Tactics Advance : https://www.youtube.com/watch?v=rd6GtLFNXrA
+* Multi jeux NES : [https://www.youtube.com/watch?v=O-sVsGSwAbY](https://www.youtube.com/watch?v=O-sVsGSwAbY)
+* Pokemon : [https://www.youtube.com/watch?v=G9-XZQqs63w](https://www.youtube.com/watch?v=G9-XZQqs63w)
+* Duck Tales 2 : [https://www.youtube.com/watch?v=j6DlLauw0-U](https://www.youtube.com/watch?v=j6DlLauw0-U)
+* Final Fantasy Tactics Advance : [https://www.youtube.com/watch?v=rd6GtLFNXrA](https://www.youtube.com/watch?v=rd6GtLFNXrA)
 
 
 
