@@ -44,10 +44,10 @@ Comme pour le _box art_ l'animation de l'écran d'accueil est souvent un moyen s
 </p>
 
 ### Animation avant interface :
-Multi jeux NES : https://www.youtube.com/watch?v=O-sVsGSwAbY
-Pokemon : https://www.youtube.com/watch?v=G9-XZQqs63w
-Duck Tales 2 : https://www.youtube.com/watch?v=j6DlLauw0-U
-Final Fantasy Tactics Advance : https://www.youtube.com/watch?v=rd6GtLFNXrA
+* Multi jeux NES : https://www.youtube.com/watch?v=O-sVsGSwAbY
+* Pokemon : https://www.youtube.com/watch?v=G9-XZQqs63w
+* Duck Tales 2 : https://www.youtube.com/watch?v=j6DlLauw0-U
+* Final Fantasy Tactics Advance : https://www.youtube.com/watch?v=rd6GtLFNXrA
 
 
 
@@ -59,10 +59,10 @@ Votre jeu vidéo devra revisiter un des célèbres jeux précédemment cités. V
 Le canna de votre jeu sera entouré d'un univers découlant de l'affiche à l'image des stickers qui existe sur les bornes d'arcade.
 
 <p align="left">
-<img src="http://img11.hostingpics.net/pics/318608fin3.jpg" width="50%" height="50%">
-<img src="http://thearcademan.net/wp-content/uploads/2008/11/artwork-pacman.jpg" width="50%" height="50%">
-<img src="https://www.smallcab.net/images/deco-bartop-xl-arcade-kong.jpg" width="50%" height="50%">
-<img src="http://www.smallcab.net/images/deco-bartop-xl-retro-link.jpg" width="50%" height="50%">
+<img src="http://img11.hostingpics.net/pics/318608fin3.jpg" width="49%" height="50%">
+<img src="http://thearcademan.net/wp-content/uploads/2008/11/artwork-pacman.jpg" width="49%" height="50%">
+<img src="https://www.smallcab.net/images/deco-bartop-xl-arcade-kong.jpg" width="49%" height="50%">
+<img src="http://www.smallcab.net/images/deco-bartop-xl-retro-link.jpg" width="49%" height="50%">
 </p>
 
 ## Contraintes
