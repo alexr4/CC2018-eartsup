@@ -36,7 +36,7 @@ function guess(value){
 	}else{
 		//The game is over, we invite the player to replay
 		console.log("The game hasn't start yet or is over, use start() to play");
-	}	
+	}
 }
 
 /**
