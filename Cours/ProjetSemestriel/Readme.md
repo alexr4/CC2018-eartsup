@@ -56,7 +56,7 @@ Sources : [Nes title Screens](http://nestitlescreens.tumblr.com)
 ## Le jeu video
 Votre jeu vidéo devra revisiter un des célèbres jeux précédemment cités. Vous en reprendrez le game design afin de le faire évoluer tant dans le gameplay que dans l'univers graphique. Vous pourrez ainsi faire évoluer les règles / bonus / malus / action / design / histoire... Il faudra malgré tout que l'essence du jeu soit présente.  Il sera basé sur le principe de l'arcade; c'est-à-dire composé d’un ou plusieurs niveaux très courts, de mécanismes de contrôle intuitifs et simples, et d'une difficulté de jeu qui augmente rapidement. Votre jeu sera solo. Il devra avoir un système de HighScore.
 
-Le canna de votre jeu sera entouré d'un univers découlant de l'affiche à l'image des stickers qui existe sur les bornes d'arcade.
+Le canvas de votre jeu sera entouré d'un univers découlant de l'affiche à l'image des stickers qui existe sur les bornes d'arcade.
 
 <p align="left">
 <img src="http://img11.hostingpics.net/pics/318608fin3.jpg" width="49%" height="50%">
