@@ -10,4 +10,6 @@
 
 > Même si le passage des jeux vidéo à la 3e dimension a considérablement réduit l'utilisation des sprites, ils restent essentiels notamment pour les systèmes de particules, les Z-Sprite ou les Billboard.
 
-> Un exemple de sprite particulièrement courant est le pointeur de la souris d'un ordinateur personnel.
+<p style=" text-align : right">
+Source : [wikipedia](https://fr.wikipedia.org/wiki/Sprite_(jeu_vid%C3%A9o))
+</p>
