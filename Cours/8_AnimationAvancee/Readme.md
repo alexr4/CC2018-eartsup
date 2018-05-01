@@ -75,3 +75,67 @@ index = floor(passedFrame % sprites.length);
 ```
 
 Nous obtenons alors un lecteur de sprite lisant en boucle le lot de sprites au fps désiré.
+
+## p5.Sprite
+Si le lecteur de sprites créé plus haut permet facilement de lire un lot d'images sous forme d'animation, il est souvent utile de pouvoir manipuler l'animation des sprites tel que :
+* Mettre en pause, stoper ou lire le sprite
+* Lier plusieurs animations à un même sprites
+* Lire en boucle ou non un sprites
+
+Pour ce faire nous allons utiliser la classe ```Sprite``` fournie par l'extension p5.Sprite disponible à l'adresse suivante : [p5.Sprite](https://github.com/alexr4/p5.Sprite). Comme toute librairie cette extension necessite d'être ajouté à notre page HTML afin d'étendre les possiblité de p5js. À noter que cette classe dépend également d'une seconde extension permettant de gérer le temps dans p5js : [p5.Time](https://github.com/alexr4/p5.Time). Nous devrons donc ajouter ces deux extension à notre page html :
+
+```
+<script src="https://rawgit.com/alexr4/p5.Time/master/TimeExtension.js"></script>
+<script src="https://rawgit.com/alexr4/p5.Sprite/master/Sprite.js"></script>
+```
+
+La classe ```Sprite``` fonctionne sur le même principe que le lecteur précédemment écrit. Nous aurons donc besoins d'un tableau d'image afin d'instancier notre sprite.
+
+```
+var sprites = [];
+
+function preload(){
+  var nbSprites = 30;
+  for(var i=0; i<nbSprites; i++){
+    var sprite = loadImage("https://www.arivaux.com/preprod/cc-2018/_EXPORTS/1_Ryu/Ryu_"+i+".png");
+    sprites.push(sprite);
+  }
+}
+```
+
+Nous pouvons alors instancier notre objet sprite dans le ```setup()``` de notre programme. Le constructeur de la classe fonctionne de lamanière suivante : ```Sprite(spritesArray, fps, loop)``` où :
+
+* ```spritesArray``` est le tableau d'image du sprites
+* ```fps``` est le nombre d'image par seconde de l'animation
+* ```loop``` est la valeur booléenne permettant de définir si l'animation doit se jouer en boucle ou non
+
+Soit :
+```
+var ryu;
+function setup(){
+  //initialize canvas
+  var targetWidth = contentDiv.offsetWidth;
+  var targetHeight = targetWidth / resolution;
+  var canvas = createCanvas(targetWidth, targetHeight);
+  canvas.parent("canvas-content");
+
+  ryu = new Sprite(sprites, 12, true);
+}
+```
+
+Une fois l'objet instancié il est alors possible de lire sont animation à l'aide de la méthode ```update()``` ainsi que récupérer l'image à afficher à l'aide dela méthode ```getSprite()``` soit :
+
+```
+ryu.update();
+image(ryu.getSprite(), x, y);
+```
+
+Il est également possible de mettre en pause, stoper ou relancer l'animation à l'aide des méthodes suivantes :
+* ```play()``` lit l'animation
+* ```replay()``` relit l'animation
+* ```stop()``` arrête l'animation
+* ```pause()``` pause l'animation
+
+Les méthodes suivantes vous permettront également d'afficher quelques débug :
+* ```displayBoundingBox(color, x, y)``` affiche la bounding box du sprite à la position ```x,y``` et de couleur ```color```
+* ```displaySpriteSheet(x_, y_, w_, s_)``` affiche le sprite sous forme de sprite sheet à la position ```x_, y_``` de largeur ```w_``` et de taille de sprite ```s_```
