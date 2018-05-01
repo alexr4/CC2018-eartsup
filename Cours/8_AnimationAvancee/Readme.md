@@ -167,7 +167,13 @@ ryu.addAnimation("kick", 27, 29);
 ```
 
 Nous noterons que la première animation ajoutée sera automatiquement considéré comme la première animation à jouer par la classe.
-Nous pouvons alors choisir à tous moment l'animation à jouer par l'utilisation de la méthode suivante ```ryu.setAnimation(nom);``` où ```nom``` correspond au nom de l'animation à jouer
+Nous pouvons alors choisir à tous moment l'animation à jouer par l'utilisation de la méthode suivante ```ryu.setAnimation(nom);``` où ```nom``` correspond au nom de l'animation à jouer tel que :
+
+```
+void mousePressed(){
+  ryu.setAnimation("kick");
+}
+```
 
 ## Exemples :
 * [Animation avancée : sprite simple](https://alexr4.github.io/CC2018-eartsup/Cours/8_AnimationAvancee/1_Sprites/)
