@@ -139,3 +139,13 @@ Il est également possible de mettre en pause, stoper ou relancer l'animation à
 Les méthodes suivantes vous permettront également d'afficher quelques débug :
 * ```displayBoundingBox(color, x, y)``` affiche la bounding box du sprite à la position ```x,y``` et de couleur ```color```
 * ```displaySpriteSheet(x_, y_, w_, s_)``` affiche le sprite sous forme de sprite sheet à la position ```x_, y_``` de largeur ```w_``` et de taille de sprite ```s_```
+
+Enfin la classe permet également d'ajouter différentes animations parmis le lot d'image. Pour ce faire le lot d'image chargé dans le sprite doit contenir différentes animations.
+L'exemple utilisé ci-dessus contient 6 animations différentes :
+
+* L'animation **idle** du personnage
+* L'animation **walk** du personnage
+* L'animation **jump** du personnage
+* L'animation **jumpForward** du personnage
+* L'animation **punch** du personnage
+* L'animation **kick** du personnage
