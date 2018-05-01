@@ -10,7 +10,7 @@ var multiplekey = [false, false, false, false, false];//UP-RIGHT-LEFT-W-X
 function preload(){
   var nbSprites = 30;
   for(var i=0; i<nbSprites; i++){
-    var sprite = loadImage("../_SRC/Sprites/_EXPORTS/1_Ryu/Ryu_"+i+".png");
+    var sprite = loadImage("https://www.arivaux.com/preprod/cc-2018/_EXPORTS/1_Ryu/Ryu_"+i+".png");
     sprites.push(sprite);
   }
 

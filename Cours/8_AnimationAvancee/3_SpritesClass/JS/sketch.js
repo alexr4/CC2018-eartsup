@@ -9,13 +9,13 @@ var particles;
 function preload(){
   var nbSprites = 16;
   for(var i=0; i<nbSprites; i++){
-    var sprite = loadImage("../_SRC/Sprites/_EXPORTS/3_Splatter/Splat_"+i+".png");
+    var sprite = loadImage("https://www.arivaux.com/preprod/cc-2018/_EXPORTS/3_Splatter/Splat_"+i+".png");
     spritesSplatter.push(sprite);
   }
 
   var nbSprites = 49;
   for(var i=0; i<nbSprites; i++){
-    var sprite = loadImage("../_SRC/Sprites/_EXPORTS/2_Ball/Ball_"+i+".png");
+    var sprite = loadImage("https://www.arivaux.com/preprod/cc-2018/_EXPORTS/2_Ball/Ball_"+i+".png");
     spritesBall.push(sprite);
   }
 

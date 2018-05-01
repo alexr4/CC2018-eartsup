@@ -17,7 +17,8 @@ var time = 0;
 function preload(){
   var nbSprites = 16;
   for(var i=0; i<nbSprites; i++){
-    var sprite = loadImage("../_SRC/Sprites/_EXPORTS/0_Bounce/ball_"+i+".png");
+
+    var sprite = loadImage("https://www.arivaux.com/preprod/cc-2018/_EXPORTS/0_Bounce/ball_"+i+".png");
     sprites.push(sprite);
   }
 }
