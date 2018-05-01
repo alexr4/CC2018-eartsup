@@ -10,6 +10,4 @@
 
 > Même si le passage des jeux vidéo à la 3e dimension a considérablement réduit l'utilisation des sprites, ils restent essentiels notamment pour les systèmes de particules, les Z-Sprite ou les Billboard.
 
-<p style=" text-align : right">
-Source : [wikipedia](https://fr.wikipedia.org/wiki/Sprite_(jeu_vid%C3%A9o))
-</p>
+<p style=" text-align : right">Source : <a href="https://fr.wikipedia.org/wiki/Sprite_(jeu_vid%C3%A9o)">wikipedia</a></p>
