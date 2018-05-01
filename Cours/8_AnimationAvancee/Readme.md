@@ -149,3 +149,27 @@ L'exemple utilisé ci-dessus contient 6 animations différentes :
 * L'animation **jumpForward** du personnage
 * L'animation **punch** du personnage
 * L'animation **kick** du personnage
+
+Afin de charger les différentes animations nous utiliserons la fonction ```addAnimation(name, in, out, [bool])``` où
+* ```name``` correspond au nom de l'animation
+* ```in``` correspond à première image de l'animation
+* ```out``` correspond à dernière image de l'animation
+* ```[bool]``` définit si l'animation sur joue en boucle ou non (définie comme vrai par défaut)
+
+Soit dans notre programme :
+```
+ryu.addAnimation("idle", 0, 3); //first animation will always be idle
+ryu.addAnimation("walk", 4, 10);
+ryu.addAnimation("jump", 11, 17);
+ryu.addAnimation("jumpForward", 12, 23);
+ryu.addAnimation("punch", 24, 26);
+ryu.addAnimation("kick", 27, 29);
+```
+
+Nous noterons que la première animation ajoutée sera automatiquement considéré comme la première animation à jouer par la classe.
+Nous pouvons alors choisir à tous moment l'animation à jouer par l'utilisation de la méthode suivante ```ryu.setAnimation(nom);``` où ```nom``` correspond au nom de l'animation à jouer
+
+## Exemples :
+* [Animation avancée : sprite simple](https://alexr4.github.io/CC2018-eartsup/Cours/8_AnimationAvancee/1_Sprites/)
+* [Animation avancée : class sprite 1/2](https://alexr4.github.io/CC2018-eartsup/Cours/8_AnimationAvancee/2_SpritesClass/)
+* [Animation avancée : class sprite 2/2](https://alexr4.github.io/CC2018-eartsup/Cours/8_AnimationAvancee/3_SpritesClass/)
