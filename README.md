@@ -57,6 +57,10 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 * * [Moteurs Physiques : ajout de force](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/10_Newton_AddForce)
 * * [Moteurs Physiques : gravité et vent](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/11_Gravity+Wind)
 * * [Moteurs Physiques : friction](https://alexr4.github.io/CC2018-eartsup/Cours/7_MoteurPhysique/12_Friction)
+* [Animation avancée : les Sprites](CC2018-eartsup/Cours/8_AnimationAvancee/)
+* * [Animation avancée : sprite simple](CC2018-eartsup/Cours/8_AnimationAvancee/1_Sprites/)
+* * [Animation avancée : class sprite 1/2](CC2018-eartsup/Cours/8_AnimationAvancee/2_SpritesClass/)
+* * [Animation avancée : class sprite 2/2](CC2018-eartsup/Cours/8_AnimationAvancee/3_SpritesClass/)
 
 ## Exercices
 * [HTLM5 introduction 1/2](https://alexr4.github.io/CC2018-eartsup/Cours/1_Introduction%20HTML5%20(1-2)/Exercice)
