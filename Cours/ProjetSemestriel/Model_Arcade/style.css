@@ -1,0 +1,60 @@
+body,html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  background-color: black;
+
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+#container{
+  margin: auto;
+  width: 152.1rem;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+header{
+  background: red;
+  width: 152.1rem;
+  height: 15rem;
+}
+section{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#left{
+  background: green;
+  width: 32.3rem;
+  height: 65.6rem;
+}
+#right{
+  background: blue;
+  width: 32.3rem;
+  height: 65.6rem;
+}
+#screen{
+  background: black;
+  width: 87.5rem;
+  height: 65.6rem;
+}
+canvas{
+  width: 100%;
+  height: 100%;
+}
+footer{
+  clear: both;
+  background: gray;
+  width: 152.1rem;
+  height: 15rem;
+}
