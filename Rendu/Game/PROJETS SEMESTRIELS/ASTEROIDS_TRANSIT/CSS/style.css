@@ -1,0 +1,44 @@
+body {
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  background-color: #2f3640;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
+#up
+{
+  position: relative;
+  font-size: 15pt;
+  text-align: center;
+  background: #000000;
+  color: #CCFFFF;
+}
+
+#Titre {
+  position: relative;
+  text-align: center;
+  width: 1650px;
+  line-height: 50px;
+  background: #353b48;
+  color: #CCFFFF;
+}
+
+#GameWindow {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  width : 60%;
+  height: 60%;
+}
+
+#footer{
+  text-align: right;
+  position: fixed;
+  right: 20px;
+  bottom: 0px;
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}
