@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Borne Arcade</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <body>
+    <div id="container">
+      <header>
+        <img src="./img/header.png"> <!-- Image superieur -->
+      </header>
+      <section id="left">
+        <img src="./img/left.png"> <!-- Image gauche -->
+      </section>
+      <section id="screen">
+        <!-- Le canvas est généré ici -->
+      </section>
+      <section id="right">
+        <img src="./img/right.png"> <!-- Image droite -->
+      </section>
+      <footer>
+        <img src="./img/footer.png"> <!-- Image inférieur -->
+      </footer>
+    </div>
+  </body>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script> <!-- Récupération de P5JS -->
+  <script src="sketch.js"></script> <!-- Lien vers le Sketch P5 -->
+
+  <!-- Ne pas toucher! -->
+  <script>
+  // Calcul la taille des éléments avec ratio
+    var SizeFont = document.querySelector('html');
+    var resize = function(){
+      var ratio;
+      var size;
+      var windowWidth = document.documentElement.clientWidth;
+      var windowHeight= document.querySelector('html').offsetHeight;
+      var containerSize = document.querySelector('#container').offsetHeight;
+      var ratioWidth = windowWidth/1523;
+      var ratioHeight= windowHeight/960;
+      if(ratioHeight > ratioWidth){
+      ratio = ratioWidth;
+      }else{
+          ratio = ratioHeight;
+      }
+      size = 10*ratio;
+      SizeFont.style.fontSize = size+'px';
+    }
+    resize();
+    window.onresize = function(event) {
+      resize();
+    };
+  </script>
+</html>
