@@ -13,13 +13,10 @@ var eta;
 var textToGuess;
 
 function preload() {
-  font = loadFont(".\WebDesign7\Roboto-Light.ttf");
+  font = loadFont("./Roboto-Light.ttf");
 }
 function setup(){
-  var targetWidth = contentDiv.offsetWidth;
-  var targetHeight = targetWidth / resolution;
-  var canvas = createCanvas(targetWidth, targetHeight);
-  canvas.parent("canvas-content");
+  var canvas = createCanvas(windowWidth, windowHeight);
   margin = 40;
   gameOver = false;
   score = 0;

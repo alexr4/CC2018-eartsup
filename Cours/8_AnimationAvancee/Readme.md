@@ -170,7 +170,7 @@ Nous noterons que la première animation ajoutée sera automatiquement considér
 Nous pouvons alors choisir à tous moment l'animation à jouer par l'utilisation de la méthode suivante ```ryu.setAnimation(nom);``` où ```nom``` correspond au nom de l'animation à jouer tel que :
 
 ```
-void mousePressed(){
+function mousePressed(){
   ryu.setAnimation("kick");
 }
 ```
