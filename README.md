@@ -76,3 +76,6 @@ Pour plus d'information sur les cours, le programmes ou la méthodologie; rendez
 
 ## Projet Semestriel
 * [Sujet du semestre](https://alexr4.github.io/CC2018-eartsup/Cours/ProjetSemestriel/)
+
+## Rattrapages
+* [Sujet de rattrapage](https://alexr4.github.io/CC2018-eartsup/Cours/Rattrapages/)
