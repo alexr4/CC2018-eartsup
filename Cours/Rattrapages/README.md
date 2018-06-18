@@ -8,8 +8,7 @@
 ## Game : Création du série de minijeu autour du créative coding
 **À partir des concepts et éléments vu en cours vous réaliserez une série de 4 mini-jeu basés sur du design génératif.**
 
-Vous reprendrez succéssivement les thèmes abordés en cours (Grille, Couleur, Typographie et Moteur Physique) pour chacun de vos jeux et vous baserez sur un gameplay simple que vous expliciterez.
-Vous pourrez vous inspirez de jeux existant tel que :
+Vous reprendrez succéssivement les thèmes abordés en cours (Grille, Couleur, Typographie et Moteur Physique) pour chacun de vos jeux et vous baserez sur un gameplay simple que vous expliciterez. Vous pourrez vous inspirez de jeux existant tel que :
 
 * [Thomas was alone](https://store.steampowered.com/app/220780/Thomas_Was_Alone/)
 * [Puk](http://www.laserdog.co.uk/puk/)
@@ -21,10 +20,10 @@ Vous pourrez vous inspirez de jeux existant tel que :
 
 ### Contraintes
 * Design : Votre design sera minimaliste, vous n'utiliserez que peu d'image
-* Contenus : Vous inclurez sur les pages web de vos jeu les règles de gameplay permettant au joueur de tester votre jeu
+* Contenus : Vous inclurez sur les pages web de vos jeux les règles de gameplay permettant au joueur de tester votre jeu
 * Technologies : HTML5/JS
-* Format : **Pour votre travail vous utiliserez la [nomenclature HTML fournie](#) que vous completerez avec votre nom, titre du jeu et gameplay. Vous n'en changerez pas le format mais pourrez en changer le style (couleurs, typographie...) en fonction de votre affiche**
-* Gameplay : Chaque jeu se composera de 2 niveaux
+* Format : **Pour votre travail vous utiliserez la [nomenclature HTML fournie](#) que vous compléterez avec votre nom, titre du jeu et gameplay. Vous n'en changerez pas le format mais pourrez en changer le style (couleurs, typographie...) en fonction de votre affiche**
+* Gameplay : Chaque jeu se composera de 2 niveaux.
 
 ### Rendu
 Vous effectuerez votre rendu dans le dossier à votre nom sur le github du cours. Vous utiliserez la nomenclature de dossier suivante :
@@ -38,7 +37,7 @@ Vous effectuerez votre rendu dans le dossier à votre nom sur le github du cours
 ## Animation: Création d'une série d'affiches animées
 **À partir des concepts et éléments vu en cours vous réaliserez une série de 10 affiches minimalistes animées de manière générative.**
 
-Une affiche de cinéma est une image assurant  la publicité d'une œuvre cinématographique. Elle permet au spectateur de découvrir les informations principales sur l'œuvre (réalisateur, acteur, date de sortie...) ainsi que de présenter l'univers et le ton du film. Elle peut être graphiquement chargée ou très minimaliste en fonction du parti pris du graphique.
+Une affiche de cinéma est une image assurant  la publicité d'une œuvre cinématographique. Elle permet au spectateur de découvrir les informations principales sur l'œuvre (réalisateur, acteur, date de sortie...) ainsi que de présenter l'univers et le ton du film. Elle peut être graphiquement chargée ou très minimaliste en fonction du parti-pris du graphique.
 
 ### Saul Bass et le minimalisme au cinéma
 >[Saul Bass](https://fr.wikipedia.org/wiki/Saul_Bass) (1920-1996) est un designer américain ayant beaucoup travaillé dans l'univers du cinéma : il laisse une oeuvre très dense, notamment en motion design, >domaine dans lequel il est considéré à la fois comme un génie et un précurseur. [Nun : design et arts graphiques](https://www.nundesign.fr/transmettre/espace-pedagogique/maitres/saul-bass)
@@ -50,10 +49,10 @@ Quelques génériques de film réalisés par Saul et Elaine Bass : [https://www.
 ![Saul Bass](https://www.arivaux.com/preprod/cc-2018/SaulBass.jpg)
 
 ### Contraintes
-* Design : Votre design sera minimaliste, votre affiche devra permettre de comprendre l'univers du film en utilisant minimum d'élement iconographique
-* Contenus : Votre affiche devra présenter le nom de l'œuvre, le nom du réalisateur ainsi que ceux des acteurs principaux. Le choix de la mise en page et de la typographie sera cohérente avec votre design.
+* Design : Votre design sera minimaliste, votre affiche devra permettre de comprendre l'univers du film en utilisant minimum d'élément iconographique
+* Contenus : Votre affiche devra présenter le nom de l'œuvre, le nom du réalisateur ainsi que ceux des acteurs principaux. Le choix de la mise en page et de la typographie sera cohérent avec votre design.
 * Technologies : HTML5/JS
-* Format : **Pour votre travail vous utiliserez la [nomenclature HTML fournie](#) que vous completerez avec votre nom et titre du film. Vous n'en changerez pas le format mais pourrez en changer le style (couleurs, typographie...) en fonction de votre affiche**
+* Format : **Pour votre travail vous utiliserez la [nomenclature HTML fournie](#) que vous compléterez avec votre nom et titre du film. Vous n'en changerez pas le format, mais pourrez en changer le style (couleurs, typographie...) en fonction de votre affiche**
 * Le ou les éléments animés devront servir à la compréhension du sujet du film
 
 ### Rendu
