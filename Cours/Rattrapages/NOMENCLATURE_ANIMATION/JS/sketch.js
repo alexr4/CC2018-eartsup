@@ -14,7 +14,7 @@ function draw(){
 }
 
 function windowResized(){
-  var targetWidth = contentDiv.offsetWidth;
-  var targetHeight = targetWidth / resolution;
+  var targetHeight = html.clientHeight * 0.75;
+  var targetWidth = targetHeight * resolution;
   resizeCanvas(targetWidth, targetHeight);
 }
