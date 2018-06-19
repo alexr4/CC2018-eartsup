@@ -22,7 +22,7 @@ Vous reprendrez succéssivement les thèmes abordés en cours (Grille, Couleur, 
 * Design : Votre design sera minimaliste, vous n'utiliserez que peu d'image
 * Contenus : Vous inclurez sur les pages web de vos jeux les règles de gameplay permettant au joueur de tester votre jeu
 * Technologies : HTML5/JS
-* Format : **Pour votre travail vous utiliserez la [nomenclature HTML fournie](https://github.com/alexr4/CC2018-eartsup/tree/master/Cours/Rattrapages/NOMENCLATURE_GAME) que vous compléterez avec votre nom, titre du jeu et gameplay. Vous n'en changerez pas le format mais pourrez en changer le style (couleurs, typographie...) en fonction de votre affiche**
+* Format : **Pour votre travail vous utiliserez la [nomenclature HTML fournie](https://github.com/alexr4/CC2018-eartsup/tree/master/Cours/Rattrapages/NOMENCLATURE_GAME) (https://github.com/alexr4/CC2018-eartsup/tree/master/Cours/Rattrapages/NOMENCLATURE_GAME) que vous compléterez avec votre nom, titre du jeu et gameplay. Vous n'en changerez pas le format mais pourrez en changer le style (couleurs, typographie...) en fonction de votre affiche**
 * Gameplay : Chaque jeu se composera de 2 niveaux.
 
 ### Rendu
@@ -52,7 +52,7 @@ Quelques génériques de film réalisés par Saul et Elaine Bass : [https://www.
 * Design : Votre design sera minimaliste, votre affiche devra permettre de comprendre l'univers du film en utilisant minimum d'élément iconographique
 * Contenus : Votre affiche devra présenter le nom de l'œuvre, le nom du réalisateur ainsi que ceux des acteurs principaux. Le choix de la mise en page et de la typographie sera cohérent avec votre design.
 * Technologies : HTML5/JS
-* Format : **Pour votre travail vous utiliserez la [nomenclature HTML fournie](https://github.com/alexr4/CC2018-eartsup/tree/master/Cours/Rattrapages/NOMENCLATURE_ANIMATION) que vous compléterez avec votre nom et titre du film. Vous n'en changerez pas le format, mais pourrez en changer le style (couleurs, typographie...) en fonction de votre affiche**
+* Format : **Pour votre travail vous utiliserez la [nomenclature HTML fournie](https://github.com/alexr4/CC2018-eartsup/tree/master/Cours/Rattrapages/NOMENCLATURE_ANIMATION) (https://github.com/alexr4/CC2018-eartsup/tree/master/Cours/Rattrapages/NOMENCLATURE_ANIMATION) que vous compléterez avec votre nom et titre du film. Vous n'en changerez pas le format, mais pourrez en changer le style (couleurs, typographie...) en fonction de votre affiche**
 * Le ou les éléments animés devront servir à la compréhension du sujet du film
 
 ### Rendu
