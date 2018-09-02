@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+html, 
+body{
+	background: #ffffff; /* same as #formeNinja */
+}
+
+#main {
+	width: 1286px;
+	background: none;
+	margin: 0px auto;
+}
+
+		/* FORME NINJA */
+
+#formeNinja {
+	position: fixed;
+	z-index: 7;
+	margin: 0px;
+	width: 100%;
+	height: 270px;
+	background: #ffffff; /* same as body background */
+}
+
+
+		/* HEADER */
+
+#main_title {
+	position: fixed;
+	z-index: 10;
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 68px;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 30pt;
+	color: #000000;
+	width: 300px;
+}
+
+
+	/*		logo		*/
+	
+#Logo {
+	position: fixed;
+	z-index: 10;
+	margin-top: 50px;
+	margin-left: 150px;
+}
+
+		/* BARRE NAVIGATION */
+
+a:link { 
+ 	text-decoration: none; 
+}
+
+#menu_horizontal {
+	position: fixed;
+	z-index: 10;
+	margin-top: 67px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    margin-left: -13px;
+}
+
+ul#menu_horizontal {  
+	width : 1210px;
+	height : 25px;
+	list-style-type : none; 
+}
+
+ul#menu_horizontal li {
+	padding : 0 1em; 
+}
+
+li.bouton_droite {
+	float : right;
+}
+
+
+		/* TYPOGRAPHIE */
+
+h1 {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18pt;
+	font-style: italic;
+}
+
+h2 {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15pt;
+	border-bottom: 2px solid #000000;
+	padding-bottom: 10px;
+}
+
+
+h3 {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25pt;
+}
+
+h6 {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25pt;
+	Font-Weight: Bold;
+}
+
+
+		/* TEXTE */
+
+h4 {
+	color: #000000;
+	font-family: 'Lora', serif;
+	font-size: 11pt;
+	line-height: 18pt;
+	font-weight: lighter;
+	letter-spacing: 1.25px;
+}
+
+
+#NomPageWeb {
+	position: fixed;
+	z-index: 9;
+	width: 400px;
+	margin-left: 160px;
+	margin-top: 150px;
+	margin-bottom: 15px;
+}
+
+#Title {
+	position: fixed;
+	z-index: 9;
+	width: 600px;
+	margin-top: 185px;
+	margin-left: 160px;
+}
+
+#text {
+	position: absolute;
+	z-index: 6;
+	width: 400px;
+	left: 160px;
+	top : 270px;
+}
+
+
+		/* IMAGE */
+		
+.flotte {
+	float:right;
+	position: absolute;
+	top : 290px;
+	left: 640px;
+	margin-bottom: 50px;
+}
+
+
+		/* FOOTER */
+
+#footer {
+	position: absolute;
+	background: #ffffff;
+	width: 100%;
+	height: 200px;
+}
+
