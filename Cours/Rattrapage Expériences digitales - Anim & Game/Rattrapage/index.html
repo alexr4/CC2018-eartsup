@@ -1,133 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="UTF-8" />
-		<link rel="stylesheet" href="./css/reset.css"/>
-		<link rel="stylesheet" href="./css/styles.css"/>
-		<title>Type &amp; Form</title>
-	</head>
-
-	<body>
-		<div id="formeNinja"></div>
-		<div id="main">
-			<div id="header">
-				<div id="Logo">
-					<h6>Type &amp; Form</h6></div>
-				<div id="nav">
-					<ul id="menu_horizontal">
-						<li class="bouton_droite"><a href="apropos.html"><h2>À propos</h2></a></li>
-						<li class="bouton_droite"><a href="lartiste.html"><h2>L'artiste</h2></a></li>
-						<li class="bouton_droite"><a href="index.html"><h2>Le projet</h2></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div id="content">
-				<div id="chapter">
-					<div id="NomPageWeb"><h1>&mdash; Le projet</h1></div>
-					<div id="Title"><h3>Type &amp; Form <br>sculpture</h3></div>
-					<div id="text">
-                    <br>
-					<h4>Ce projet de 2008, était une commission <br> pour le magazine Print qui souhaitait créer <br> 
-                    une couverture pour leur numéro spécial <br> sur la cinétique : un processus conduit <br> par la typographie.<br>
-                    <br>
-                    Créé en seulement 3 semaines et sans aucune <br> expérience dans l'impression d’objets 3D <br> 
-                    de cette complexité, le procédé était une courbe <br> d’apprentissage raide. <br> 
-                    Mais ce projet n’aurait pas pu être réalisé <br> sans le travail précédent de Karsten Schmidt <br> 
-                    fini sur toxiclibs' voxel toolchain. <br>
-                    <br>
-                    Avec le recul, Schmidt s’est rendu compte que c'était ce projet, ainsi que d’autres projets <br> 
-                    de la communauté Processing, qui l'avaient poussé à approfondir ses recherches d’application de diffusion 
-                    des réactions, d’isosurfaces et de voxels comme outils de conception de structures génératives complexes. <br>
-					<br> <br>
-					</h4>
-                    <br>
-                    <h2> Étape 1 </h2> 
-                    <h4> Choisir une approche et un algorithme approprié
-                    <br> <br>
-                    Après avoir passé plusieurs mois avant ce projet <br> à travailler sans relâche avec des automates 
-                    cellulaires (CA), Schmidt a pensé qu'ils seraient l'outil parfait pour être combiné à la typographie. <br>
-                    <br>
-                    Les formes de lettre pourraient être utilisées comme un masque pour définir deux ensembles de règles 
-                    de comportement (éventuellement contradictoires) et créez ainsi une interaction intéressante entre 
-                    leurs modèles résultants. <br>
-                    <br>
-                    La seule chose qu'il n’aimait pas chez les CA était leur esthétique basée sur les pixels. Il a donc cherché 
-                    des alternatives ayant un potentiel tout aussi élevé pour des expressions différentes, mais sans utiliser 
-                    uniquement les états marche/arrêt. La diffusion de réaction (RD) <br> - l'équation différentielle préférée 
-                    de tous, <br> de la chimie de niveau A - à la rescousse ! <br>
-                    <br> 
-                    Voulant une liberté maximale pour contrôler <br> le poids des lettres par rapport à la résolution <br> 
-                    de la grille de simulation, Schmidt a écrit <br> un outil pour générer une police personnalisée (uniquement 
-                    les lettres nécessaires) à partir <br> de simples segments linéaires et circulaires. <br>
-                    <br> <br>
-                    <br>
-                    <h2> Étape 2 </h2> 
-                    <h4> Utilisation de la 3e dimension comme axe <br> de temps
-                    <br> <br>
-                    L'interprétation de la séquence bitmap <br> en niveaux de gris de la simulation précédente comme tranches 
-                    de temps de densité dans l'espace voxel 3D a permis à Schmidt de choisir une valeur seuil de densité, 
-                    de calculer sa surface iso et d'obtenir un maillage 3D très détaillé : <br> un format de fichier 
-                    beaucoup trop grand <br> pour être géré en affichage en temps réel <br> sans structures de données optimisées 
-                    <br> (par exemple, VBO). <br> 
-                    <br> 
-                    Par conséquent, le processus a abouti à un ping-pong continu entre les modifications apportées <br> à Eclipse 
-                    et la révision des maillages Meshlab. <br> 
-                    <br> <br>
-                    <br>
-                    <h2> Étape 3 </h2> 
-                    <h4> Combat avec la lisibilité 
-                    <br> <br>
-                    L'approche initiale utilisant des formes de lettres remplies s'est avérée être un cauchemar <br> de lisibilité, 
-                    tout en ne produisant pas une face avant aussi intéressante qu’espérée. <br>
-                    De plus, la connexion entre les lettres était <br> très faible, causant des potentiels problèmes 
-                    avec l’impression 3D. <br>
-                    <br> <br>
-                    <br>
-                    <h2> Étape 4 </h2> 
-                    <h4> Aperçu des semences FTW
-                    <br> <br>
-                    En exécutant une cascade de filtres Sobel <br> & Dilate sur l'image bitmap des formes de lettres originales, 
-                    Schmidt a pu transformer des lettres pleines en contours, les utiliser comme semences alternatives pour 
-                    la simulation RD et créer <br> des résultats beaucoup plus intéressants. <br> 
-                    <br> <br>
-                    <br>
-                    <h2> Étape 5 </h2> 
-                    <h4> Améliorations du maillage
-                    <br> <br>
-                    La majeure partie du temps restant a été consacrée à essayer de rendre le maillage <br> aussi stable 
-                    et imprimable que possible. <br>
-                    Cela signifiait créer le maillage : en utilisant différentes résolutions de voxels, en analysant <br> 
-                    le maillage pour trouver le diamètre des brins <br> les plus fins, en maximisant leur nombre <br> 
-                    et leurs espacements et en ajustant <br> les paramètres du simulateur RD. <br> 
-                    <br> <br>
-                    <br>
-                    <h2> Étape finale </h2> 
-                    <h4> Le grand défi de l'impression 3D
-                    <br> <br>
-                    Même si le modèle était conforme aux limites <br> de l’imprimante Z450 utilisée, la première tentative 
-                    de fabrication n’a pas été couronnée <br> de succès et le maillage a été déchiré en tentant de le sortir 
-                    de l’imprimante. <br>
-                    <br>
-                    Heureusement, l'opérateur a eu la gentillesse d'imprimer un deuxième objet et a dû démonter partiellement 
-                    l'imprimante pour retirer toute <br> la plateforme d'impression avant de nettoyer <br> et de placer l'objet 
-                    dans un bain de fixation <br> pour le durcir. <br> 
-                    <br> <br>
-                    </h4>
-				  </div>
-				</div>
-                
-                <p class="flotte">
-                <img src="image/image2.jpg" width="730" height="3665" alt=""/>
-                </p>
-				</div>
-			</div>
-
-			<div id="footer">
-				<div id="logo"></div>
-				<div id="copyright"></div>
-			</div>
-		</div>
-	</body>
-
+<head>
+  <meta charset="utf-8">
+  <title>The Giant Map </title>
+  <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+  <div class="contenair">
+    <header>
+      <div class="header-col" id="col1">18/08/2018</div>
+      <div class="header-col" id="col2">The Giant Map</div>
+      <div class="header-col" id="col3">Un travail de Jeffrey DIN</div>
+    </header>
+    <h1>The Giant Map</h1>
+    <h3>de Takayuki Fukatsu et Akira Iwaya</h3>
+    <h2>Description</h2>
+    <div class= "Description">"THE GIANT MAP" est une google map géant interactive mettant l'utilisateur à la place d'une créature géante
+        voyant le monde de très haut et pouvant interagir avec celui-ci.
+      Pour plus d''information sur le travail de cette artiste,cliquez <a href="https://devart.withgoogle.com/fr#/project/16566495">ici</a>.</div>
+      <div class="presentation"> Takayuki Fukatsu et Akira Iwaya sont des amis passionés de creatives coding.
+        A eux deux ils possèdent une page nommée <a href="http://fladdict.net/">fladict</a> permettant d'essayer des approches de creative coding sous différents formes.
+    <div class= "projet">La partie du projet qui m'a le plus inspiré et intrigué est le code permettant de faire interagir des points de façon à former des noeuds avec la vitesse d'un pointeur sur cette surface .On peut voir des enjeux important derrière ce projet bien que ludique, les deux amis voulaient gagnés un concours avec celui-ci. </div>
+    <div class="redirection"> <a href="http://labs.theguild.jp/thegiantmap/sketches/sketch01/"> Lien vers le projet.</div>
+      <img src="./image/noding.png" width="600" height="600"></a>
+    <div class="redirection"> <a href="http://labs.theguild.jp/thegiantmap/sketches/sketch01/THE_GIANT_MAP_sketch01.pde">
+    <img src="./image/Codeline.png" width="350" height="800"></a>
+    <p>Le projet est une approche sur le moyen d'interagir avec un environnement cartographique et la position de l'homme dans cette environnement avec les changements de perspectives engendrés.</p>
+    <p>J'ai choisi ce projet pour la simple et bonne raison qu'il m'est apparu comme étant une approche interactive autour de carte du monde, interessant accessible et permettant à l'utilisateur de pouvoir se projetter sur celle-ci de façon ludique.</p>
+    <p>Ce projet peut avoir une utilité dans la façon d'utiliser et d'interagir avec une carte du monde dans un jeu vidéo dans lequel nous nous trouvons de façon diégétique.Pour faire simple imaginez vous déployez votre carte du monde et pouvoir vous y baladez de façon purement naturel en piétinant sa carte, le tout évidement en étant en jeu.</p>
+  </div>
+</body>
 </html>
