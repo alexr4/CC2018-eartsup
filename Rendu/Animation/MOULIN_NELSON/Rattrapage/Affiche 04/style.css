@@ -1,0 +1,20 @@
+canvas
+{
+background-color: (0,0,0);
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+display: block;
+width: 1000px;
+
+}
+body{
+  padding-top: 15px;
+
+}
+div#img {
+  height: 600px;
+  width: 850px;
+  cursor: pointer;
+}
