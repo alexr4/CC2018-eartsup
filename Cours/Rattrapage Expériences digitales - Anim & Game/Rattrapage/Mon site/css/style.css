@@ -1,0 +1,91 @@
+h1{
+  color: #B73460;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+p{
+
+color: #ffffff;
+
+}
+
+body{
+  background: #5FD8C8;
+  background-size: 100%;
+}
+h1.titre{
+margin-top: 10px;
+font-size: 60px;
+color: #5FD8C8;
+background: #B73460;
+text-align: center;
+}
+p{
+
+  font-size: 35px;
+}
+a.lien{
+
+  margin-left: 400px;
+    margin-top: :200px;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+  color: #B73460;
+}
+
+h1,h2,p{
+  text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+img.CetB{
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+h1.auteurs{
+  color: #000000;
+  font-size: 30px;
+}
+h1.Mouad{
+
+  color: #000000;
+  font-size: 30px;
+}
+img.oeuvre{
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+
+}
+img.Board1{
+border-radius: 60%;
+  width: 300px;
+  height: 300px;
+}
+img.euvre1{
+
+  border-radius: 60%;
+    width: 300px;
+    height: 300px;
+}
+img.wsh{
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  margin-top: 30px;
+
+
+}
